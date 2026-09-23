@@ -2,8 +2,8 @@ import { Menu } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
-import Button from "../common/Button";
 import Container from "../common/Container";
+import QuoteCTA from "../conversion/QuoteCTA";
 import { site } from "../../data/site";
 import DesktopNavigation from "./DesktopNavigation";
 import MobileNavigation from "./MobileNavigation";
@@ -44,6 +44,7 @@ export default function Header() {
         <Link className="site-header__brand" to="/" aria-label={`${site.name} home`}>
           {/* TODO[ASSET]: Replace this text mark with the approved Elevated Resin Creations logo. */}
           <span className="site-header__brand-mark">ER</span>
+
           <span className="site-header__brand-text">
             <strong>Elevated Resin</strong>
             <small>Creations</small>
@@ -53,9 +54,7 @@ export default function Header() {
         <DesktopNavigation />
 
         <div className="site-header__actions">
-          <Button className="site-header__cta" to="/contact" showArrow>
-            Request a Free Quote
-          </Button>
+          <QuoteCTA className="site-header__cta" />
 
           <button
             className="site-header__menu-button"

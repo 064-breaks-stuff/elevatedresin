@@ -1,7 +1,8 @@
-import Button from "../common/Button";
 import Container from "../common/Container";
 import Eyebrow from "../common/Eyebrow";
 import PlaceholderVisual from "../common/PlaceholderVisual";
+import Button from "../common/Button";
+import QuoteCTA from "../conversion/QuoteCTA";
 import { homeHero } from "../../data/home";
 
 export default function HomeHero() {
@@ -16,9 +17,10 @@ export default function HomeHero() {
           <p className="home-hero__description">{homeHero.description}</p>
 
           <div className="home-hero__actions">
-            <Button href={homeHero.primaryCta.href} showArrow>
-              {homeHero.primaryCta.label}
-            </Button>
+            <QuoteCTA
+              label={homeHero.primaryCta.label}
+              ariaLabel="Request a free quote"
+            />
 
             <Button to={homeHero.secondaryCta.to} variant="secondary">
               {homeHero.secondaryCta.label}

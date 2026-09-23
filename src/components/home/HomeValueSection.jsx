@@ -19,6 +19,7 @@ export default function HomeValueSection() {
 
         <div className="home-value__content">
           <Eyebrow>{resinBoundValue.eyebrow}</Eyebrow>
+
           <h2>{resinBoundValue.title}</h2>
 
           <div className="home-value__copy">

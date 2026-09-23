@@ -4,8 +4,7 @@ export const homeHero = {
   description:
     "Elevated Resin Creations transforms driveways, patios, pathways, pool decks, and landscaped areas with refined, seamless resin-bound stone surfaces built for long-term performance.",
   primaryCta: {
-    label: "Request a Free Quote",
-    href: "#quote-form"
+    label: "Request a Free Quote"
   },
   secondaryCta: {
     label: "View Our Projects",

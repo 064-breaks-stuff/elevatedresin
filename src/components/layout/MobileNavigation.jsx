@@ -1,7 +1,7 @@
 import { Phone, X } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
-import Button from "../common/Button";
+import QuoteCTA from "../conversion/QuoteCTA";
 import { primaryNavigation } from "../../data/navigation";
 import { site } from "../../data/site";
 
@@ -46,9 +46,11 @@ export default function MobileNavigation({ isOpen, onClose }) {
             <span>Call {site.phoneDisplay}</span>
           </a>
 
-          <Button to="/contact" onClick={onClose} showArrow>
-            Request a Free Quote
-          </Button>
+          <QuoteCTA
+            label="Request a Free Quote"
+            showArrow
+            ariaLabel="Request a free quote"
+          />
         </div>
       </div>
     </div>

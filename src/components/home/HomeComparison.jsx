@@ -1,6 +1,6 @@
-import Button from "../common/Button";
 import Container from "../common/Container";
 import SectionHeading from "../common/SectionHeading";
+import QuoteCTA from "../conversion/QuoteCTA";
 import { comparisonRows } from "../../data/home";
 
 export default function HomeComparison() {
@@ -13,7 +13,12 @@ export default function HomeComparison() {
       />
 
       <Container>
-        <div className="comparison-table-wrapper" role="region" aria-label="Surface comparison table" tabIndex="0">
+        <div
+          className="comparison-table-wrapper"
+          role="region"
+          aria-label="Surface comparison table"
+          tabIndex="0"
+        >
           <table className="comparison-table">
             <thead>
               <tr>
@@ -40,9 +45,7 @@ export default function HomeComparison() {
         </div>
 
         <div className="home-comparison__action">
-          <Button href="#quote-form" showArrow>
-            Request a Free Quote
-          </Button>
+          <QuoteCTA />
         </div>
       </Container>
     </section>

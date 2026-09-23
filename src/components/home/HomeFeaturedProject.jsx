@@ -1,7 +1,7 @@
-import Button from "../common/Button";
 import Container from "../common/Container";
 import Eyebrow from "../common/Eyebrow";
 import PlaceholderVisual from "../common/PlaceholderVisual";
+import Button from "../common/Button";
 
 export default function HomeFeaturedProject() {
   return (
