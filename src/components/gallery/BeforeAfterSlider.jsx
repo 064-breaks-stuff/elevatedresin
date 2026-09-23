@@ -87,17 +87,15 @@ export default function BeforeAfterSlider() {
 
         <div
           className="before-after__reveal"
-          style={{ width: `${position}%` }}
+          style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}
           aria-hidden="true"
         >
-          <div className="before-after__reveal-inner">
-            <PlaceholderVisual
-              label="After resin-bound surface"
-              assetName="PLACEHOLDER-after-resin-surface.jpg"
-              aspectRatio="wide"
-              className="before-after__image"
-            />
-          </div>
+          <PlaceholderVisual
+            label="After resin-bound surface"
+            assetName="PLACEHOLDER-after-resin-surface.jpg"
+            aspectRatio="wide"
+            className="before-after__image"
+          />
         </div>
 
         <div
