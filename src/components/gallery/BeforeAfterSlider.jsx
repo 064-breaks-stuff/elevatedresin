@@ -3,7 +3,8 @@ import { MoveHorizontal } from "lucide-react";
 
 import PlaceholderVisual from "../common/PlaceholderVisual";
 
-const clamp = (value, minimum, maximum) => Math.min(Math.max(value, minimum), maximum);
+const clamp = (value, minimum, maximum) =>
+  Math.min(Math.max(value, minimum), maximum);
 
 export default function BeforeAfterSlider() {
   const [position, setPosition] = useState(50);
@@ -36,32 +37,34 @@ export default function BeforeAfterSlider() {
   };
 
   const handleKeyDown = (event) => {
-    const increments = {
+    const movementMap = {
       ArrowLeft: -5,
       ArrowDown: -5,
       ArrowRight: 5,
-      ArrowUp: 5,
-      Home: -100,
-      End: 100
+      ArrowUp: 5
     };
 
-    if (!(event.key in increments)) {
-      return;
-    }
-
-    event.preventDefault();
-
     if (event.key === "Home") {
+      event.preventDefault();
       setPosition(0);
       return;
     }
 
     if (event.key === "End") {
+      event.preventDefault();
       setPosition(100);
       return;
     }
 
-    setPosition((currentPosition) => clamp(currentPosition + increments[event.key], 0, 100));
+    if (!(event.key in movementMap)) {
+      return;
+    }
+
+    event.preventDefault();
+
+    setPosition((currentPosition) =>
+      clamp(currentPosition + movementMap[event.key], 0, 100)
+    );
   };
 
   return (
@@ -73,24 +76,28 @@ export default function BeforeAfterSlider() {
         onPointerMove={handlePointerMove}
       >
         {/* TODO[ASSET]: Replace with approved matched before/after project photos. */}
-        <PlaceholderVisual
-          label="Before surface"
-          assetName="PLACEHOLDER-before-surface.jpg"
-          aspectRatio="wide"
-          className="before-after__image before-after__image--before"
-        />
+        <div className="before-after__base">
+          <PlaceholderVisual
+            label="Before surface"
+            assetName="PLACEHOLDER-before-surface.jpg"
+            aspectRatio="wide"
+            className="before-after__image"
+          />
+        </div>
 
         <div
-          className="before-after__after-clip"
-          style={{ clipPath: `inset(0 0 0 ${position}%)` }}
+          className="before-after__reveal"
+          style={{ width: `${position}%` }}
           aria-hidden="true"
         >
-          <PlaceholderVisual
-            label="After resin-bound surface"
-            assetName="PLACEHOLDER-after-resin-surface.jpg"
-            aspectRatio="wide"
-            className="before-after__image before-after__image--after"
-          />
+          <div className="before-after__reveal-inner">
+            <PlaceholderVisual
+              label="After resin-bound surface"
+              assetName="PLACEHOLDER-after-resin-surface.jpg"
+              aspectRatio="wide"
+              className="before-after__image"
+            />
+          </div>
         </div>
 
         <div
@@ -115,8 +122,13 @@ export default function BeforeAfterSlider() {
           aria-valuetext={`${Math.round(position)} percent after surface visible`}
         />
 
-        <span className="before-after__label before-after__label--before">Before</span>
-        <span className="before-after__label before-after__label--after">After</span>
+        <span className="before-after__label before-after__label--before">
+          Before
+        </span>
+
+        <span className="before-after__label before-after__label--after">
+          After
+        </span>
       </div>
 
       <p className="before-after__instruction">
