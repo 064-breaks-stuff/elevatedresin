@@ -11,7 +11,7 @@ export const resinBoundPage = {
     title: "A refined stone surface designed for practical outdoor performance.",
     paragraphs: [
       "Resin-bound surfacing combines selected stone aggregate with resin to create a seamless, decorative finish. It is designed for outdoor areas where appearance, drainage, durability, and low-maintenance performance matter.",
-      "As an Approved Resin Rock Installer, Elevated Resin Creations uses Resin Rock systems for residential and commercial projects, helping create finished surfaces that are practical underfoot and visually suited to the surrounding space."
+      "As an Approved Resin Rock Installer, Elevated Resin Creations uses Resin Rock systems for residential and commercial projects, helping create finished surfaces for a range of outdoor spaces."
     ]
   },
 
