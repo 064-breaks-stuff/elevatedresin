@@ -1,5 +1,6 @@
 export const site = {
   name: "Elevated Resin Creations",
+  shortName: "Elevated Resin",
   domain: "https://elevatedresin.com",
   credential: "Approved Resin Rock Installer",
   phoneDisplay: "920-404-9048",
@@ -34,5 +35,6 @@ export const site = {
   googleBusinessCategory: "Landscape designer",
   ghlFormUrl:
     "https://api.leadconnectorhq.com/widget/form/fDPwMZqw1M5eItPCqT0Z",
-  ghlFormId: "fDPwMZqw1M5eItPCqT0Z"
+  ghlFormId: "fDPwMZqw1M5eItPCqT0Z",
+  ghlFormName: "Contact Submission Form"
 };
