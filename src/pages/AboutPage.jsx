@@ -1,22 +1,33 @@
 import { Helmet } from "react-helmet-async";
 
-import Container from "../components/common/Container";
+import AboutApproach from "../components/about/AboutApproach";
+import AboutAudience from "../components/about/AboutAudience";
+import AboutCredential from "../components/about/AboutCredential";
+import AboutHero from "../components/about/AboutHero";
+import AboutServiceArea from "../components/about/AboutServiceArea";
+import AboutSystems from "../components/about/AboutSystems";
+import AboutWorkmanship from "../components/about/AboutWorkmanship";
 import { site } from "../data/site";
 
 export default function AboutPage() {
   return (
     <>
       <Helmet>
-        <title>About | {site.name}</title>
+        <title>About Elevated Resin Creations | {site.name}</title>
+
+        <meta
+          name="description"
+          content="Learn about Elevated Resin Creations, an Approved Resin Rock Installer serving homeowners and commercial property owners in Menasha, Wisconsin and surrounding areas."
+        />
       </Helmet>
 
-      <section className="route-placeholder section">
-        <Container>
-          <p className="route-placeholder__label">P11 — About</p>
-          <h1>About Elevated Resin Creations</h1>
-          <p>This page will be implemented after Contact and Thank-you.</p>
-        </Container>
-      </section>
+      <AboutHero />
+      <AboutAudience />
+      <AboutSystems />
+      <AboutApproach />
+      <AboutCredential />
+      <AboutServiceArea />
+      <AboutWorkmanship />
     </>
   );
 }
