@@ -10,7 +10,7 @@ export const homeHero = {
     label: "View Our Projects",
     to: "/projects"
   },
-  serviceLine: "Serving Menasha, Wisconsin and surrounding areas within 40 miles."
+  serviceLine: "Serving Menasha, Wisconsin, surrounding areas, and statewide for qualifying projects."
 };
 
 export const trustItems = [

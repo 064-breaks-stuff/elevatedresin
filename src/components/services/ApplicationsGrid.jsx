@@ -12,22 +12,16 @@ import SectionHeading from "../common/SectionHeading";
 
 const applications = [
   {
+    title: "Commercial Spaces",
+    description:
+      "Resin Rock systems suitable for practical and decorative outdoor commercial applications.",
+    icon: Building2
+  },
+  {
     title: "Driveways",
     description:
       "Refined resin-bound driveway surfaces designed for everyday vehicle and pedestrian use.",
     icon: Home
-  },
-  {
-    title: "Patios",
-    description:
-      "Decorative outdoor patio finishes that bring a seamless stone look to entertaining spaces.",
-    icon: Palmtree
-  },
-  {
-    title: "Walkways & Pathways",
-    description:
-      "Practical, slip-resistant surfaces for paths, walkways, garden routes, and outdoor connections.",
-    icon: Flower2
   },
   {
     title: "Pool Surrounds",
@@ -36,16 +30,22 @@ const applications = [
     icon: Waves
   },
   {
+    title: "Patios",
+    description:
+      "Decorative outdoor patio finishes that bring a seamless stone look to entertaining spaces.",
+    icon: Palmtree
+  },
+  {
     title: "Landscaped Areas",
     description:
       "Stone-and-resin finishes that complement gardens, borders, and broader landscape designs.",
     icon: Fence
   },
   {
-    title: "Commercial Spaces",
+    title: "Walkways & Pathways",
     description:
-      "Resin Rock systems suitable for practical and decorative outdoor commercial applications.",
-    icon: Building2
+      "Practical, slip-resistant surfaces for paths, walkways, garden routes, and outdoor connections.",
+    icon: Flower2
   }
 ];
 

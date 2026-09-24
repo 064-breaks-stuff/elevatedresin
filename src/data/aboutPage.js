@@ -56,7 +56,8 @@ export const aboutPage = {
 
   serviceArea: {
     eyebrow: "Local Service Coverage",
-    title: "Serving Menasha, Wisconsin and surrounding areas within 40 miles.",
+    title:
+      "Serving Menasha, Wisconsin, surrounding areas, and statewide for qualifying projects.",
     description:
       "Discuss a residential or commercial outdoor project with Elevated Resin Creations to determine which Resin Rock system may be suitable for your space."
   },
