@@ -9,24 +9,7 @@ import { faqs } from "../data/faqs";
 import { faqPage } from "../data/faqPage";
 import { site } from "../data/site";
 
-function createFaqSchema() {
-  return {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer
-      }
-    }))
-  };
-}
-
 export default function FAQPage() {
-  const faqSchema = createFaqSchema();
-
   return (
     <>
       <Helmet>
@@ -36,10 +19,6 @@ export default function FAQPage() {
           name="description"
           content="Find answers about resin-bound surface preparation, permeability, drainage, installation timing, maintenance, slip resistance, and project quotes."
         />
-
-        <script type="application/ld+json">
-          {JSON.stringify(faqSchema)}
-        </script>
       </Helmet>
 
       <section className="faq-page-hero">
