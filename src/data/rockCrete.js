@@ -36,9 +36,9 @@ export const rockCretePage = {
         "Designed to support natural drainage, reduce runoff, and meet SUDS requirements when installed as the appropriate system."
     },
     {
-      title: "High Load-Bearing Strength",
+      title: "Pedestrian & Vehicle Traffic",
       description:
-        "Suitable for pedestrian and vehicle traffic, including driveway applications."
+        "Suitable for pedestrian and vehicle traffic, including driveways."
     },
     {
       title: "Quick Installation",
@@ -53,7 +53,7 @@ export const rockCretePage = {
     {
       title: "No Tarmac or Concrete Needed",
       description:
-        "A cleaner, more efficient alternative to traditional foundation approaches for appropriate resin-bound projects."
+        "Published Rock Crete system guidance describes an alternative to traditional tarmac or concrete bases for appropriate projects."
     }
   ],
 
