@@ -2108,6 +2108,513 @@
   background: var(--color-white);
 }
 
+/* Keep the complete P5 components.css content exactly as currently approved above this line. */
+
+/*
+  IMPORTANT IMPLEMENTATION INSTRUCTION:
+  Replace the current file by retaining every existing P0-P5 CSS rule unchanged,
+  then insert the following P6 block immediately before the existing media queries.
+  This code block is the P6 addition required for Glow Rock.
+*/
+
+/* P6 — Glow Rock */
+
+.glow-rock-hero {
+  overflow: clip;
+  padding-block: clamp(3rem, 7vw, 7rem);
+  background:
+    radial-gradient(circle at 86% 17%, rgb(184 123 82 / 20%), transparent 28%),
+    radial-gradient(circle at 18% 88%, rgb(41 75 59 / 20%), transparent 34%),
+    var(--color-forest-deep);
+}
+
+.glow-rock-hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: clamp(2.5rem, 6vw, 6rem);
+}
+
+.glow-rock-hero__content {
+  max-width: 43rem;
+}
+
+.glow-rock-hero .eyebrow {
+  color: var(--color-sand);
+}
+
+.glow-rock-hero h1 {
+  max-width: 10ch;
+  margin-top: var(--space-4);
+  color: var(--color-white);
+}
+
+.glow-rock-hero__content > p:not(.eyebrow):not(.glow-rock-hero__service-area) {
+  max-width: 40rem;
+  margin-top: var(--space-6);
+  color: rgb(255 255 255 / 76%);
+  font-size: var(--font-size-lg);
+}
+
+.glow-rock-hero .button {
+  margin-top: var(--space-8);
+  background: var(--color-sand);
+  color: var(--color-forest-deep);
+}
+
+.glow-rock-hero .button:hover {
+  background: var(--color-white);
+}
+
+.glow-rock-hero__service-area {
+  margin-top: var(--space-6);
+  color: var(--color-sand);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+}
+
+.glow-rock-hero__visual {
+  border-radius: var(--radius-xl);
+  box-shadow: 0 2rem 4rem rgb(0 0 0 / 24%);
+}
+
+.glow-rock-how-it-works {
+  background: var(--color-white);
+}
+
+.glow-rock-how-it-works__intro {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  align-items: center;
+  gap: clamp(2.5rem, 7vw, 7rem);
+}
+
+.glow-rock-how-it-works__copy {
+  max-width: 43rem;
+}
+
+.glow-rock-how-it-works__copy h2 {
+  margin-top: var(--space-4);
+}
+
+.glow-rock-how-it-works__paragraphs {
+  display: grid;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+  color: var(--color-text-muted);
+}
+
+.glow-rock-how-it-works__visual {
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+}
+
+.glow-rock-how-it-works__steps-wrapper {
+  margin-top: var(--section-space);
+  padding-top: var(--section-space);
+  border-top: 1px solid var(--color-border);
+}
+
+.glow-rock-how-it-works__heading {
+  max-width: var(--reading-max);
+}
+
+.glow-rock-how-it-works__heading h2 {
+  margin-top: var(--space-4);
+}
+
+.glow-rock-how-it-works__steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-10);
+}
+
+.glow-rock-how-it-works__steps li {
+  position: relative;
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-mist);
+}
+
+.glow-rock-how-it-works__steps li > span {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--color-forest-deep);
+  color: var(--color-white);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+}
+
+.glow-rock-how-it-works__steps h3 {
+  margin-top: var(--space-6);
+  font-size: var(--font-size-xl);
+}
+
+.glow-rock-how-it-works__steps p {
+  margin-top: var(--space-3);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.glow-rock-benefits {
+  background: var(--color-mist);
+}
+
+.glow-rock-benefits .section-heading {
+  margin-bottom: var(--space-10);
+}
+
+.glow-rock-benefits__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.glow-rock-benefit-card {
+  min-height: 17rem;
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-white);
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base),
+    border-color var(--transition-base);
+}
+
+.glow-rock-benefit-card:hover {
+  transform: translateY(-0.25rem);
+  border-color: rgb(41 75 59 / 32%);
+  box-shadow: var(--shadow-md);
+}
+
+.glow-rock-benefit-card__icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--color-forest-deep);
+  color: var(--color-sand);
+}
+
+.glow-rock-benefit-card h3 {
+  margin-top: var(--space-6);
+  font-size: var(--font-size-xl);
+}
+
+.glow-rock-benefit-card p {
+  margin-top: var(--space-3);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.glow-rock-applications {
+  background: var(--color-sand);
+}
+
+.glow-rock-applications .section-heading {
+  margin-bottom: var(--space-10);
+}
+
+.glow-rock-applications__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.glow-rock-application-card {
+  min-height: 15rem;
+  padding: var(--space-6);
+  border: 1px solid rgb(41 75 59 / 14%);
+  border-radius: var(--radius-lg);
+  background: rgb(255 255 255 / 70%);
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base),
+    background var(--transition-base);
+}
+
+.glow-rock-application-card:hover {
+  transform: translateY(-0.25rem);
+  background: var(--color-white);
+  box-shadow: var(--shadow-md);
+}
+
+.glow-rock-application-card__icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--color-forest-deep);
+  color: var(--color-white);
+}
+
+.glow-rock-application-card h3 {
+  margin-top: var(--space-6);
+  font-size: var(--font-size-xl);
+}
+
+.glow-rock-application-card p {
+  margin-top: var(--space-3);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.glow-rock-design-options {
+  background: var(--color-white);
+}
+
+.glow-rock-design-options__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+  align-items: center;
+  gap: clamp(2.5rem, 7vw, 7rem);
+}
+
+.glow-rock-design-options__content {
+  max-width: 38rem;
+}
+
+.glow-rock-design-options__content h2 {
+  margin-top: var(--space-4);
+}
+
+.glow-rock-design-options__content > p:not(.eyebrow) {
+  margin-top: var(--space-6);
+  color: var(--color-text-muted);
+}
+
+.glow-rock-design-options__notice {
+  display: grid;
+  gap: var(--space-2);
+  margin-top: var(--space-8);
+  padding: var(--space-5);
+  border: 1px dashed var(--color-stone);
+  border-radius: var(--radius-md);
+  background: var(--color-sand);
+}
+
+.glow-rock-design-options__notice strong {
+  color: var(--color-forest-deep);
+  font-size: var(--font-size-sm);
+}
+
+.glow-rock-design-options__notice span {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.glow-rock-design-options .button {
+  margin-top: var(--space-8);
+}
+
+.glow-rock-design-options__visuals {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.glow-rock-design-options__visual {
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.glow-rock-design-options__visual .placeholder-visual {
+  min-height: 14rem;
+  border-radius: 0;
+}
+
+.glow-rock-design-options__visual .placeholder-visual__surface {
+  padding: var(--space-4);
+}
+
+.glow-rock-design-options__visual .placeholder-visual__surface strong {
+  font-size: var(--font-size-sm);
+}
+
+.glow-rock-gallery {
+  background: var(--color-mist);
+}
+
+.glow-rock-gallery .section-heading {
+  margin-bottom: var(--space-10);
+}
+
+.glow-rock-gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-auto-rows: minmax(9rem, 13rem);
+  gap: var(--space-4);
+}
+
+.glow-rock-gallery__item {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: var(--color-forest-deep);
+}
+
+.glow-rock-gallery__item--wide {
+  grid-column: span 7;
+  grid-row: span 2;
+}
+
+.glow-rock-gallery__item--tall {
+  grid-column: span 5;
+  grid-row: span 3;
+}
+
+.glow-rock-gallery__item--standard {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+.glow-rock-gallery__item .placeholder-visual {
+  height: 100%;
+  min-height: 100%;
+  border-radius: 0;
+  transition: transform var(--transition-slow);
+}
+
+.glow-rock-gallery__item:hover .placeholder-visual {
+  transform: scale(1.035);
+}
+
+.glow-rock-gallery__meta {
+  position: absolute;
+  right: var(--space-4);
+  bottom: var(--space-4);
+  left: var(--space-4);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  color: var(--color-white);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.glow-rock-resin-bound-link {
+  background: var(--color-forest-deep);
+}
+
+.glow-rock-resin-bound-link__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-8);
+  padding: clamp(2rem, 5vw, 4rem);
+  border: 1px solid rgb(255 255 255 / 16%);
+  border-radius: var(--radius-xl);
+  background: rgb(255 255 255 / 5%);
+}
+
+.glow-rock-resin-bound-link__content > div {
+  max-width: 48rem;
+}
+
+.glow-rock-resin-bound-link__eyebrow {
+  color: var(--color-sand);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing-eyebrow);
+  text-transform: uppercase;
+}
+
+.glow-rock-resin-bound-link h2 {
+  margin-top: var(--space-4);
+  color: var(--color-white);
+}
+
+.glow-rock-resin-bound-link__content > div > p:last-child {
+  margin-top: var(--space-4);
+  color: rgb(255 255 255 / 76%);
+}
+
+.glow-rock-resin-bound-link .button {
+  flex: 0 0 auto;
+  border-color: var(--color-sand);
+  color: var(--color-sand);
+}
+
+.glow-rock-resin-bound-link .button:hover {
+  border-color: var(--color-sand);
+  background: var(--color-sand);
+  color: var(--color-forest-deep);
+}
+
+.glow-rock-faq {
+  background: var(--color-white);
+}
+
+.glow-rock-faq .section-heading {
+  margin-bottom: var(--space-10);
+}
+
+.glow-rock-faq__content {
+  display: grid;
+  gap: var(--space-8);
+}
+
+.glow-rock-faq__action {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.glow-rock-contact-cta {
+  background: var(--color-mist);
+}
+
+.glow-rock-contact-cta__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-8);
+  padding: clamp(2rem, 5vw, 4rem);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  background: var(--color-white);
+  box-shadow: var(--shadow-sm);
+}
+
+.glow-rock-contact-cta__content > div {
+  max-width: 48rem;
+}
+
+.glow-rock-contact-cta__eyebrow {
+  color: var(--color-forest);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing-eyebrow);
+  text-transform: uppercase;
+}
+
+.glow-rock-contact-cta h2 {
+  margin-top: var(--space-4);
+}
+
+.glow-rock-contact-cta__content > div > p:last-child {
+  margin-top: var(--space-4);
+  color: var(--color-text-muted);
+}
+
+.glow-rock-contact-cta .button {
+  flex: 0 0 auto;
+}
+
 @media (max-width: 68rem) {
   .home-hero__grid,
   .home-featured-project__grid,
@@ -2350,6 +2857,12 @@
   .resin-bound-projects__overlay,
   .projects-grid__item:hover .placeholder-visual,
   .projects-grid__overlay {
+    transform: none;
+  }
+
+  .glow-rock-benefit-card:hover,
+  .glow-rock-application-card:hover,
+  .glow-rock-gallery__item:hover .placeholder-visual {
     transform: none;
   }
 }
