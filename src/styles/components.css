@@ -2108,15 +2108,6 @@
   background: var(--color-white);
 }
 
-/* Keep the complete P5 components.css content exactly as currently approved above this line. */
-
-/*
-  IMPORTANT IMPLEMENTATION INSTRUCTION:
-  Replace the current file by retaining every existing P0-P5 CSS rule unchanged,
-  then insert the following P6 block immediately before the existing media queries.
-  This code block is the P6 addition required for Glow Rock.
-*/
-
 /* P6 — Glow Rock */
 
 .glow-rock-hero {
@@ -2615,6 +2606,451 @@
   flex: 0 0 auto;
 }
 
+/* P7 — Rock Crete */
+
+.rock-crete-hero {
+  overflow: clip;
+  padding-block: clamp(3rem, 7vw, 7rem);
+  background:
+    radial-gradient(circle at 9% 14%, rgb(184 123 82 / 14%), transparent 26%),
+    var(--color-mist);
+}
+
+.rock-crete-hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: clamp(2.5rem, 6vw, 6rem);
+}
+
+.rock-crete-hero__content {
+  max-width: 44rem;
+}
+
+.rock-crete-hero h1 {
+  max-width: 12ch;
+  margin-top: var(--space-4);
+}
+
+.rock-crete-hero__content > p:not(.eyebrow):not(.rock-crete-hero__service-area) {
+  max-width: 40rem;
+  margin-top: var(--space-6);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-lg);
+}
+
+.rock-crete-hero .button {
+  margin-top: var(--space-8);
+}
+
+.rock-crete-hero__service-area {
+  margin-top: var(--space-6);
+  color: var(--color-forest);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+}
+
+.rock-crete-hero__visual {
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.rock-crete-foundation {
+  background: var(--color-white);
+}
+
+.rock-crete-foundation__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  align-items: center;
+  gap: clamp(2.5rem, 7vw, 7rem);
+}
+
+.rock-crete-foundation__visual {
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+}
+
+.rock-crete-foundation__content {
+  max-width: 43rem;
+}
+
+.rock-crete-foundation__content h2 {
+  margin-top: var(--space-4);
+}
+
+.rock-crete-foundation__copy {
+  display: grid;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+  color: var(--color-text-muted);
+}
+
+.rock-crete-performance {
+  background: var(--color-sand);
+}
+
+.rock-crete-performance__stat {
+  padding: clamp(2rem, 6vw, 5rem);
+  border-radius: var(--radius-xl);
+  background: var(--color-forest-deep);
+  color: var(--color-white);
+}
+
+.rock-crete-performance__stat .eyebrow {
+  color: var(--color-sand);
+}
+
+.rock-crete-performance__statistic {
+  margin-top: var(--space-6);
+  color: var(--color-sand);
+  font-family: var(--font-display);
+  font-size: clamp(4rem, 10vw, 8rem);
+  line-height: 0.8;
+}
+
+.rock-crete-performance__stat h2 {
+  max-width: 10ch;
+  margin-top: var(--space-4);
+  color: var(--color-white);
+}
+
+.rock-crete-performance__stat > div > p:last-child {
+  max-width: 46rem;
+  margin-top: var(--space-6);
+  color: rgb(255 255 255 / 72%);
+  font-size: var(--font-size-sm);
+}
+
+.rock-crete-performance__diagram {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  align-items: center;
+  gap: clamp(2.5rem, 7vw, 7rem);
+  margin-top: var(--section-space);
+}
+
+.rock-crete-performance__diagram-copy {
+  max-width: 39rem;
+}
+
+.rock-crete-performance__diagram-copy h2 {
+  margin-top: var(--space-4);
+}
+
+.rock-crete-performance__diagram-copy > p:not(.eyebrow) {
+  margin-top: var(--space-6);
+  color: var(--color-text-muted);
+}
+
+.rock-crete-performance__text-equivalent {
+  margin-top: var(--space-8);
+  padding: var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-white);
+}
+
+.rock-crete-performance__text-equivalent > p {
+  color: var(--color-forest);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing-eyebrow);
+  text-transform: uppercase;
+}
+
+.rock-crete-performance__text-equivalent ol {
+  display: grid;
+  gap: var(--space-3);
+  margin: var(--space-4) 0 0;
+  padding-left: 1.35rem;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  list-style: decimal;
+}
+
+.rock-crete-performance__diagram-visual {
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+}
+
+.rock-crete-benefits {
+  background: var(--color-mist);
+}
+
+.rock-crete-benefits .section-heading {
+  margin-bottom: var(--space-10);
+}
+
+.rock-crete-benefits__grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.rock-crete-benefit-card {
+  min-height: 18rem;
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-white);
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base),
+    border-color var(--transition-base);
+}
+
+.rock-crete-benefit-card:hover {
+  transform: translateY(-0.25rem);
+  border-color: rgb(41 75 59 / 32%);
+  box-shadow: var(--shadow-md);
+}
+
+.rock-crete-benefit-card__icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--color-sand);
+  color: var(--color-forest-deep);
+}
+
+.rock-crete-benefit-card h3 {
+  margin-top: var(--space-6);
+  font-size: var(--font-size-xl);
+}
+
+.rock-crete-benefit-card p {
+  margin-top: var(--space-3);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.rock-crete-binder-course {
+  overflow: hidden;
+  background: var(--color-forest-deep);
+}
+
+.rock-crete-binder-course__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.7fr);
+  align-items: center;
+  gap: clamp(2.5rem, 8vw, 8rem);
+}
+
+.rock-crete-binder-course__content {
+  max-width: 44rem;
+}
+
+.rock-crete-binder-course .eyebrow {
+  color: var(--color-sand);
+}
+
+.rock-crete-binder-course h2 {
+  margin-top: var(--space-4);
+  color: var(--color-white);
+}
+
+.rock-crete-binder-course__copy {
+  display: grid;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+  color: rgb(255 255 255 / 76%);
+}
+
+.rock-crete-binder-course .button {
+  margin-top: var(--space-8);
+  background: var(--color-sand);
+  color: var(--color-forest-deep);
+}
+
+.rock-crete-binder-course .button:hover {
+  background: var(--color-white);
+}
+
+.rock-crete-binder-course__stat {
+  display: grid;
+  gap: var(--space-3);
+  padding: clamp(1.75rem, 4vw, 3rem);
+  border: 1px solid rgb(255 255 255 / 20%);
+  border-radius: var(--radius-xl);
+  background: rgb(255 255 255 / 6%);
+}
+
+.rock-crete-binder-course__stat > p {
+  color: var(--color-sand);
+  font-family: var(--font-display);
+  font-size: clamp(4rem, 8vw, 6.5rem);
+  line-height: 0.85;
+}
+
+.rock-crete-binder-course__stat > span {
+  color: var(--color-white);
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+}
+
+.rock-crete-binder-course__stat > small {
+  color: rgb(255 255 255 / 62%);
+  font-size: var(--font-size-xs);
+  line-height: 1.55;
+}
+
+.rock-crete-applications {
+  background: var(--color-white);
+}
+
+.rock-crete-applications .section-heading {
+  margin-bottom: var(--space-10);
+}
+
+.rock-crete-applications__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.rock-crete-application-card {
+  min-height: 16rem;
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-mist);
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base),
+    background var(--transition-base);
+}
+
+.rock-crete-application-card:hover {
+  transform: translateY(-0.25rem);
+  background: var(--color-white);
+  box-shadow: var(--shadow-md);
+}
+
+.rock-crete-application-card__icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--color-forest-deep);
+  color: var(--color-white);
+}
+
+.rock-crete-application-card h3 {
+  margin-top: var(--space-6);
+  font-size: var(--font-size-xl);
+}
+
+.rock-crete-application-card p {
+  margin-top: var(--space-3);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.rock-crete-glow-link {
+  background: var(--color-sand);
+}
+
+.rock-crete-glow-link__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-8);
+  padding: clamp(2rem, 5vw, 4rem);
+  border: 1px solid rgb(41 75 59 / 14%);
+  border-radius: var(--radius-xl);
+  background: rgb(255 255 255 / 70%);
+}
+
+.rock-crete-glow-link__content > div {
+  max-width: 48rem;
+}
+
+.rock-crete-glow-link__eyebrow {
+  color: var(--color-forest);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing-eyebrow);
+  text-transform: uppercase;
+}
+
+.rock-crete-glow-link h2 {
+  margin-top: var(--space-4);
+}
+
+.rock-crete-glow-link__content > div > p:last-child {
+  margin-top: var(--space-4);
+  color: var(--color-text-muted);
+}
+
+.rock-crete-glow-link .button {
+  flex: 0 0 auto;
+}
+
+.rock-crete-faq {
+  background: var(--color-mist);
+}
+
+.rock-crete-faq .section-heading {
+  margin-bottom: var(--space-10);
+}
+
+.rock-crete-faq__content {
+  display: grid;
+  gap: var(--space-8);
+}
+
+.rock-crete-faq__action {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.rock-crete-contact-cta {
+  background: var(--color-white);
+}
+
+.rock-crete-contact-cta__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-8);
+  padding: clamp(2rem, 5vw, 4rem);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  background: var(--color-mist);
+  box-shadow: var(--shadow-sm);
+}
+
+.rock-crete-contact-cta__content > div {
+  max-width: 48rem;
+}
+
+.rock-crete-contact-cta__eyebrow {
+  color: var(--color-forest);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing-eyebrow);
+  text-transform: uppercase;
+}
+
+.rock-crete-contact-cta h2 {
+  margin-top: var(--space-4);
+}
+
+.rock-crete-contact-cta__content > div > p:last-child {
+  margin-top: var(--space-4);
+  color: var(--color-text-muted);
+}
+
+.rock-crete-contact-cta .button {
+  flex: 0 0 auto;
+}
+
 @media (max-width: 68rem) {
   .home-hero__grid,
   .home-featured-project__grid,
@@ -2719,6 +3155,37 @@
     align-items: flex-start;
     flex-direction: column;
   }
+
+  .rock-crete-hero__grid,
+.rock-crete-foundation__grid,
+.rock-crete-performance__diagram,
+.rock-crete-binder-course__grid {
+  grid-template-columns: 1fr;
+}
+
+.rock-crete-hero__content {
+  max-width: 46rem;
+}
+
+.rock-crete-hero__visual,
+.rock-crete-foundation__visual,
+.rock-crete-performance__diagram-visual {
+  max-width: 52rem;
+}
+
+.rock-crete-benefits__grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.rock-crete-applications__grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.rock-crete-glow-link__content,
+.rock-crete-contact-cta__content {
+  align-items: flex-start;
+  flex-direction: column;
+}
 }
 
 @media (max-width: 42rem) {
@@ -2916,6 +3383,29 @@
   .glow-rock-contact-cta .button {
     width: 100%;
   }
+
+  .rock-crete-hero {
+  padding-block: var(--space-12) var(--space-16);
+}
+
+.rock-crete-hero h1 {
+  max-width: 12ch;
+}
+
+.rock-crete-benefits__grid,
+.rock-crete-applications__grid {
+  grid-template-columns: 1fr;
+}
+
+.rock-crete-glow-link__content,
+.rock-crete-contact-cta__content {
+  padding: var(--space-6);
+}
+
+.rock-crete-glow-link .button,
+.rock-crete-contact-cta .button {
+  width: 100%;
+}
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -2942,4 +3432,8 @@
   .glow-rock-gallery__item:hover .placeholder-visual {
     transform: none;
   }
+  .rock-crete-benefit-card:hover,
+.rock-crete-application-card:hover {
+  transform: none;
+}
 }
