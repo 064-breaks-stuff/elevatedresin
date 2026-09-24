@@ -1,22 +1,22 @@
 import { Helmet } from "react-helmet-async";
 
-import Container from "../components/common/Container";
+import LegalDocument from "../components/legal/LegalDocument";
+import { termsAndConditions } from "../data/legal";
 import { site } from "../data/site";
 
 export default function TermsPage() {
   return (
     <>
       <Helmet>
-        <title>Terms & Conditions | {site.name}</title>
+        <title>Terms and Conditions | {site.name}</title>
+
+        <meta
+          name="description"
+          content="Draft Terms and Conditions for Elevated Resin Creations, pending client review and approval."
+        />
       </Helmet>
 
-      <section className="route-placeholder section">
-        <Container>
-          <p className="route-placeholder__label">P12 — Legal</p>
-          <h1>Terms & Conditions</h1>
-          <p>This page will be implemented during the legal and launch-readiness phase.</p>
-        </Container>
-      </section>
+      <LegalDocument document={termsAndConditions} />
     </>
   );
 }
