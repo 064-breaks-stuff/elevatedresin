@@ -3051,6 +3051,386 @@
   flex: 0 0 auto;
 }
 
+/* P8 — Resin Wall */
+
+.resin-wall-hero {
+  overflow: clip;
+  padding-block: clamp(3rem, 7vw, 7rem);
+  background:
+    radial-gradient(circle at 90% 16%, rgb(184 123 82 / 14%), transparent 28%),
+    var(--color-mist);
+}
+
+.resin-wall-hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: clamp(2.5rem, 6vw, 6rem);
+}
+
+.resin-wall-hero__content {
+  max-width: 44rem;
+}
+
+.resin-wall-hero h1 {
+  max-width: 12ch;
+  margin-top: var(--space-4);
+}
+
+.resin-wall-hero__content > p:not(.eyebrow):not(.resin-wall-hero__service-area) {
+  max-width: 40rem;
+  margin-top: var(--space-6);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-lg);
+}
+
+.resin-wall-hero .button {
+  margin-top: var(--space-8);
+}
+
+.resin-wall-hero__service-area {
+  margin-top: var(--space-6);
+  color: var(--color-forest);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+}
+
+.resin-wall-hero__visual {
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.resin-wall-introduction {
+  background: var(--color-white);
+}
+
+.resin-wall-introduction__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  align-items: center;
+  gap: clamp(2.5rem, 7vw, 7rem);
+}
+
+.resin-wall-introduction__visual {
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+}
+
+.resin-wall-introduction__content {
+  max-width: 43rem;
+}
+
+.resin-wall-introduction__content h2 {
+  margin-top: var(--space-4);
+}
+
+.resin-wall-introduction__copy {
+  display: grid;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+  color: var(--color-text-muted);
+}
+
+.resin-wall-features {
+  background: var(--color-mist);
+}
+
+.resin-wall-features .section-heading {
+  margin-bottom: var(--space-10);
+}
+
+.resin-wall-features__grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.resin-wall-feature-card {
+  min-height: 18rem;
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-white);
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base),
+    border-color var(--transition-base);
+}
+
+.resin-wall-feature-card:hover {
+  transform: translateY(-0.25rem);
+  border-color: rgb(41 75 59 / 32%);
+  box-shadow: var(--shadow-md);
+}
+
+.resin-wall-feature-card__icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--color-sand);
+  color: var(--color-forest-deep);
+}
+
+.resin-wall-feature-card h3 {
+  margin-top: var(--space-6);
+  font-size: var(--font-size-xl);
+}
+
+.resin-wall-feature-card p {
+  margin-top: var(--space-3);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.resin-wall-applications {
+  background: var(--color-sand);
+}
+
+.resin-wall-applications .section-heading {
+  margin-bottom: var(--space-10);
+}
+
+.resin-wall-applications__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.resin-wall-application-card {
+  min-height: 16rem;
+  padding: var(--space-6);
+  border: 1px solid rgb(41 75 59 / 14%);
+  border-radius: var(--radius-lg);
+  background: rgb(255 255 255 / 70%);
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base),
+    background var(--transition-base);
+}
+
+.resin-wall-application-card:hover {
+  transform: translateY(-0.25rem);
+  background: var(--color-white);
+  box-shadow: var(--shadow-md);
+}
+
+.resin-wall-application-card__icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--color-forest-deep);
+  color: var(--color-white);
+}
+
+.resin-wall-application-card h3 {
+  margin-top: var(--space-6);
+  font-size: var(--font-size-xl);
+}
+
+.resin-wall-application-card p {
+  margin-top: var(--space-3);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.resin-wall-continuity {
+  overflow: hidden;
+  background: var(--color-forest-deep);
+}
+
+.resin-wall-continuity__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  align-items: center;
+  gap: clamp(2.5rem, 7vw, 7rem);
+}
+
+.resin-wall-continuity__content {
+  max-width: 37rem;
+}
+
+.resin-wall-continuity .eyebrow {
+  color: var(--color-sand);
+}
+
+.resin-wall-continuity h2 {
+  margin-top: var(--space-4);
+  color: var(--color-white);
+}
+
+.resin-wall-continuity__content > p:not(.eyebrow) {
+  margin-top: var(--space-6);
+  color: rgb(255 255 255 / 76%);
+}
+
+.resin-wall-continuity .button {
+  margin-top: var(--space-8);
+  border-color: var(--color-sand);
+  color: var(--color-sand);
+}
+
+.resin-wall-continuity .button:hover {
+  border-color: var(--color-sand);
+  background: var(--color-sand);
+  color: var(--color-forest-deep);
+}
+
+.resin-wall-continuity__visuals {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.resin-wall-continuity__visual {
+  display: grid;
+  gap: var(--space-3);
+  color: var(--color-white);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.resin-wall-continuity__visual > div {
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 1.5rem 3rem rgb(0 0 0 / 18%);
+}
+
+.resin-wall-continuity__visual .placeholder-visual {
+  border-radius: 0;
+}
+
+.resin-wall-gallery {
+  background: var(--color-white);
+}
+
+.resin-wall-gallery .section-heading {
+  margin-bottom: var(--space-10);
+}
+
+.resin-wall-gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-auto-rows: minmax(9rem, 13rem);
+  gap: var(--space-4);
+}
+
+.resin-wall-gallery__item {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: var(--color-forest-deep);
+}
+
+.resin-wall-gallery__item--wide {
+  grid-column: span 7;
+  grid-row: span 2;
+}
+
+.resin-wall-gallery__item--tall {
+  grid-column: span 5;
+  grid-row: span 3;
+}
+
+.resin-wall-gallery__item--standard {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+.resin-wall-gallery__item .placeholder-visual {
+  height: 100%;
+  min-height: 100%;
+  border-radius: 0;
+  transition: transform var(--transition-slow);
+}
+
+.resin-wall-gallery__item:hover .placeholder-visual {
+  transform: scale(1.035);
+}
+
+.resin-wall-gallery__meta {
+  position: absolute;
+  right: var(--space-4);
+  bottom: var(--space-4);
+  left: var(--space-4);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  color: var(--color-white);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.resin-wall-faq {
+  background: var(--color-sand);
+}
+
+.resin-wall-faq .section-heading {
+  margin-bottom: var(--space-10);
+}
+
+.resin-wall-faq__content {
+  display: grid;
+  gap: var(--space-8);
+}
+
+.resin-wall-faq__action {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.resin-wall-contact-cta {
+  background: var(--color-mist);
+}
+
+.resin-wall-contact-cta__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-8);
+  padding: clamp(2rem, 5vw, 4rem);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  background: var(--color-white);
+  box-shadow: var(--shadow-sm);
+}
+
+.resin-wall-contact-cta__content > div {
+  max-width: 48rem;
+}
+
+.resin-wall-contact-cta__eyebrow {
+  color: var(--color-forest);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing-eyebrow);
+  text-transform: uppercase;
+}
+
+.resin-wall-contact-cta h2 {
+  margin-top: var(--space-4);
+}
+
+.resin-wall-contact-cta__content > div > p:last-child {
+  margin-top: var(--space-4);
+  color: var(--color-text-muted);
+}
+
+.resin-wall-contact-cta .button {
+  flex: 0 0 auto;
+}
+
 @media (max-width: 68rem) {
   .home-hero__grid,
   .home-featured-project__grid,
@@ -3183,6 +3563,34 @@
 
 .rock-crete-glow-link__content,
 .rock-crete-contact-cta__content {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.resin-wall-hero__grid,
+.resin-wall-introduction__grid,
+.resin-wall-continuity__grid {
+  grid-template-columns: 1fr;
+}
+
+.resin-wall-hero__content {
+  max-width: 46rem;
+}
+
+.resin-wall-hero__visual,
+.resin-wall-introduction__visual {
+  max-width: 52rem;
+}
+
+.resin-wall-features__grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.resin-wall-applications__grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.resin-wall-contact-cta__content {
   align-items: flex-start;
   flex-direction: column;
 }
@@ -3406,6 +3814,46 @@
 .rock-crete-contact-cta .button {
   width: 100%;
 }
+.resin-wall-hero {
+  padding-block: var(--space-12) var(--space-16);
+}
+
+.resin-wall-hero h1 {
+  max-width: 12ch;
+}
+
+.resin-wall-features__grid,
+.resin-wall-applications__grid {
+  grid-template-columns: 1fr;
+}
+
+.resin-wall-continuity__visuals {
+  grid-template-columns: 1fr;
+}
+
+.resin-wall-gallery__grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: 10rem;
+}
+
+.resin-wall-gallery__item--wide,
+.resin-wall-gallery__item--tall,
+.resin-wall-gallery__item--standard {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.resin-wall-gallery__item--wide:first-child {
+  grid-column: span 2;
+}
+
+.resin-wall-contact-cta__content {
+  padding: var(--space-6);
+}
+
+.resin-wall-contact-cta .button {
+  width: 100%;
+}
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -3434,6 +3882,12 @@
   }
   .rock-crete-benefit-card:hover,
 .rock-crete-application-card:hover {
+  transform: none;
+}
+
+.resin-wall-feature-card:hover,
+.resin-wall-application-card:hover,
+.resin-wall-gallery__item:hover .placeholder-visual {
   transform: none;
 }
 }
