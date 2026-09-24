@@ -2690,6 +2690,35 @@
   .resin-bound-aftercare__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .glow-rock-hero__grid,
+  .glow-rock-how-it-works__intro,
+  .glow-rock-design-options__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .glow-rock-hero__content {
+    max-width: 46rem;
+  }
+
+  .glow-rock-hero__visual {
+    max-width: 52rem;
+  }
+
+  .glow-rock-how-it-works__visual {
+    max-width: 42rem;
+  }
+
+  .glow-rock-benefits__grid,
+  .glow-rock-applications__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .glow-rock-resin-bound-link__content,
+  .glow-rock-contact-cta__content {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 42rem) {
@@ -2837,6 +2866,54 @@
   }
 
   .projects-lightbox__details .button {
+    width: 100%;
+  }
+
+  .glow-rock-hero {
+    padding-block: var(--space-12) var(--space-16);
+  }
+
+  .glow-rock-hero h1 {
+    max-width: 12ch;
+  }
+
+  .glow-rock-how-it-works__steps,
+  .glow-rock-benefits__grid,
+  .glow-rock-applications__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .glow-rock-design-options__visuals {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .glow-rock-design-options__visual .placeholder-visual {
+    min-height: 10rem;
+  }
+
+  .glow-rock-gallery__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 10rem;
+  }
+
+  .glow-rock-gallery__item--wide,
+  .glow-rock-gallery__item--tall,
+  .glow-rock-gallery__item--standard {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .glow-rock-gallery__item--wide:first-child {
+    grid-column: span 2;
+  }
+
+  .glow-rock-resin-bound-link__content,
+  .glow-rock-contact-cta__content {
+    padding: var(--space-6);
+  }
+
+  .glow-rock-resin-bound-link .button,
+  .glow-rock-contact-cta .button {
     width: 100%;
   }
 }
