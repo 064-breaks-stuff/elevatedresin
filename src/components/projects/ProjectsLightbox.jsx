@@ -19,7 +19,9 @@ function ProjectDetails({ project }) {
   return (
     <div className="projects-lightbox__details">
       <p className="projects-lightbox__category">{project.category}</p>
+
       <h2>{project.title}</h2>
+
       <p>{project.description}</p>
 
       {project.location ? (
@@ -47,7 +49,9 @@ export default function ProjectsLightbox({ projects, activeIndex, onClose }) {
       index={activeIndex ?? 0}
       slides={slides}
       render={{
-        slide: ({ slide }) => <PlaceholderSlide slide={slide} />
+        slide: ({ slide }) => <PlaceholderSlide slide={slide} />,
+        footer: () =>
+          activeProject ? <ProjectDetails project={activeProject} /> : null
       }}
       toolbar={{
         buttons: ["close"]
@@ -63,9 +67,6 @@ export default function ProjectsLightbox({ projects, activeIndex, onClose }) {
           backgroundColor: "rgb(16 45 34 / 96%)"
         }
       }}
-      renderFooter={() =>
-        activeProject ? <ProjectDetails project={activeProject} /> : null
-      }
     />
   );
 }
