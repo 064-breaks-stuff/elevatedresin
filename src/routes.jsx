@@ -17,6 +17,7 @@ import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import TermsPage from "./pages/TermsPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import DrivewaysPage from "./pages/DrivewaysPage";
+import PatiosPage from "./pages/PatiosPage";
 
 export default function AppRoutes() {
   return (
@@ -24,6 +25,7 @@ export default function AppRoutes() {
       <Route element={<PageShell />}>
         <Route path="/" element={<HomePage />} />
         <Route path="/driveways" element={<DrivewaysPage />} />
+        <Route path="/patios" element={<PatiosPage />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/services/resin-bound" element={<ResinBoundPage />} />
         <Route path="/services/glow-rock" element={<GlowRockPage />} />

@@ -5122,6 +5122,17 @@
   max-width: 14ch;
 }
 
+.project-landing-hero--patios {
+  background:
+    radial-gradient(circle at 82% 16%, rgb(184 123 82 / 18%), transparent 30%),
+    radial-gradient(circle at 14% 86%, rgb(41 75 59 / 9%), transparent 32%),
+    var(--color-mist);
+}
+
+.project-landing-hero--patios h1 {
+  max-width: 15ch;
+}
+
 @media (max-width: 68rem) {
   .project-landing-benefits__grid,
   .project-product-options__grid,
