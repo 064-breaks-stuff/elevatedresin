@@ -5166,6 +5166,74 @@
   max-width: 16ch;
 }
 
+/* Product-to-project navigation */
+
+.explore-by-project {
+  background: var(--color-sand);
+}
+
+.explore-by-project .section-heading {
+  margin-bottom: var(--space-10);
+}
+
+.explore-by-project__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.explore-by-project__card {
+  display: flex;
+  min-height: 17rem;
+  flex-direction: column;
+  padding: var(--space-6);
+  border: 1px solid rgb(41 75 59 / 14%);
+  border-radius: var(--radius-lg);
+  background: rgb(255 255 255 / 74%);
+}
+
+.explore-by-project__card h3 {
+  font-size: var(--font-size-xl);
+}
+
+.explore-by-project__card p {
+  margin-top: var(--space-3);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.explore-by-project__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  width: fit-content;
+  margin-top: auto;
+  padding-top: var(--space-6);
+  color: var(--color-forest-deep);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+}
+
+.explore-by-project__link svg {
+  transition: transform var(--transition-fast);
+}
+
+.explore-by-project__link:hover svg {
+  transform: translate(0.15rem, -0.15rem);
+}
+
+@media (max-width: 68rem) {
+  .explore-by-project__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 42rem) {
+  .explore-by-project__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 68rem) {
   .project-landing-benefits__grid,
   .project-product-options__grid,
