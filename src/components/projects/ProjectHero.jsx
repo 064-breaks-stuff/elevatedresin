@@ -5,7 +5,7 @@ import { site } from "../../data/site";
 
 export default function ProjectHero({ page }) {
   return (
-    <section className="project-landing-hero">
+    <section className={`project-landing-hero project-landing-hero--${page.slug}`}>
       <Container className="project-landing-hero__content">
         <Eyebrow>{page.eyebrow}</Eyebrow>
 
