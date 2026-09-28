@@ -19,6 +19,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import DrivewaysPage from "./pages/DrivewaysPage";
 import PatiosPage from "./pages/PatiosPage";
 import PoolDecksPage from "./pages/PoolDecksPage";
+import WalkwaysPathwaysPage from "./pages/WalkwaysPathwaysPage";
 
 export default function AppRoutes() {
   return (
@@ -28,6 +29,7 @@ export default function AppRoutes() {
         <Route path="/driveways" element={<DrivewaysPage />} />
         <Route path="/patios" element={<PatiosPage />} />
         <Route path="/pool-decks" element={<PoolDecksPage />} />
+        <Route path="/walkways-pathways" element={<WalkwaysPathwaysPage />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/services/resin-bound" element={<ResinBoundPage />} />
         <Route path="/services/glow-rock" element={<GlowRockPage />} />

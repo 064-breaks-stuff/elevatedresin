@@ -5144,6 +5144,17 @@
   max-width: 16ch;
 }
 
+.project-landing-hero--walkways-pathways {
+  background:
+    radial-gradient(circle at 84% 17%, rgb(184 123 82 / 15%), transparent 29%),
+    radial-gradient(circle at 14% 88%, rgb(41 75 59 / 13%), transparent 35%),
+    var(--color-mist);
+}
+
+.project-landing-hero--walkways-pathways h1 {
+  max-width: 15ch;
+}
+
 @media (max-width: 68rem) {
   .project-landing-benefits__grid,
   .project-product-options__grid,
