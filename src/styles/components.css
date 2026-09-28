@@ -4873,3 +4873,285 @@
   transform: none;
 }
 }
+
+/* Project Landing Page Foundation */
+
+.project-landing-hero {
+  overflow: clip;
+  padding-block: clamp(4rem, 8vw, 8rem);
+  background:
+    radial-gradient(circle at 84% 18%, rgb(184 123 82 / 14%), transparent 28%),
+    var(--color-mist);
+}
+
+.project-landing-hero__content {
+  max-width: 54rem;
+}
+
+.project-landing-hero h1 {
+  max-width: 15ch;
+  margin-top: var(--space-4);
+}
+
+.project-landing-hero__content > p:not(.eyebrow):not(.project-landing-hero__service-area) {
+  max-width: 46rem;
+  margin-top: var(--space-6);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-lg);
+}
+
+.project-landing-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-8);
+}
+
+.project-landing-hero__service-area {
+  margin-top: var(--space-6);
+  color: var(--color-forest);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+}
+
+.project-landing-benefits {
+  background: var(--color-white);
+}
+
+.project-landing-benefits .section-heading,
+.project-product-options .section-heading,
+.project-drainage-benefits .section-heading {
+  margin-bottom: var(--space-10);
+}
+
+.project-landing-benefits__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.project-landing-benefits__card {
+  min-height: 15rem;
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-mist);
+}
+
+.project-landing-benefits__card h3 {
+  font-size: var(--font-size-xl);
+}
+
+.project-landing-benefits__card p {
+  margin-top: var(--space-3);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.project-product-options {
+  background: var(--color-sand);
+}
+
+.project-product-options__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.project-product-option {
+  display: flex;
+  min-height: 19rem;
+  flex-direction: column;
+  padding: var(--space-6);
+  border: 1px solid rgb(41 75 59 / 14%);
+  border-radius: var(--radius-lg);
+  background: rgb(255 255 255 / 74%);
+}
+
+.project-product-option h3 {
+  font-size: var(--font-size-xl);
+}
+
+.project-product-option > p {
+  margin-top: var(--space-3);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.project-product-option__benefit {
+  color: var(--color-forest-deep) !important;
+  font-weight: 700;
+}
+
+.project-product-option__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  width: fit-content;
+  margin-top: auto;
+  padding-top: var(--space-6);
+  color: var(--color-forest-deep);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+}
+
+.project-wisconsin-durability {
+  background: var(--color-forest-deep);
+}
+
+.project-wisconsin-durability__content {
+  max-width: 52rem;
+}
+
+.project-wisconsin-durability .eyebrow {
+  color: var(--color-sand);
+}
+
+.project-wisconsin-durability h2 {
+  margin-top: var(--space-4);
+  color: var(--color-white);
+}
+
+.project-wisconsin-durability p:not(.eyebrow) {
+  max-width: 46rem;
+  margin-top: var(--space-6);
+  color: rgb(255 255 255 / 78%);
+  font-size: var(--font-size-lg);
+}
+
+.project-drainage-benefits {
+  background: var(--color-white);
+}
+
+.project-drainage-benefits__steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+  counter-reset: project-drainage-step;
+}
+
+.project-drainage-benefits__steps li {
+  display: grid;
+  gap: var(--space-5);
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-mist);
+}
+
+.project-drainage-benefits__steps li > span {
+  width: 2.75rem;
+  height: 2.75rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--color-forest-deep);
+  color: var(--color-white);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+}
+
+.project-drainage-benefits__steps h3 {
+  font-size: var(--font-size-xl);
+}
+
+.project-drainage-benefits__steps p {
+  margin-top: var(--space-3);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.project-landing-cta {
+  background: var(--color-mist);
+}
+
+.project-landing-cta__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-8);
+  padding: clamp(2rem, 5vw, 4rem);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  background: var(--color-white);
+  box-shadow: var(--shadow-sm);
+}
+
+.project-landing-cta__content > div:first-child {
+  max-width: 48rem;
+}
+
+.project-landing-cta__eyebrow {
+  color: var(--color-forest);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing-eyebrow);
+  text-transform: uppercase;
+}
+
+.project-landing-cta h2 {
+  margin-top: var(--space-4);
+}
+
+.project-landing-cta__content > div:first-child > p:last-child {
+  margin-top: var(--space-4);
+  color: var(--color-text-muted);
+}
+
+.project-landing-cta__actions {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-4);
+  flex: 0 0 auto;
+}
+
+.project-landing-cta__actions > a {
+  color: var(--color-forest-deep);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+}
+
+@media (max-width: 68rem) {
+  .project-landing-benefits__grid,
+  .project-product-options__grid,
+  .project-drainage-benefits__steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-landing-cta__content {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 42rem) {
+  .project-landing-hero {
+    padding-block: var(--space-12) var(--space-16);
+  }
+
+  .project-landing-hero__actions {
+    display: grid;
+  }
+
+  .project-landing-hero__actions .button {
+    width: 100%;
+  }
+
+  .project-landing-benefits__grid,
+  .project-product-options__grid,
+  .project-drainage-benefits__steps {
+    grid-template-columns: 1fr;
+  }
+
+  .project-landing-cta__content {
+    padding: var(--space-6);
+  }
+
+  .project-landing-cta__actions {
+    width: 100%;
+  }
+
+  .project-landing-cta__actions .button {
+    width: 100%;
+  }
+}
