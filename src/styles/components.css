@@ -5133,6 +5133,17 @@
   max-width: 15ch;
 }
 
+.project-landing-hero--pool-decks {
+  background:
+    radial-gradient(circle at 82% 15%, rgb(184 123 82 / 17%), transparent 30%),
+    radial-gradient(circle at 12% 88%, rgb(41 75 59 / 11%), transparent 34%),
+    var(--color-mist);
+}
+
+.project-landing-hero--pool-decks h1 {
+  max-width: 16ch;
+}
+
 @media (max-width: 68rem) {
   .project-landing-benefits__grid,
   .project-product-options__grid,
