@@ -1,11 +1,51 @@
 export const primaryNavigation = [
   {
-    label: "Services",
-    to: "/services"
+    label: "Projects",
+    to: "/projects",
+    items: [
+      {
+        label: "Driveways",
+        to: "/driveways"
+      },
+      {
+        label: "Patios",
+        to: "/patios"
+      },
+      {
+        label: "Pool Decks",
+        to: "/pool-decks"
+      },
+      {
+        label: "Walkways & Pathways",
+        to: "/walkways-pathways"
+      },
+      {
+        label: "Landscape Areas",
+        to: "/landscape-areas"
+      }
+    ]
   },
   {
-    label: "Projects",
-    to: "/projects"
+    label: "Products",
+    to: "/services",
+    items: [
+      {
+        label: "Resin Bound",
+        to: "/services/resin-bound"
+      },
+      {
+        label: "Glow Rock",
+        to: "/services/glow-rock"
+      },
+      {
+        label: "Rock Crete",
+        to: "/services/rock-crete"
+      },
+      {
+        label: "Resin Wall",
+        to: "/services/resin-wall"
+      }
+    ]
   },
   {
     label: "About",

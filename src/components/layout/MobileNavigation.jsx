@@ -1,4 +1,4 @@
-import { Phone, X } from "lucide-react";
+import { ChevronDown, Phone, X } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
 import QuoteCTA from "../conversion/QuoteCTA";
@@ -11,8 +11,17 @@ export default function MobileNavigation({ isOpen, onClose }) {
   }
 
   return (
-    <div className="mobile-navigation" role="dialog" aria-modal="true" aria-label="Mobile menu">
-      <div className="mobile-navigation__backdrop" onClick={onClose} aria-hidden="true" />
+    <div
+      className="mobile-navigation"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Mobile menu"
+    >
+      <div
+        className="mobile-navigation__backdrop"
+        onClick={onClose}
+        aria-hidden="true"
+      />
 
       <div className="mobile-navigation__panel">
         <div className="mobile-navigation__top">
@@ -30,13 +39,52 @@ export default function MobileNavigation({ isOpen, onClose }) {
 
         <nav aria-label="Mobile primary navigation">
           <ul className="mobile-navigation__links">
-            {primaryNavigation.map((item) => (
-              <li key={item.to}>
-                <NavLink to={item.to} onClick={onClose}>
-                  {item.label}
-                </NavLink>
-              </li>
-            ))}
+            {primaryNavigation.map((item) => {
+              if (!item.items) {
+                return (
+                  <li key={item.to}>
+                    <NavLink to={item.to} onClick={onClose}>
+                      {item.label}
+                    </NavLink>
+                  </li>
+                );
+              }
+
+              return (
+                <li className="mobile-navigation__group" key={item.label}>
+                  <details>
+                    <summary>
+                      <span>{item.label}</span>
+                      <ChevronDown
+                        aria-hidden="true"
+                        size={22}
+                        strokeWidth={2}
+                      />
+                    </summary>
+
+                    <ul>
+                      <li>
+                        <NavLink
+                          className="mobile-navigation__overview-link"
+                          to={item.to}
+                          onClick={onClose}
+                        >
+                          View all {item.label}
+                        </NavLink>
+                      </li>
+
+                      {item.items.map((child) => (
+                        <li key={child.to}>
+                          <NavLink to={child.to} onClick={onClose}>
+                            {child.label}
+                          </NavLink>
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                </li>
+              );
+            })}
           </ul>
         </nav>
 

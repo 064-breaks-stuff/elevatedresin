@@ -1,5 +1,5 @@
 import { Menu } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import Container from "../common/Container";
@@ -10,6 +10,7 @@ import MobileNavigation from "./MobileNavigation";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuButtonRef = useRef(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -38,10 +39,19 @@ export default function Header() {
     };
   }, []);
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+    menuButtonRef.current?.focus();
+  };
+
   return (
     <header className="site-header">
       <Container className="site-header__content">
-        <Link className="site-header__brand" to="/" aria-label={`${site.name} home`}>
+        <Link
+          className="site-header__brand"
+          to="/"
+          aria-label={`${site.name} home`}
+        >
           {/* TODO[ASSET]: Replace this text mark with the approved Elevated Resin Creations logo. */}
           <span className="site-header__brand-mark">ER</span>
 
@@ -57,6 +67,7 @@ export default function Header() {
           <QuoteCTA className="site-header__cta" />
 
           <button
+            ref={menuButtonRef}
             className="site-header__menu-button"
             type="button"
             onClick={() => setIsMenuOpen(true)}
@@ -70,7 +81,7 @@ export default function Header() {
       </Container>
 
       <div id="mobile-navigation">
-        <MobileNavigation isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
+        <MobileNavigation isOpen={isMenuOpen} onClose={closeMenu} />
       </div>
     </header>
   );
