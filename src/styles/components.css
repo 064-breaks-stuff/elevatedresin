@@ -1272,6 +1272,117 @@
   flex: 0 0 auto;
 }
 
+.services-project-discovery {
+  background: var(--color-white);
+}
+
+.services-project-discovery .section-heading {
+  margin-bottom: var(--space-10);
+}
+
+.services-project-discovery__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.services-project-discovery__card {
+  display: flex;
+  min-height: 18rem;
+  flex-direction: column;
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-mist);
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base),
+    border-color var(--transition-base);
+}
+
+.services-project-discovery__card:hover {
+  transform: translateY(-0.25rem);
+  border-color: rgb(41 75 59 / 32%);
+  box-shadow: var(--shadow-md);
+}
+
+.services-project-discovery__icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--color-forest-deep);
+  color: var(--color-white);
+}
+
+.services-project-discovery__card h3 {
+  margin-top: var(--space-6);
+  font-size: var(--font-size-xl);
+}
+
+.services-project-discovery__card p {
+  margin-top: var(--space-3);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.services-project-discovery__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  width: fit-content;
+  margin-top: auto;
+  padding-top: var(--space-6);
+  color: var(--color-forest-deep);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+}
+
+.services-project-discovery__link svg {
+  transition: transform var(--transition-fast);
+}
+
+.services-project-discovery__link:hover svg {
+  transform: translate(0.15rem, -0.15rem);
+}
+
+.services-resurfacing-approach {
+  background: var(--color-forest-deep);
+}
+
+.services-resurfacing-approach__content {
+  max-width: 52rem;
+}
+
+.services-resurfacing-approach .eyebrow {
+  color: var(--color-sand);
+}
+
+.services-resurfacing-approach h2 {
+  margin-top: var(--space-4);
+  color: var(--color-white);
+}
+
+.services-resurfacing-approach p:not(.eyebrow) {
+  max-width: 46rem;
+  margin-top: var(--space-5);
+  color: rgb(255 255 255 / 78%);
+  font-size: var(--font-size-lg);
+}
+
+@media (max-width: 68rem) {
+  .services-project-discovery__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 42rem) {
+  .services-project-discovery__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* P4 — Resin Bound */
 
 .resin-bound-hero {

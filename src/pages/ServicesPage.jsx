@@ -5,6 +5,8 @@ import SectionHeading from "../components/common/SectionHeading";
 import QuoteCTA from "../components/conversion/QuoteCTA";
 import ServiceCard from "../components/content/ServiceCard";
 import ApplicationsGrid from "../components/services/ApplicationsGrid";
+import ProjectDiscoveryGrid from "../components/services/ProjectDiscoveryGrid";
+import ResurfacingApproach from "../components/services/ResurfacingApproach";
 import ServicesHero from "../components/services/ServicesHero";
 import SolutionSelector from "../components/services/SolutionSelector";
 import { services } from "../data/services";
@@ -14,20 +16,27 @@ export default function ServicesPage() {
   return (
     <>
       <Helmet>
-        <title>Resin Surfacing Services | {site.name}</title>
+        <title>Outdoor Resurfacing Projects & Systems | {site.name}</title>
+
         <meta
           name="description"
-          content="Explore Resin Bound, Glow Rock, Rock Crete, and Resin Wall solutions from Elevated Resin Creations in Menasha, Wisconsin and surrounding areas."
+          content="Explore driveway, patio, pool deck, walkway, landscape, and commercial resin surfacing projects from Elevated Resin Creations. Compare Resin Bound, Glow Rock, Rock Crete, and Resin Wall systems."
         />
       </Helmet>
 
       <ServicesHero />
 
+      <ProjectDiscoveryGrid />
+
+      <ResurfacingApproach />
+
+      <ApplicationsGrid />
+
       <section className="services-overview section">
         <SectionHeading
-          eyebrow="Our Product Systems"
-          title="A complete range of Resin Rock surface solutions."
-          description="Every system has a different role: finished resin-bound surfaces, glow-in-the-dark aggregate, a durable permeable foundation, and coordinated vertical stone surfacing."
+          eyebrow="Surface & System Options"
+          title="Compare Resin Rock systems for the complete project."
+          description="Each system has a different role within a project: finished resin-bound surfaces, glow-in-the-dark aggregate, a durable permeable foundation, and coordinated vertical stone surfacing."
         />
 
         <Container>
@@ -39,25 +48,25 @@ export default function ServicesPage() {
         </Container>
       </section>
 
-      <ApplicationsGrid />
-
       <SolutionSelector />
 
       <section className="services-contact-cta section">
         <Container className="services-contact-cta__content">
           <div>
-            <p className="services-contact-cta__eyebrow">Ready to Get Started?</p>
+            <p className="services-contact-cta__eyebrow">
+              Request a Project Estimate
+            </p>
 
-            <h2>Tell us about the space you want to transform.</h2>
+            <h2>Tell us about the complete outdoor project you are planning.</h2>
 
             <p>
-              Discuss your driveway, patio, pathway, pool area, landscaped
-              space, commercial surface, or vertical feature with Elevated
-              Resin Creations.
+              Use the project type and project-size fields in the quote form to
+              help us understand the space, intended use, existing surface, and
+              scope before discussing the most suitable system and finish.
             </p>
           </div>
 
-          <QuoteCTA label="Request a Free Quote" />
+          <QuoteCTA label="Request a Project Estimate" />
         </Container>
       </section>
     </>

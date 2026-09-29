@@ -167,12 +167,14 @@
 
 .desktop-navigation__link:hover,
 .desktop-navigation__link:focus-visible,
+.desktop-navigation__link.is-active,
 .desktop-navigation__details[open] .desktop-navigation__link {
   color: var(--color-ink);
 }
 
 .desktop-navigation__link:hover::after,
 .desktop-navigation__link:focus-visible::after,
+.desktop-navigation__link.is-active::after,
 .desktop-navigation__details[open] .desktop-navigation__link::after {
   transform: scaleX(1);
 }

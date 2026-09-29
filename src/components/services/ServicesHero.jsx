@@ -11,15 +11,16 @@ export default function ServicesHero() {
         <div className="services-hero__content">
           <Eyebrow>{site.credential}</Eyebrow>
 
-          <h1>Resin Surfacing & Product Solutions</h1>
+          <h1>Resin surfacing projects for the outdoor spaces that matter most.</h1>
 
           <p>
-            Elevated Resin Creations provides Resin Rock systems for refined,
-            durable, and practical outdoor surfacing across residential and
-            commercial spaces.
+            Elevated Resin Creations helps homeowners and commercial property
+            owners plan complete driveway, patio, pool deck, pathway, and
+            landscape-area transformations with the appropriate Resin Rock
+            system for the project.
           </p>
 
-          <QuoteCTA />
+          <QuoteCTA label="Request a Project Estimate" />
 
           <p className="services-hero__service-area">{site.serviceArea}</p>
         </div>
@@ -27,7 +28,7 @@ export default function ServicesHero() {
         <div className="services-hero__visual">
           {/* TODO[ASSET]: Replace with an approved Elevated Resin Creations services overview image. */}
           <PlaceholderVisual
-            label="Resin surfacing solutions overview"
+            label="Complete outdoor resurfacing project overview"
             assetName="PLACEHOLDER-services-hero.jpg"
             aspectRatio="hero"
             priority="high"
