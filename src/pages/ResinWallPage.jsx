@@ -53,7 +53,7 @@ export default function ResinWallPage() {
             </p>
           </div>
 
-          <QuoteCTA label="Request a Quote" />
+          <QuoteCTA label="Plan a Coordinated Landscape Project" />
         </Container>
       </section>
     </>

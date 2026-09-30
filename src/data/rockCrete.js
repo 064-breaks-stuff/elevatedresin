@@ -1,26 +1,26 @@
 export const rockCretePage = {
   hero: {
-    eyebrow: "Resin Rock System",
-    title: "Rock Crete — A Permeable, Durable Foundation for Resin-Bound Surfaces",
-    description:
-      "Rock Crete is a high-performance Resin Rock sub-base and binder system designed to provide a strong, flexible, and fully permeable foundation for resin-bound surfaces."
-  },
+  eyebrow: "Resin Rock System",
+  title: "Rock Crete Foundation Options for Resin-Bound Projects",
+  description:
+    "Rock Crete is a Resin Rock base and binder option to assess for selected resin-bound projects where substrate conditions, drainage, intended use, and the wider system design support its use."
+},
 
   foundation: {
     eyebrow: "Why the Foundation Matters",
     title: "A resin-bound surface depends on what is built beneath it.",
     paragraphs: [
-      "As an Approved Resin Rock Installer, Elevated Resin Creations uses Rock Crete as a high-performance sub-base for resin-bound surfacing. It is designed to support long-lasting results across residential and commercial projects.",
-      "Unlike traditional bases such as tarmac or concrete, Rock Crete is engineered specifically for resin-bound systems. When installed within the recommended intercoat window, the binder and resin layers bond into a single monolithic structure."
-    ]
+  "A resin-bound surface depends on the base and system beneath it. Elevated Resin Creations can assess whether Rock Crete is an appropriate option for the existing conditions, intended use, drainage needs, and selected finished surface.",
+  "Base preparation and system design should be confirmed for each project. The appropriate approach depends on the property, traffic expectations, substrate condition, drainage plan, and Resin Rock system selected."
+]
   },
 
   performance: {
-    statistic: "600%",
-    title: "Higher Flexural Strength Than Asphalt",
-    context:
-      "Published Resin Rock system specification. This statement refers to Rock Crete’s published flexural-strength comparison and is not a guarantee of site-specific project outcomes."
-  },
+  statistic: "System Assessment",
+  title: "Foundation decisions should be made around the complete project.",
+  context:
+    "Rock Crete is considered as part of a Resin Rock system after reviewing the existing conditions, intended use, drainage requirements, base preparation, and selected finished surface."
+},
 
   systemDiagram: {
     eyebrow: "System Overview",
@@ -30,43 +30,43 @@ export const rockCretePage = {
   },
 
   benefits: [
-    {
-      title: "100% Permeable & Eco-Friendly",
-      description:
-        "Designed to support natural drainage, reduce runoff, and meet SUDS requirements when installed as the appropriate system."
-    },
-    {
-      title: "Pedestrian & Vehicle Traffic",
-      description:
-        "Suitable for pedestrian and vehicle traffic, including driveways."
-    },
-    {
-      title: "Quick Installation",
-      description:
-        "Published Rock Crete guidance states installation can often be completed in as little as one day, with no digging required, depending on project conditions."
-    },
-    {
-      title: "Long-Term Flexural Resistance",
-      description:
-        "Designed to remain strong, flexible, and resistant to cracking under pressure."
-    },
-    {
-      title: "No Tarmac or Concrete Needed",
-      description:
-        "Published Rock Crete system guidance describes an alternative to traditional tarmac or concrete bases for appropriate projects."
-    }
-  ],
+  {
+    title: "System-Based Planning",
+    description:
+      "Rock Crete can be evaluated as part of a complete resin-bound system rather than as a standalone surface decision."
+  },
+  {
+    title: "Drainage-Aware Design",
+    description:
+      "Base and drainage choices are reviewed together with the selected finished surface and site conditions."
+  },
+  {
+    title: "Use-Case Assessment",
+    description:
+      "Expected pedestrian or vehicle use is considered when selecting an appropriate base and system approach."
+  },
+  {
+    title: "Project-Specific Preparation",
+    description:
+      "Preparation requirements depend on the existing surface, drainage, site conditions, and final project design."
+  },
+  {
+    title: "Coordinated Surface System",
+    description:
+      "Rock Crete may be considered alongside selected Resin Rock finished-surface and design options."
+  }
+],
 
   binderCourse: {
-    eyebrow: "Urethane Binder Course",
-    title: "Strength from within the finished system.",
-    paragraphs: [
-      "Rock Crete uses specially selected recycled aggregate for stability and structure. Its non-UV polyurethane resin is published as delivering 42% increased strength.",
-      "When installed as part of the recommended Resin Rock system, the binder and resin layers fuse into a seamless monolithic build-up designed for long-term performance."
-    ],
-    statistic: "42%",
-    statisticLabel: "Published increased strength"
-  },
+  eyebrow: "Binder Course Considerations",
+  title: "A coordinated approach to base and surface selection.",
+  paragraphs: [
+    "Rock Crete is considered within the broader Resin Rock system design, including the prepared base, binder course, selected finished surface, and project conditions.",
+    "The right system configuration should be confirmed after reviewing the individual site, expected use, drainage requirements, and installation plan."
+  ],
+  statistic: null,
+  statisticLabel: null
+},
 
   applications: [
     {
@@ -101,8 +101,5 @@ export const rockCretePage = {
 
 export const rockCreteFaqIds = [
   "base-condition",
-  "permeability",
-  "installation-time",
-  "walk-drive-time",
   "pricing"
 ];

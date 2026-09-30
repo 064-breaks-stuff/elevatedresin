@@ -35,9 +35,9 @@ export default function HomePage() {
 
       <section className="home-transformation section">
         <SectionHeading
-          eyebrow="Resin Rock Installs Over Most Surfaces"
-          title="See the difference a refined resin-bound finish can make."
-          description="Use the comparison control to explore a clearly marked before-and-after placeholder. Replace this matched pair with an approved project transformation before launch."
+          eyebrow="Planning a Complete Surface Project"
+          title="Start with the space, the conditions, and the result you want."
+          description="A professional project assessment helps determine whether resurfacing may be appropriate for the existing surface and which Resin Rock system may suit the drainage, intended use, and finish requirements."
         />
 
         <Container>
@@ -54,8 +54,8 @@ export default function HomePage() {
       <section className="home-gallery section">
         <SectionHeading
           eyebrow="Project Gallery"
-          title="Outdoor surfaces designed to make a lasting impression."
-          description="This preview is reserved for approved Elevated Resin Creations project photography. Final project titles, descriptions, and alt text must be confirmed with the original assets."
+          title="Verified project imagery will be added as it is approved."
+          description="Project photography, descriptions, and alt text are published only after they have been verified and approved for Elevated Resin Creations."
         />
 
         <Container>
@@ -68,10 +68,10 @@ export default function HomePage() {
       <HomeFAQPreview />
 
       <QuoteFormSection
-        eyebrow="Your Transformation Starts Here"
-        title="Ready to Transform Your Outdoor Space?"
-        description={`Tell us about your project and the ${site.name} team will get back to you as soon as possible.`}
-      />
+        eyebrow="Request a Project Estimate"
+        title="Tell us about the complete outdoor project you are planning."
+        description={`Share your driveway, patio, pool deck, walkway, or landscape project with ${site.name}. We will review the existing surface, intended use, drainage considerations, and project scope with you.`}
+      />q
     </>
   );
 }

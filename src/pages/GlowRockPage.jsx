@@ -82,7 +82,7 @@ export default function GlowRockPage() {
             </p>
           </div>
 
-          <QuoteCTA label="Request a Free Quote" />
+          <QuoteCTA label="Discuss a Glow Rock Project" />
         </Container>
       </section>
     </>

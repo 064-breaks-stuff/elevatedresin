@@ -57,7 +57,7 @@ export default function RockCretePage() {
             </p>
           </div>
 
-          <QuoteCTA label="Request a Quote" />
+          <QuoteCTA label="Discuss Your Foundation Options" />
         </Container>
       </section>
     </>

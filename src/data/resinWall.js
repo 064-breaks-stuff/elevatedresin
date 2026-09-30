@@ -16,32 +16,32 @@ export const resinWallPage = {
   },
 
   features: [
-    {
-      title: "UV-Stable Finish",
-      description:
-        "Made with aliphatic polyurethane for long-lasting color and weather resistance."
-    },
-    {
-      title: "Strength & Durability",
-      description:
-        "Designed to handle temperature changes and impact for dependable outdoor performance."
-    },
-    {
-      title: "Porous & Breathable System",
-      description:
-        "Allows airflow to help reduce moisture buildup and cracking."
-    },
-    {
-      title: "Dual Functionality",
-      description:
-        "Works as both the bond coat and binder for a seamless, unified structure."
-    },
-    {
-      title: "Aesthetic Continuity",
-      description:
-        "Carries the same resin-bound stone appearance onto vertical edges, walls, steps, and related features."
-    }
-  ],
+  {
+    title: "Vertical Stone-Surface Option",
+    description:
+      "A Resin Rock system option to consider for suitable outdoor walls, steps, edges, and decorative vertical features."
+  },
+  {
+    title: "Project-Specific Preparation",
+    description:
+      "Vertical surfaces require assessment of the substrate, condition, preparation, exposure, and intended finish before system selection."
+  },
+  {
+    title: "Coordinated Design",
+    description:
+      "Vertical Binder can be considered where the goal is to coordinate selected vertical details with the wider outdoor surface design."
+  },
+  {
+    title: "System-Led Selection",
+    description:
+      "The appropriate materials and installation approach depend on the individual surface, project conditions, and wider Resin Rock system."
+  },
+  {
+    title: "Landscape Project Integration",
+    description:
+      "Suitable vertical details can be planned alongside paths, borders, surrounds, and other integrated landscape features."
+  }
+],
 
   applications: [
     {
@@ -90,8 +90,6 @@ export const resinWallPage = {
 
 export const resinWallFaqIds = [
   "base-condition",
-  "cover-cracks",
-  "colour-fade",
   "maintenance",
   "pricing"
 ];

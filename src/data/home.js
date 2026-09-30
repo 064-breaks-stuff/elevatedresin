@@ -1,108 +1,72 @@
 export const homeHero = {
-  eyebrow: "Approved Resin Rock Installer",
-  title: "Premium Resin-Bound Driveways, Patios & Outdoor Surfaces",
+  eyebrow: "Complete Outdoor Resurfacing Projects",
+  title: "Plan a driveway, patio, pool deck, pathway, or landscape transformation.",
   description:
-    "Elevated Resin Creations transforms driveways, patios, pathways, pool decks, and landscaped areas with refined, seamless resin-bound stone surfaces built for long-term performance.",
+    "Elevated Resin Creations helps homeowners plan complete resin surfacing projects around the existing surface, drainage, intended use, and finish they want to achieve.",
   primaryCta: {
-    label: "Request a Free Quote"
+    label: "Request a Project Estimate"
   },
   secondaryCta: {
-    label: "View Our Projects",
-    to: "/projects"
+    label: "Explore Project Types",
+    to: "/services"
   },
-  serviceLine: "Serving Menasha, Wisconsin, surrounding areas, and statewide for qualifying projects."
+  serviceLine:
+    "Serving Menasha, Wisconsin, surrounding areas, and statewide for qualifying projects."
 };
 
 export const trustItems = [
-  "Permeable",
-  "Slip-resistant",
-  "Low-maintenance",
-  "30+ color options"
+  "Project-focused planning",
+  "System selection for suitable surfaces",
+  "Drainage-aware options",
+  "30+ finish options"
 ];
 
 export const resinBoundValue = {
-  eyebrow: "Designed for Lasting Outdoor Performance",
-  title: "Eco-Friendly, Permeable, and Built to Perform in Any Climate",
+  eyebrow: "Built for Wisconsin Conditions",
+  title: "Resurface, don’t replace—where the project is suitable.",
   paragraphs: [
-    "Choose from 30+ stunning color options to create the right resin-bound surface for your driveway, walkway, pool area, or garden. The stone-and-resin system is 100% permeable and fully SUDS-compliant, allowing rainwater to naturally drain into the ground.",
-    "Resin Rock surfaces are non-slip, frost-resistant, and weed-resistant, creating a smart, low-maintenance option that combines style, strength, and sustainability."
+    "When an existing concrete or prepared surface is stable, clean, and appropriate for the selected Resin Rock system, resurfacing may offer an alternative to full demolition and replacement. Each project begins with an assessment of the substrate, drainage, intended use, and finish requirements.",
+    "Wisconsin outdoor spaces experience seasonal temperature changes, rain, snowmelt, and freeze/thaw cycles. Where a permeable system and suitable base preparation are selected, water can move through the surface rather than remaining on top, which may help reduce standing water and puddles. Results depend on the selected system, base, installation, and site conditions."
   ],
   cta: {
-    label: "Explore Resin Bound",
-    to: "/services/resin-bound"
+    label: "Explore Project Types",
+    to: "/services"
   }
 };
 
-export const processSteps = [
-  {
-    number: "01",
-    title: "Tell us about your project",
-    description:
-      "Share the type of outdoor space you want to transform and any details that will help us understand your project."
-  },
-  {
-    number: "02",
-    title: "We review your space and requirements",
-    description:
-      "We consider the intended use of the area, the existing surface, and the preparation needed for the right system."
-  },
-  {
-    number: "03",
-    title: "Choose the right system and finish",
-    description:
-      "Select the appropriate Resin Rock solution and finish for your driveway, patio, pathway, pool area, wall, or commercial space."
-  },
-  {
-    number: "04",
-    title: "Transform your outdoor space",
-    description:
-      "Move forward with a refined resin-bound surface designed to deliver a seamless, durable, and low-maintenance finish."
-  }
-];
-
 export const comparisonRows = [
   {
-    feature: "Seamless finish",
-    resinBound: "Yes",
-    looseGravel: "No",
-    pavers: "No",
-    concrete: "Yes"
+    feature: "Surface and finish options",
+    resinBound: "Multiple aggregate and finish options",
+    looseGravel: "Limited containment and finish control",
+    pavers: "Multiple styles and layouts",
+    concrete: "Finish options vary by installation"
   },
   {
-    feature: "Permeable system option",
-    resinBound: "Yes",
-    looseGravel: "Varies",
-    pavers: "Varies",
-    concrete: "No"
+    feature: "Drainage approach",
+    resinBound: "Permeable systems may be suitable with the right base",
+    looseGravel: "Varies by aggregate, base, and containment",
+    pavers: "Varies by paver, joint, base, and layout",
+    concrete: "Depends on slope, joints, and drainage design"
   },
   {
-    feature: "Low-maintenance surface",
-    resinBound: "Yes",
-    looseGravel: "No",
-    pavers: "Varies",
-    concrete: "Varies"
+    feature: "Project suitability",
+    resinBound: "Depends on substrate, traffic, drainage, and system selection",
+    looseGravel: "Depends on containment, maintenance, and intended use",
+    pavers: "Depends on base preparation, layout, and intended use",
+    concrete: "Depends on condition, drainage, and replacement scope"
   },
   {
-    feature: "Weed resistance",
-    resinBound: "Yes",
-    looseGravel: "No",
-    pavers: "Varies",
-    concrete: "N/A"
-  },
-  {
-    feature: "Decorative finish options",
-    resinBound: "30+ options",
-    looseGravel: "Limited",
-    pavers: "Varies",
-    concrete: "Limited"
+    feature: "Maintenance needs",
+    resinBound: "Maintenance needs vary by system and site conditions",
+    looseGravel: "Regular raking and aggregate management may be needed",
+    pavers: "Joint, settlement, and weed management may be needed",
+    concrete: "Cleaning, joint, and crack maintenance may be needed"
   }
 ];
 
 export const homepageFaqIds = [
-  "existing-surfaces",
   "base-condition",
-  "permeability",
-  "installation-time",
-  "walk-drive-time",
+  "maintenance",
   "pricing"
 ];

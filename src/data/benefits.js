@@ -1,10 +1,10 @@
 export const benefits = [
-  "Cost Effective",
-  "Seamless",
-  "Decorative",
-  "Covers Cracks & Drains",
-  "Can hold up to 30,000 lbs",
-  "UV Stability",
-  "Low Maintenance",
-  "Permeable"
+  "Project-focused planning",
+  "Seamless stone finish options",
+  "Drainage-aware system selection",
+  "Suitable-base assessment",
+  "Decorative aggregate choices",
+  "Complete outdoor project support",
+  "Routine maintenance guidance",
+  "Permeable system options where appropriate"
 ];

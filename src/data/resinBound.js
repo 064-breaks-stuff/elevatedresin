@@ -16,79 +16,79 @@ export const resinBoundPage = {
   },
 
   applications: [
-    {
-      title: "Driveways",
-      description:
-        "Resin-bound driveway surfaces designed for everyday vehicle and pedestrian use."
-    },
-    {
-      title: "Patios",
-      description:
-        "Decorative, seamless patio finishes for outdoor living and entertaining areas."
-    },
-    {
-      title: "Walkways & Pathways",
-      description:
-        "Slip-resistant surfaces for pathways, garden routes, entrances, and outdoor connections."
-    },
-    {
-      title: "Pool Areas",
-      description:
-        "Resin-bound surfaces suitable for pool surrounds and outdoor areas where footing matters."
-    },
-    {
-      title: "Landscaped Spaces",
-      description:
-        "Stone-and-resin finishes that complement gardens, borders, and wider landscape designs."
-    },
-    {
-      title: "Commercial Areas",
-      description:
-        "Practical and decorative resin-bound systems for a range of commercial outdoor spaces."
-    }
-  ],
+  {
+    title: "Driveways",
+    description:
+      "A resin-bound surface option to consider for complete driveway projects after reviewing vehicle use, the existing base, drainage, and selected system."
+  },
+  {
+    title: "Patios",
+    description:
+      "A decorative, seamless finish option for suitable patio and outdoor-living projects."
+  },
+  {
+    title: "Walkways & Pathways",
+    description:
+      "A surface option to consider for paths, garden routes, entrances, and outdoor connections based on the intended use and selected system."
+  },
+  {
+    title: "Pool Areas",
+    description:
+      "A potential surface option for pool surrounds and related outdoor areas where system selection, drainage, and project conditions are assessed."
+  },
+  {
+    title: "Landscaped Spaces",
+    description:
+      "Stone-and-resin finish options that can complement gardens, borders, and integrated landscape design."
+  },
+  {
+    title: "Commercial Areas",
+    description:
+      "A resin-bound system option to review for selected commercial outdoor projects based on expected use and site conditions."
+  }
+],
 
   benefits: [
-    {
-      title: "Seamless Finish",
-      description:
-        "A continuous stone surface without the jointed appearance of many traditional outdoor finishes."
-    },
-    {
-      title: "Slip Resistance",
-      description:
-        "A practical surface option for driveways, paths, pool surrounds, and other outdoor areas."
-    },
-    {
-      title: "Permeable System",
-      description:
-        "When installed as a permeable system, water can drain through the surface and sub-base."
-    },
-    {
-      title: "Low Maintenance",
-      description:
-        "Simple ongoing care includes regular sweeping, rinsing, and occasional light pressure washing when needed."
-    },
-    {
-      title: "Decorative Choice",
-      description:
-        "Choose from more than 30 stone color options to suit the character of your outdoor space."
-    },
-    {
-      title: "Weather-Resistant Performance",
-      description:
-        "Source-approved Resin Rock system benefits include frost resistance, weed resistance, and UV-stable resin."
-    }
-  ],
+  {
+    title: "Seamless Stone Finish",
+    description:
+      "A continuous aggregate-and-resin surface option without the jointed appearance of many traditional outdoor finishes."
+  },
+  {
+    title: "Project-Specific Surface Selection",
+    description:
+      "Aggregate, finish, base preparation, and system selection are considered around the intended use, drainage needs, and project conditions."
+  },
+  {
+    title: "Permeable System Option",
+    description:
+      "Where a permeable Resin Rock system and suitable base preparation are selected, water can move through the surface rather than remaining on top."
+  },
+  {
+    title: "Maintenance Guidance",
+    description:
+      "Ongoing care requirements depend on the system, use, and site conditions; regular sweeping and rinsing may be appropriate."
+  },
+  {
+    title: "Decorative Choice",
+    description:
+      "Explore more than 30 stone colour options for a finish considered alongside the property, intended use, and wider outdoor design."
+  },
+  {
+    title: "Wisconsin-Aware Planning",
+    description:
+      "Outdoor system selection should consider seasonal temperature changes, rain, snowmelt, freeze/thaw conditions, drainage, and substrate assessment."
+  }
+],
 
   drainage: {
-    eyebrow: "Permeability & Drainage",
-    title: "A surface system that supports natural water drainage.",
-    paragraphs: [
-      "Resin-bound surfacing can be installed as a fully permeable system. Water drains through the finished surface and into the appropriate sub-base below, helping reduce standing water and runoff.",
-      "The Resin Rock system is published as 100% permeable and SUDS-compliant. Appropriate preparation and the condition of the existing base remain important to the performance of any installation."
-    ]
-  },
+  eyebrow: "Permeability & Drainage",
+  title: "Drainage planning starts with the selected system and base.",
+  paragraphs: [
+    "Where an appropriate permeable Resin Rock system and suitable base preparation are selected, water can move through the surface rather than remaining on top. This may help reduce standing water and puddles.",
+    "Drainage performance depends on the selected system, the existing or prepared base, installation details, and site conditions. A project assessment helps confirm the most suitable approach."
+  ]
+},
 
   colours: {
     eyebrow: "Colour & Finish Options",
@@ -142,14 +142,7 @@ export const resinBoundPage = {
 };
 
 export const resinBoundFaqIds = [
-  "existing-surfaces",
   "base-condition",
-  "cover-cracks",
-  "permeability",
-  "installation-time",
-  "walk-drive-time",
-  "slip-resistance",
-  "colour-fade",
   "maintenance",
   "pricing"
 ];

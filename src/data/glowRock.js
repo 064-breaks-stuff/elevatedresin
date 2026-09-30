@@ -11,7 +11,7 @@ export const glowRockPage = {
     title: "A distinctive finish that continues to stand out after sunset.",
     paragraphs: [
       "As an Approved Resin Rock Installer, Elevated Resin Creations offers Glow Rock as an innovative upgrade for outdoor surfaces. Glow stones absorb sunlight during the day and emit a soft ambient glow after dark.",
-      "Glow Rock can be incorporated into Resin Rock surfacing to add a distinctive visual element while retaining the benefits of a resin-bound system, including a seamless finish, slip resistance, drainage, and low-maintenance performance."
+      "Glow Rock can be incorporated into selected Resin Rock surface projects to add a distinctive visual element. Final system selection should be based on the application, the wider project, and the desired design result."
     ]
   },
 
@@ -41,37 +41,37 @@ export const glowRockPage = {
   },
 
   benefits: [
-    {
-      title: "Better Nighttime Visibility",
-      description:
-        "A soft glow can help define driveways, paths, patios, and outdoor areas after dark."
-    },
-    {
-      title: "Added Outdoor Safety Context",
-      description:
-        "Glow features can help make edges, steps, walkways, and boundaries more visible at night."
-    },
-    {
-      title: "Standout Design Detail",
-      description:
-        "Glow stones add a distinctive visual feature that changes the appearance of an outdoor space after sunset."
-    },
-    {
-      title: "No-Power Illumination",
-      description:
-        "Glow stones charge naturally during the day without cables, electricity, batteries, or fixtures."
-    },
-    {
-      title: "Low-Maintenance Finish",
-      description:
-        "Glow stones are integrated into the Resin Rock surface to support a durable, low-maintenance outdoor finish."
-    },
-    {
-      title: "Resin Rock System Compatibility",
-      description:
-        "Glow finishes can be integrated with resin-bound systems for a seamless surface with drainage and slip-resistance benefits."
-    }
-  ],
+  {
+    title: "After-Dark Design Detail",
+    description:
+      "Glow stones can add a distinctive daylight-to-night visual feature to selected outdoor projects."
+  },
+  {
+    title: "Wayfinding Accent",
+    description:
+      "A glow feature can help visually define selected paths, edges, steps, and outdoor design details after dark."
+  },
+  {
+    title: "Standout Appearance",
+    description:
+      "Glow stones add a changing visual element that can alter the appearance of an outdoor space after sunset."
+  },
+  {
+    title: "Daylight-Charged Feature",
+    description:
+      "Glow Rock product selection and placement should be confirmed for the individual project, including available daylight exposure and the intended visual result."
+  },
+  {
+    title: "Integrated Design Option",
+    description:
+      "Glow Rock can be considered as an accent within selected Resin Rock surface and landscape projects."
+  },
+  {
+    title: "Project-Specific Compatibility",
+    description:
+      "Whether Glow Rock fits a driveway, patio, pathway, pool area, or landscape feature depends on the chosen system and project conditions."
+  }
+],
 
   applications: [
     {
@@ -122,8 +122,6 @@ export const glowRockPage = {
 };
 
 export const glowRockFaqIds = [
-  "permeability",
-  "slip-resistance",
   "maintenance",
   "pricing"
 ];

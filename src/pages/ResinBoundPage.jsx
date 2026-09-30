@@ -61,7 +61,7 @@ export default function ResinBoundPage() {
             </p>
           </div>
 
-          <QuoteCTA label="Request a Free Quote" />
+          <QuoteCTA label="Request a Project Estimate" />
         </Container>
       </section>
     </>

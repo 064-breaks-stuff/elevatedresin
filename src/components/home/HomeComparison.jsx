@@ -8,8 +8,8 @@ export default function HomeComparison() {
     <section className="home-comparison section">
       <SectionHeading
         eyebrow="A Considered Surface Choice"
-        title="Compare the practical qualities of outdoor surface options."
-        description="This comparison is intended as a high-level guide. The right system depends on your project requirements, existing base, and intended use."
+        title="Compare project considerations before choosing a surface system."
+        description="This is a high-level planning guide, not a product guarantee. The right approach depends on the existing base, drainage design, intended use, system selection, and a professional site assessment."
       />
 
       <Container>
@@ -45,7 +45,7 @@ export default function HomeComparison() {
         </div>
 
         <div className="home-comparison__action">
-          <QuoteCTA />
+          <QuoteCTA label="Request a Project Estimate" />
         </div>
       </Container>
     </section>

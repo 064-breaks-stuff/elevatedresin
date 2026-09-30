@@ -33,7 +33,7 @@ export default function HomeHero() {
         <div className="home-hero__visual">
           {/* TODO[ASSET]: Replace with approved original Elevated Resin Creations hero image. */}
           <PlaceholderVisual
-            label="Premium resin-bound outdoor surface hero image"
+            label="Approved Elevated Resin Creations hero image required"
             assetName="PLACEHOLDER-hero-resin-bound.jpg"
             aspectRatio="hero"
             priority="high"

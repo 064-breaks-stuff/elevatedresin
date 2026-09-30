@@ -11,7 +11,7 @@ export default function HomeValueSection() {
         <div className="home-value__visual">
           {/* TODO[ASSET]: Replace with approved original resin-bound project image. */}
           <PlaceholderVisual
-            label="Resin-bound surface detail"
+            label="Approved resin surfacing project image required"
             assetName="PLACEHOLDER-service-resin-bound.jpg"
             aspectRatio="square"
           />

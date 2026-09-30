@@ -9,7 +9,7 @@ import { site } from "../../data/site";
 export default function QuoteFormSection({
   eyebrow = "Start Your Project",
   title = "Ready to Transform Your Outdoor Space?",
-  description = "Tell us about your project and our team will get back to you as soon as possible.",
+  description = "Tell us about the complete outdoor project you are planning and our team will get back to you as soon as possible.",
   id = conversion.quoteSectionId
 }) {
   return (

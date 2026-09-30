@@ -8,28 +8,28 @@ export default function HomeFeaturedProject() {
     <section className="home-featured-project section">
       <Container className="home-featured-project__grid">
         <div className="home-featured-project__content">
-          <Eyebrow>Our Work Speaks for Itself</Eyebrow>
+          <Eyebrow>Explore by Project Type</Eyebrow>
 
-          <h2>Crafted surfaces that elevate the way outdoor spaces look and feel.</h2>
+          <h2>Plan the outdoor space you want to transform.</h2>
 
           <p>
-            Every Elevated Resin Creations project is designed to bring together a refined
-            finish, practical surface performance, and thoughtful attention to the character
-            of the space.
+            Explore project pages for driveways, patios, pool decks, walkways, and
+            landscape areas. Each page helps you compare suitable system options around
+            the existing surface, drainage needs, intended use, and finish goals.
           </p>
 
-          <Button to="/projects" showArrow>
-            View All Projects
+          <Button to="/services" showArrow>
+            Explore Project Types
           </Button>
         </div>
 
         <div className="home-featured-project__visual">
-          {/* TODO[ASSET]: Replace with approved standout project image. */}
-          <PlaceholderVisual
-            label="Featured Elevated Resin Creations project"
-            assetName="PLACEHOLDER-featured-project.jpg"
-            aspectRatio="feature"
-          />
+          {/* TODO[ASSET]: Replace with an approved, verified Elevated Resin Creations project image. */}
+        <PlaceholderVisual
+          label="Approved project image required"
+          assetName="PLACEHOLDER-featured-project.jpg"
+          aspectRatio="feature"
+        />
         </div>
       </Container>
     </section>
