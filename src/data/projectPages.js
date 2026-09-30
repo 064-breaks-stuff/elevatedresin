@@ -1,4 +1,6 @@
 import { productMappings } from "./productMappings";
+import { faqs } from "./faqs";
+import { productMappings } from "./productMappings";
 
 const coreValueProposition = {
   eyebrow: "A Complete Project Approach",
@@ -54,7 +56,42 @@ const emptyLocalProof = {
   enabled: false
 };
 
-const emptyFaqs = [];
+const projectFaqs = {
+  driveways: [
+    faqs.find((faq) => faq.id === "existing-surfaces"),
+    faqs.find((faq) => faq.id === "base-condition"),
+    faqs.find((faq) => faq.id === "permeability"),
+    faqs.find((faq) => faq.id === "pricing")
+  ].filter(Boolean),
+
+  patios: [
+    faqs.find((faq) => faq.id === "existing-surfaces"),
+    faqs.find((faq) => faq.id === "base-condition"),
+    faqs.find((faq) => faq.id === "installation-time"),
+    faqs.find((faq) => faq.id === "pricing")
+  ].filter(Boolean),
+
+  "pool-decks": [
+    faqs.find((faq) => faq.id === "existing-surfaces"),
+    faqs.find((faq) => faq.id === "permeability"),
+    faqs.find((faq) => faq.id === "slip-resistance"),
+    faqs.find((faq) => faq.id === "maintenance")
+  ].filter(Boolean),
+
+  "walkways-pathways": [
+    faqs.find((faq) => faq.id === "permeability"),
+    faqs.find((faq) => faq.id === "slip-resistance"),
+    faqs.find((faq) => faq.id === "maintenance"),
+    faqs.find((faq) => faq.id === "pricing")
+  ].filter(Boolean),
+
+  "landscape-areas": [
+    faqs.find((faq) => faq.id === "existing-surfaces"),
+    faqs.find((faq) => faq.id === "installation-time"),
+    faqs.find((faq) => faq.id === "colour-fade"),
+    faqs.find((faq) => faq.id === "pricing")
+  ].filter(Boolean)
+};
 
 export const projectPages = {
   driveways: {
@@ -97,7 +134,7 @@ export const projectPages = {
     wisconsinDurability,
     drainageBenefits,
     localProof: emptyLocalProof,
-    faqs: emptyFaqs,
+    faqs: projectFaqs.driveways,
     relatedProjects: ["patios", "walkways-pathways"],
     image: null
   },
@@ -143,7 +180,7 @@ export const projectPages = {
     wisconsinDurability,
     drainageBenefits,
     localProof: emptyLocalProof,
-    faqs: emptyFaqs,
+    faqs: projectFaqs.patios,
     relatedProjects: ["driveways", "pool-decks", "landscape-areas"],
     image: null
   },
@@ -189,7 +226,7 @@ export const projectPages = {
     wisconsinDurability,
     drainageBenefits,
     localProof: emptyLocalProof,
-    faqs: emptyFaqs,
+    faqs: projectFaqs["pool-decks"],
     relatedProjects: ["patios", "landscape-areas"],
     image: null
   },
@@ -235,7 +272,7 @@ export const projectPages = {
     wisconsinDurability,
     drainageBenefits,
     localProof: emptyLocalProof,
-    faqs: emptyFaqs,
+    faqs: projectFaqs["walkways-pathways"],
     relatedProjects: ["driveways", "landscape-areas"],
     image: null
   },
@@ -282,7 +319,7 @@ export const projectPages = {
     wisconsinDurability,
     drainageBenefits,
     localProof: emptyLocalProof,
-    faqs: emptyFaqs,
+    faqs: projectFaqs["landscape-areas"],
     relatedProjects: ["patios", "walkways-pathways", "pool-decks"],
     image: null
   }
