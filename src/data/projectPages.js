@@ -1,6 +1,5 @@
 import { productMappings } from "./productMappings";
 import { faqs } from "./faqs";
-import { productMappings } from "./productMappings";
 
 const coreValueProposition = {
   eyebrow: "A Complete Project Approach",
@@ -58,37 +57,29 @@ const emptyLocalProof = {
 
 const projectFaqs = {
   driveways: [
-    faqs.find((faq) => faq.id === "existing-surfaces"),
     faqs.find((faq) => faq.id === "base-condition"),
-    faqs.find((faq) => faq.id === "permeability"),
     faqs.find((faq) => faq.id === "pricing")
   ].filter(Boolean),
 
   patios: [
-    faqs.find((faq) => faq.id === "existing-surfaces"),
     faqs.find((faq) => faq.id === "base-condition"),
     faqs.find((faq) => faq.id === "installation-time"),
     faqs.find((faq) => faq.id === "pricing")
   ].filter(Boolean),
 
   "pool-decks": [
-    faqs.find((faq) => faq.id === "existing-surfaces"),
-    faqs.find((faq) => faq.id === "permeability"),
-    faqs.find((faq) => faq.id === "slip-resistance"),
-    faqs.find((faq) => faq.id === "maintenance")
+    faqs.find((faq) => faq.id === "base-condition"),
+    faqs.find((faq) => faq.id === "maintenance"),
+    faqs.find((faq) => faq.id === "pricing")
   ].filter(Boolean),
 
   "walkways-pathways": [
-    faqs.find((faq) => faq.id === "permeability"),
-    faqs.find((faq) => faq.id === "slip-resistance"),
     faqs.find((faq) => faq.id === "maintenance"),
     faqs.find((faq) => faq.id === "pricing")
   ].filter(Boolean),
 
   "landscape-areas": [
-    faqs.find((faq) => faq.id === "existing-surfaces"),
     faqs.find((faq) => faq.id === "installation-time"),
-    faqs.find((faq) => faq.id === "colour-fade"),
     faqs.find((faq) => faq.id === "pricing")
   ].filter(Boolean)
 };
