@@ -1,3 +1,4 @@
+import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 import Container from "../common/Container";
@@ -53,7 +54,15 @@ export default function HomeServices() {
 
               <p>{project.description}</p>
 
-              <span>Explore {project.title}</span>
+              <span className="home-services__card-link">
+                Explore {project.title}
+
+                <ArrowUpRight
+                  aria-hidden="true"
+                  size={18}
+                  strokeWidth={2}
+                />
+              </span>
             </Link>
           ))}
         </div>

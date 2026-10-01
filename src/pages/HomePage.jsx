@@ -71,7 +71,7 @@ export default function HomePage() {
         eyebrow="Request a Project Estimate"
         title="Tell us about the complete outdoor project you are planning."
         description={`Share your driveway, patio, pool deck, walkway, or landscape project with ${site.name}. We will review the existing surface, intended use, drainage considerations, and project scope with you.`}
-      />q
+      />
     </>
   );
 }

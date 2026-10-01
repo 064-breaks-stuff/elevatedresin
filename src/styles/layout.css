@@ -119,28 +119,22 @@
   position: relative;
 }
 
-.desktop-navigation__details {
-  position: relative;
-}
-
 .desktop-navigation__summary {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
+  padding-inline: 0;
+  border: 0;
+  background: transparent;
   cursor: pointer;
-  list-style: none;
 }
 
-.desktop-navigation__summary::-webkit-details-marker {
-  display: none;
+.desktop-navigation__summary.is-open .desktop-navigation__chevron {
+  transform: rotate(180deg);
 }
 
 .desktop-navigation__chevron {
   transition: transform var(--transition-fast);
-}
-
-.desktop-navigation__details[open] .desktop-navigation__chevron {
-  transform: rotate(180deg);
 }
 
 .desktop-navigation__link {
@@ -168,14 +162,14 @@
 .desktop-navigation__link:hover,
 .desktop-navigation__link:focus-visible,
 .desktop-navigation__link.is-active,
-.desktop-navigation__details[open] .desktop-navigation__link {
+.desktop-navigation__summary.is-open {
   color: var(--color-ink);
 }
 
 .desktop-navigation__link:hover::after,
 .desktop-navigation__link:focus-visible::after,
 .desktop-navigation__link.is-active::after,
-.desktop-navigation__details[open] .desktop-navigation__link::after {
+.desktop-navigation__summary.is-open::after {
   transform: scaleX(1);
 }
 
@@ -231,6 +225,30 @@
   transition:
     background var(--transition-fast),
     color var(--transition-fast);
+}
+
+.desktop-navigation__menu-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.desktop-navigation__menu-link-icon {
+  flex: 0 0 auto;
+  color: var(--color-clay);
+  opacity: 0;
+  transform: translate(-0.2rem, 0.2rem);
+  transition:
+    opacity var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.desktop-navigation__menu-link:hover .desktop-navigation__menu-link-icon,
+.desktop-navigation__menu-link:focus-visible .desktop-navigation__menu-link-icon,
+.desktop-navigation__menu-link.is-active .desktop-navigation__menu-link-icon {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .desktop-navigation__menu-overview:hover,

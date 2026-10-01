@@ -34,6 +34,33 @@ export const resinBoundValue = {
   }
 };
 
+export const processSteps = [
+  {
+    number: "01",
+    title: "Tell us about your project",
+    description:
+      "Share the type of outdoor space you want to transform and any details that will help us understand your project."
+  },
+  {
+    number: "02",
+    title: "We review your space and requirements",
+    description:
+      "We consider the intended use of the area, the existing surface, and the preparation needed for the right system."
+  },
+  {
+    number: "03",
+    title: "Choose the right system and finish",
+    description:
+      "Select the appropriate Resin Rock solution and finish for your driveway, patio, pathway, pool area, wall, or commercial space."
+  },
+  {
+    number: "04",
+    title: "Transform your outdoor space",
+    description:
+      "Move forward with a refined resin-bound surface designed to deliver a seamless, durable, and low-maintenance finish."
+  }
+];
+
 export const comparisonRows = [
   {
     feature: "Surface and finish options",
