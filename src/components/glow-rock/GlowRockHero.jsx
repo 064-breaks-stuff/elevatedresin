@@ -24,7 +24,7 @@ export default function GlowRockHero() {
 
         <div className="glow-rock-hero__visual">
           <img
-            src="/images/glow-rock-hero.jpg"
+            src="/images/glow-rock-hero.webp"
             alt="Blue-glowing paving slabs across an outdoor patio at night."
             fetchPriority="high"
           />

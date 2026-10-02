@@ -5,7 +5,7 @@ export const services = [
     route: "/services/resin-bound",
     description:
       "Seamless, slip-resistant, and fully permeable resin-bound driveways and patios built for long-term performance in all conditions.",
-    image: "/images/service-resin-bound.jpg",
+    image: "/images/service-resin-bound.jpeg",
     imageAlt: "Light-coloured resin-bound surface leading to a home entrance.",
   },
   {
@@ -14,7 +14,7 @@ export const services = [
     route: "/services/glow-rock",
     description:
       "Sunlight-absorbing glow stones that naturally illuminate driveways, patios, and pathways at night.",
-    image: "/images/service-glow-rock.jpg",
+    image: "/images/service-glow-rock.webp",
     imageAlt: "Blue-glowing paving slabs across an outdoor patio at night.",
   },
   {

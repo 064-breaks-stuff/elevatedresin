@@ -40,7 +40,7 @@ export default function RockCretePerformance() {
 
         <div className="rock-crete-performance__diagram-visual">
           <img
-            src="/images/rock-crete-technical-datasheet.jpg"
+            src="/images/rock-crete-technical-datasheet.png"
             alt="Rock Crete technical datasheet showing the layered foundation system, properties, and product kit."
             loading="lazy"
           />

@@ -11,7 +11,7 @@ const galleryImages = [
   },
   {
     id: "glow-patio",
-    src: "/images/glow-rock-hero.jpg",
+    src: "/images/glow-rock-hero.webp",
     alt: "Blue-glowing paving slabs across an outdoor patio at night.",
     className: "glow-rock-gallery__item--tall"
   },
