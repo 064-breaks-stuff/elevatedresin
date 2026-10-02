@@ -1,35 +1,34 @@
 import Container from "../common/Container";
 import Eyebrow from "../common/Eyebrow";
-import PlaceholderVisual from "../common/PlaceholderVisual";
 import QuoteCTA from "../conversion/QuoteCTA";
-import { projectsPage } from "../../data/projects";
 import { site } from "../../data/site";
 
 export default function ProjectsHero() {
-  const { hero } = projectsPage;
-
   return (
     <section className="projects-hero">
       <Container className="projects-hero__grid">
         <div className="projects-hero__content">
-          <Eyebrow>{hero.eyebrow}</Eyebrow>
+          <Eyebrow>Recent work</Eyebrow>
 
-          <h1>{hero.title}</h1>
+          <h1>Outdoor surfaces designed to elevate everyday spaces.</h1>
 
-          <p>{hero.description}</p>
+          <p>
+            Browse completed resin-bound, Glow Rock, Rock Crete, and Resin Wall
+            projects across driveways, patios, pool surrounds, and landscape features.
+          </p>
 
-          <QuoteCTA label="Start Your Project" />
-
-          <p className="projects-hero__service-area">{site.serviceArea}</p>
+          <QuoteCTA
+            label="Request a free estimate"
+            to={site.quotePath}
+            variant="primary"
+          />
         </div>
 
         <div className="projects-hero__visual">
-          {/* TODO[ASSET]: Replace with an approved wide Elevated Resin Creations project image. */}
-          <PlaceholderVisual
-            label="Featured Elevated Resin Creations project"
-            assetName="PLACEHOLDER-projects-hero.jpg"
-            aspectRatio="hero"
-            priority="high"
+          <img
+            src="/images/projects-hero-resin-driveway.jpg"
+            alt="Completed resin driveway outside a residential property."
+            fetchPriority="high"
           />
         </div>
       </Container>
