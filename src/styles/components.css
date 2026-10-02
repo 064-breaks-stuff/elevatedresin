@@ -352,6 +352,25 @@
   box-shadow: var(--shadow-lg);
 }
 
+.home-hero__visual img {
+  width: 100%;
+  min-height: clamp(25rem, 52vw, 44rem);
+  display: block;
+  border-radius: inherit;
+  object-fit: cover;
+  object-position: center;
+}
+
+.home-value__visual img {
+  width: 100%;
+  height: 100%;
+  min-height: 21rem;
+  display: block;
+  border-radius: inherit;
+  object-fit: cover;
+  object-position: center;
+}
+
 .trust-bar {
   border-block: 1px solid var(--color-border);
   background: var(--color-white);
@@ -674,6 +693,10 @@
 .service-card__visual {
   border-radius: 0;
   transition: transform var(--transition-slow);
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
 }
 
 .service-card:hover .service-card__visual {
@@ -760,6 +783,15 @@
 .home-featured-project__visual {
   border-radius: var(--radius-xl);
   box-shadow: 0 2rem 4rem rgb(0 0 0 / 24%);
+}
+
+.home-featured-project__visual img {
+  width: 100%;
+  min-height: clamp(23rem, 44vw, 39rem);
+  display: block;
+  border-radius: inherit;
+  object-fit: cover;
+  object-position: center;
 }
 
 .home-comparison {
@@ -895,40 +927,17 @@
   background: var(--color-forest-deep);
 }
 
-.project-preview__item .placeholder-visual {
+.project-preview__item img {
+  width: 100%;
   height: 100%;
-  min-height: 100%;
-  border-radius: 0;
+  display: block;
+  object-fit: cover;
+  object-position: center;
   transition: transform var(--transition-slow);
 }
 
-.project-preview__item:hover .placeholder-visual {
+.project-preview__item:hover img {
   transform: scale(1.035);
-}
-
-.project-preview__overlay {
-  position: absolute;
-  top: var(--space-4);
-  right: var(--space-4);
-  z-index: 2;
-  width: 2.75rem;
-  height: 2.75rem;
-  display: grid;
-  place-items: center;
-  transform: translateY(-0.35rem);
-  border-radius: 50%;
-  background: var(--color-white);
-  color: var(--color-forest-deep);
-  opacity: 0;
-  transition:
-    opacity var(--transition-fast),
-    transform var(--transition-fast);
-}
-
-.project-preview__item:hover .project-preview__overlay,
-.project-preview__item:focus-visible .project-preview__overlay {
-  transform: translateY(0);
-  opacity: 1;
 }
 
 .home-process {
@@ -1177,6 +1186,15 @@
 .services-hero__visual {
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-lg);
+}
+
+.services-hero__visual img {
+  width: 100%;
+  min-height: clamp(25rem, 52vw, 44rem);
+  display: block;
+  border-radius: inherit;
+  object-fit: cover;
+  object-position: center;
 }
 
 .services-overview {
@@ -1533,6 +1551,15 @@
 .resin-bound-hero__visual {
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-lg);
+}
+
+.resin-bound-hero__visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: clamp(26rem, 56vw, 46rem);
+  object-fit: cover;
+  object-position: center 58%;
 }
 
 .resin-bound-intro {

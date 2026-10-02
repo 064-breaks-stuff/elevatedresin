@@ -1,7 +1,6 @@
 import Button from "../common/Button";
 import Container from "../common/Container";
 import Eyebrow from "../common/Eyebrow";
-import PlaceholderVisual from "../common/PlaceholderVisual";
 import { resinBoundValue } from "../../data/home";
 
 export default function HomeValueSection() {
@@ -9,11 +8,10 @@ export default function HomeValueSection() {
     <section className="home-value section">
       <Container className="home-value__grid">
         <div className="home-value__visual">
-          {/* TODO[ASSET]: Replace with approved original resin-bound project image. */}
-          <PlaceholderVisual
-            label="Approved resin surfacing project image required"
-            assetName="PLACEHOLDER-service-resin-bound.jpg"
-            aspectRatio="square"
+          <img
+            src="/images/home-resin-bound-landscape-path.png"
+            alt="Curved light-coloured resin-bound path through landscaped garden beds."
+            loading="lazy"
           />
         </div>
 

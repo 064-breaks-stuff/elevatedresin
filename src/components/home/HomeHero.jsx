@@ -1,9 +1,9 @@
 import Container from "../common/Container";
 import Eyebrow from "../common/Eyebrow";
-import PlaceholderVisual from "../common/PlaceholderVisual";
 import Button from "../common/Button";
 import QuoteCTA from "../conversion/QuoteCTA";
 import { homeHero } from "../../data/home";
+
 
 export default function HomeHero() {
   return (
@@ -31,12 +31,10 @@ export default function HomeHero() {
         </div>
 
         <div className="home-hero__visual">
-          {/* TODO[ASSET]: Replace with approved original Elevated Resin Creations hero image. */}
-          <PlaceholderVisual
-            label="Approved Elevated Resin Creations hero image required"
-            assetName="PLACEHOLDER-hero-resin-bound.jpg"
-            aspectRatio="hero"
-            priority="high"
+          <img
+            src="/images/home-resin-driveway-hero.jpg"
+            alt="Completed resin driveway with a multicolored aggregate surface outside a residential property."
+            fetchPriority="high"
           />
         </div>
       </Container>

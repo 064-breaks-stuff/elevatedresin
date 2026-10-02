@@ -1,6 +1,5 @@
 import Container from "../common/Container";
 import Eyebrow from "../common/Eyebrow";
-import PlaceholderVisual from "../common/PlaceholderVisual";
 import Button from "../common/Button";
 
 export default function HomeFeaturedProject() {
@@ -24,12 +23,11 @@ export default function HomeFeaturedProject() {
         </div>
 
         <div className="home-featured-project__visual">
-          {/* TODO[ASSET]: Replace with an approved, verified Elevated Resin Creations project image. */}
-        <PlaceholderVisual
-          label="Approved project image required"
-          assetName="PLACEHOLDER-featured-project.jpg"
-          aspectRatio="feature"
-        />
+          <img
+            src="/images/home-featured-resin-pool-surround.jpg"
+            alt="Light-coloured resin pool surround around a residential swimming pool."
+            loading="lazy"
+          />
         </div>
       </Container>
     </section>

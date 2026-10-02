@@ -1,18 +1,16 @@
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-import PlaceholderVisual from "../common/PlaceholderVisual";
 
 export default function ServiceCard({ service }) {
   return (
     <article className="service-card">
       <Link className="service-card__media-link" to={service.route} aria-label={`Explore ${service.name}`}>
-        {/* TODO[ASSET]: Replace with approved original Elevated Resin Creations service asset. */}
-        <PlaceholderVisual
-          label={`${service.name} visual`}
-          assetName={service.placeholderAsset}
-          aspectRatio="portrait"
+        <img
+          src={service.image}
+          alt={service.imageAlt}
           className="service-card__visual"
+          loading="lazy"
         />
       </Link>
 

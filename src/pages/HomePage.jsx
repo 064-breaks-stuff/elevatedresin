@@ -6,7 +6,6 @@ import HomeFAQPreview from "../components/home/HomeFAQPreview";
 import HomeFeaturedProject from "../components/home/HomeFeaturedProject";
 import HomeHero from "../components/home/HomeHero";
 import HomeProcess from "../components/home/HomeProcess";
-import HomeProof from "../components/home/HomeProof";
 import HomeServices from "../components/home/HomeServices";
 import HomeTrustBar from "../components/home/HomeTrustBar";
 import HomeValueSection from "../components/home/HomeValueSection";
@@ -64,7 +63,6 @@ export default function HomePage() {
       </section>
 
       <HomeProcess />
-      <HomeProof />
       <HomeFAQPreview />
 
       <QuoteFormSection

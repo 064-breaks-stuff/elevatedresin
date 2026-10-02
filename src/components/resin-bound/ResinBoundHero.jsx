@@ -1,6 +1,5 @@
 import Container from "../common/Container";
 import Eyebrow from "../common/Eyebrow";
-import PlaceholderVisual from "../common/PlaceholderVisual";
 import QuoteCTA from "../conversion/QuoteCTA";
 import { resinBoundPage } from "../../data/resinBound";
 import { site } from "../../data/site";
@@ -24,12 +23,10 @@ export default function ResinBoundHero() {
         </div>
 
         <div className="resin-bound-hero__visual">
-          {/* TODO[ASSET]: Replace with approved Resin Bound driveway, patio, walkway, pool area, or landscape project image. */}
-          <PlaceholderVisual
-            label="Resin-bound driveway or patio project"
-            assetName="PLACEHOLDER-resin-bound-hero.jpg"
-            aspectRatio="hero"
-            priority="high"
+          <img
+            src="/images/resin-bound-hero.jpg"
+            alt="Light-coloured resin-bound patio in a furnished residential outdoor living area."
+            fetchPriority="high"
           />
         </div>
       </Container>

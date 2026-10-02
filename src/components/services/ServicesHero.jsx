@@ -1,6 +1,5 @@
 import Container from "../common/Container";
 import Eyebrow from "../common/Eyebrow";
-import PlaceholderVisual from "../common/PlaceholderVisual";
 import QuoteCTA from "../conversion/QuoteCTA";
 import { site } from "../../data/site";
 
@@ -26,12 +25,10 @@ export default function ServicesHero() {
         </div>
 
         <div className="services-hero__visual">
-          {/* TODO[ASSET]: Replace with an approved Elevated Resin Creations services overview image. */}
-          <PlaceholderVisual
-            label="Complete outdoor resurfacing project overview"
-            assetName="PLACEHOLDER-services-hero.jpg"
-            aspectRatio="hero"
-            priority="high"
+          <img
+            src="/images/services-hero-resin-driveway.jpg"
+            alt="Curved light-coloured resin driveway through landscaped garden beds."
+            fetchPriority="high"
           />
         </div>
       </Container>
