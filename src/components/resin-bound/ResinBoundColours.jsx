@@ -1,51 +1,47 @@
 import Container from "../common/Container";
-import Eyebrow from "../common/Eyebrow";
-import PlaceholderVisual from "../common/PlaceholderVisual";
+import SectionHeading from "../common/SectionHeading";
 import { resinBoundPage } from "../../data/resinBound";
-
-const placeholderSwatches = [
-  "Stone blend placeholder 01",
-  "Stone blend placeholder 02",
-  "Stone blend placeholder 03",
-  "Stone blend placeholder 04",
-  "Stone blend placeholder 05",
-  "Stone blend placeholder 06"
-];
 
 export default function ResinBoundColours() {
   const { colours } = resinBoundPage;
 
   return (
     <section className="resin-bound-colours section">
-      <Container className="resin-bound-colours__grid">
-        <div className="resin-bound-colours__content">
-          <Eyebrow>{colours.eyebrow}</Eyebrow>
+      <Container>
+        <SectionHeading
+          eyebrow={colours.eyebrow}
+          title={colours.title}
+          description={colours.description}
+        />
 
-          <h2>{colours.title}</h2>
+        <div className="resin-bound-colours__charts">
+          <figure className="resin-bound-colours__chart">
+            <img
+              src="/images/resin-rock-colour-chart-vehicle-traffic.jpg"
+              alt="Resin Rock colour chart for vehicle traffic, paths, and patios."
+              loading="lazy"
+            />
+            <figcaption>
+              Colour options for vehicle traffic, paths, and patios.
+            </figcaption>
+          </figure>
 
-          <p>{colours.description}</p>
-
-          <div className="resin-bound-colours__note">
-            {/* TODO[ASSET]: Replace placeholder swatches with approved Resin Rock colour-blend assets and exact approved blend names. */}
-            <strong>Approved colour assets required.</strong>
-            <span>
-              Replace the preview set only with client-approved Resin Rock blend
-              imagery and verified blend labels.
-            </span>
-          </div>
+          <figure className="resin-bound-colours__chart">
+            <img
+              src="/images/resin-rock-colour-chart-primary.jpg"
+              alt="Resin Rock primary colour chart for paths and patios."
+              loading="lazy"
+            />
+            <figcaption>
+              Primary colour options for paths and patios.
+            </figcaption>
+          </figure>
         </div>
 
-        <div className="resin-bound-colours__swatches">
-          {placeholderSwatches.map((swatch, index) => (
-            <div className="resin-bound-colours__swatch" key={swatch}>
-              <PlaceholderVisual
-                label={swatch}
-                assetName={`PLACEHOLDER-resin-bound-colour-${String(index + 1).padStart(2, "0")}.jpg`}
-                aspectRatio="square"
-              />
-            </div>
-          ))}
-        </div>
+        <p className="resin-bound-colours__disclaimer">
+          Colours shown are from official Resin Rock charts. Final appearance can vary
+          with material batch, lighting, surrounding finishes, and screen settings.
+        </p>
       </Container>
     </section>
   );

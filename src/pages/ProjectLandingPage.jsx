@@ -7,7 +7,7 @@ import ProductOptions from "../components/projects/ProductOptions";
 import ProjectBenefits from "../components/projects/ProjectBenefits";
 import ProjectCTA from "../components/projects/ProjectCTA";
 import ProjectFAQs from "../components/projects/ProjectFAQs";
-import ProjectHero from "../components/projects/ProjectHero";
+import ProjectHero from "../components/projects/ProjectsHero";
 import RelatedProjects from "../components/projects/RelatedProjects";
 import ValueProposition from "../components/projects/ValueProposition";
 import WisconsinDurability from "../components/projects/WisconsinDurability";

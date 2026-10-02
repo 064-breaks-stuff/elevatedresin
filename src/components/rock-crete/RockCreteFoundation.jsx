@@ -10,7 +10,7 @@ export default function RockCreteFoundation() {
       <Container className="rock-crete-foundation__grid">
         <div className="rock-crete-foundation__visual">
           <img
-            src="/images/rock-crete-foundation-detail.jpg"
+            src="/images/rock-crete-foundation-detail.JPG"
             alt="Water flowing through an aggregate sample during a permeability demonstration."
             loading="lazy"
           />

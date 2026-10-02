@@ -17,11 +17,12 @@ export default function HomeProof() {
             practical outdoor surfacing solutions.
           </p>
 
-          {/* TODO[ASSET]: Replace with approved Approved Resin Rock Installer badge/certification asset. */}
-          <div className="home-proof__badge-placeholder">
-            <span>Credential asset required</span>
-            <strong>PLACEHOLDER-approved-resin-rock-installer-badge</strong>
-          </div>
+          <img
+            className="home-proof__badge"
+            src="/images/home-resin-rock-approved-installer-badge.jpg"
+            alt="Resin Rock authorized partner badge."
+            loading="lazy"
+          />
         </div>
 
         <div className="home-proof__reviews">

@@ -25,7 +25,7 @@ export default function ResinBoundDrainage() {
 
         <div className="resin-bound-drainage__visual">
           <img
-            src="/images/resin-bound-permeability-test.jpg"
+            src="/images/resin-bound-permeability-test.JPG"
             alt="Water flowing through a sample of resin-bound aggregate during a permeability demonstration."
             loading="lazy"
           />

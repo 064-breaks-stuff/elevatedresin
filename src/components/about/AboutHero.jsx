@@ -1,8 +1,7 @@
 import Container from "../common/Container";
 import Eyebrow from "../common/Eyebrow";
-import PlaceholderVisual from "../common/PlaceholderVisual";
 import QuoteCTA from "../conversion/QuoteCTA";
-import { aboutPage } from "../../data/aboutPage";
+import { aboutPage } from "../../data/about";
 import { site } from "../../data/site";
 
 export default function AboutHero() {
@@ -18,18 +17,18 @@ export default function AboutHero() {
 
           <p>{hero.description}</p>
 
-          <QuoteCTA label="Discuss Your Project" />
-
-          <p className="about-hero__service-area">{site.serviceArea}</p>
+          <QuoteCTA
+            label="Request a free estimate"
+            to={site.quotePath}
+            variant="primary"
+          />
         </div>
 
         <div className="about-hero__visual">
-          {/* TODO[ASSET]: Replace with an approved Elevated Resin Creations project or workmanship image. */}
-          <PlaceholderVisual
-            label="Elevated Resin Creations workmanship visual"
-            assetName="PLACEHOLDER-about-hero.jpg"
-            aspectRatio="hero"
-            priority="high"
+          <img
+            src="/images/about-hero-resin-driveway.jpg"
+            alt="Completed resin driveway outside a residential property."
+            fetchPriority="high"
           />
         </div>
       </Container>

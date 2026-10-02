@@ -52,6 +52,14 @@
   backdrop-filter: blur(1rem);
 }
 
+.site-header__brand-logo {
+  display: block;
+  width: clamp(9rem, 16vw, 13rem);
+  height: auto;
+  max-height: 4.25rem;
+  object-fit: contain;
+}
+
 .site-header__content {
   min-height: 5.5rem;
   display: flex;
@@ -589,6 +597,13 @@
 
   .site-footer__map {
     max-width: 48rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .site-header__brand-logo {
+    width: 8.5rem;
+    max-height: 3.5rem;
   }
 }
 

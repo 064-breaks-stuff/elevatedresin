@@ -31,7 +31,7 @@ export default function BeforeAfterSlider() {
       >
         <div className="before-after__base">
           <img
-            src="/images/before-after-representative-before.jpg"
+            src="/images/before-after-representative-before.png"
             alt="Representative driveway surface before resurfacing."
           />
         </div>
@@ -41,7 +41,7 @@ export default function BeforeAfterSlider() {
           style={{ width: `${position}%` }}
         >
           <img
-            src="/images/before-after-representative-after.jpg"
+            src="/images/before-after-representative-after.png"
             alt="Representative driveway surface after resurfacing with a warm-coloured aggregate finish."
           />
         </div>

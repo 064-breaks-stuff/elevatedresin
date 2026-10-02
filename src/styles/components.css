@@ -1002,6 +1002,14 @@
   background: var(--color-mist);
 }
 
+.home-proof__badge {
+  display: block;
+  width: min(100%, 16rem);
+  height: auto;
+  margin-top: var(--space-6);
+  object-fit: contain;
+}
+
 .home-proof__grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1771,26 +1779,6 @@
   color: var(--color-text-muted);
 }
 
-.resin-bound-colours__note {
-  display: grid;
-  gap: var(--space-2);
-  margin-top: var(--space-8);
-  padding: var(--space-5);
-  border: 1px dashed var(--color-stone);
-  border-radius: var(--radius-md);
-  background: var(--color-sand);
-}
-
-.resin-bound-colours__note strong {
-  color: var(--color-forest-deep);
-  font-size: var(--font-size-sm);
-}
-
-.resin-bound-colours__note span {
-  color: var(--color-text-muted);
-  font-size: var(--font-size-sm);
-}
-
 .resin-bound-colours__swatches {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1814,6 +1802,53 @@
 
 .resin-bound-colours__swatch .placeholder-visual__surface strong {
   font-size: var(--font-size-sm);
+}
+
+.resin-bound-colours__charts,
+.glow-rock-design-options__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-6);
+  align-items: start;
+}
+
+.resin-bound-colours__chart,
+.glow-rock-design-options__card {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+}
+
+.resin-bound-colours__chart img,
+.glow-rock-design-options__card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.resin-bound-colours__chart figcaption,
+.glow-rock-design-options__card figcaption {
+  padding: var(--space-4);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  line-height: 1.5;
+}
+
+.resin-bound-colours__disclaimer,
+.glow-rock-design-options__disclaimer {
+  max-width: 50rem;
+  margin: var(--space-6) auto 0;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  text-align: center;
+}
+
+@media (max-width: 48rem) {
+  .resin-bound-colours__charts,
+  .glow-rock-design-options__grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .resin-bound-preparation {
@@ -2839,26 +2874,6 @@
 .glow-rock-design-options__content > p:not(.eyebrow) {
   margin-top: var(--space-6);
   color: var(--color-text-muted);
-}
-
-.glow-rock-design-options__notice {
-  display: grid;
-  gap: var(--space-2);
-  margin-top: var(--space-8);
-  padding: var(--space-5);
-  border: 1px dashed var(--color-stone);
-  border-radius: var(--radius-md);
-  background: var(--color-sand);
-}
-
-.glow-rock-design-options__notice strong {
-  color: var(--color-forest-deep);
-  font-size: var(--font-size-sm);
-}
-
-.glow-rock-design-options__notice span {
-  color: var(--color-text-muted);
-  font-size: var(--font-size-sm);
 }
 
 .glow-rock-design-options .button {
@@ -4328,6 +4343,38 @@
   box-shadow: var(--shadow-lg);
 }
 
+.about-hero__visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: clamp(26rem, 56vw, 46rem);
+  border-radius: inherit;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-workmanship__item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform var(--transition-slow);
+}
+
+.about-workmanship__item:hover img {
+  transform: scale(1.035);
+}
+
+.about-credential__visual img {
+  display: block;
+  width: 100%;
+  max-width: 28rem;
+  margin-inline: auto;
+  border-radius: inherit;
+  object-fit: contain;
+}
+
 .about-audience {
   background: var(--color-white);
 }
@@ -4579,14 +4626,14 @@
   grid-row: span 1;
 }
 
-.about-workmanship__item .placeholder-visual {
+.about-workmanship__item img {
   height: 100%;
   min-height: 100%;
   border-radius: 0;
   transition: transform var(--transition-slow);
 }
 
-.about-workmanship__item:hover .placeholder-visual {
+.about-workmanship__item:hover img {
   transform: scale(1.035);
 }
 
@@ -5370,7 +5417,7 @@
 }
 
 .about-approach-card:hover,
-.about-workmanship__item:hover .placeholder-visual {
+.about-workmanship__item:hover img {
   transform: none;
 }
 }

@@ -1,29 +1,31 @@
-import { ArrowUpRight } from "lucide-react";
-import { Link } from "react-router-dom";
-
 import Container from "../common/Container";
-import PlaceholderVisual from "../common/PlaceholderVisual";
 import SectionHeading from "../common/SectionHeading";
-import { aboutPage } from "../../data/aboutPage";
+import { aboutPage } from "../../data/about";
 
-const workmanshipPlaceholders = [
+const workmanshipImages = [
   {
-    id: "about-workmanship-01",
-    label: "Workmanship project placeholder 01",
-    assetName: "PLACEHOLDER-about-workmanship-01.jpg",
-    layout: "about-workmanship__item--wide"
+    id: "pool",
+    src: "/images/about-workmanship-pool.jpg",
+    alt: "Resin-bound pool surround around a curved residential swimming pool.",
+    className: "about-workmanship__item--wide"
   },
   {
-    id: "about-workmanship-02",
-    label: "Workmanship project placeholder 02",
-    assetName: "PLACEHOLDER-about-workmanship-02.jpg",
-    layout: "about-workmanship__item--tall"
+    id: "screened-patio",
+    src: "/images/about-workmanship-screened-patio.jpg",
+    alt: "Dark speckled resin-bound surface in a screened outdoor living area.",
+    className: "about-workmanship__item--tall"
   },
   {
-    id: "about-workmanship-03",
-    label: "Workmanship project placeholder 03",
-    assetName: "PLACEHOLDER-about-workmanship-03.jpg",
-    layout: "about-workmanship__item--standard"
+    id: "resin-wall",
+    src: "/images/about-workmanship-resin-wall.jpg",
+    alt: "Close view of a finished textured retaining-wall surface.",
+    className: "about-workmanship__item--standard"
+  },
+  {
+    id: "glow-driveway",
+    src: "/images/about-workmanship-glow-driveway.jpg",
+    alt: "Blue-glowing geometric driveway pattern outside a residential property at dusk.",
+    className: "about-workmanship__item--standard"
   }
 ];
 
@@ -32,40 +34,24 @@ export default function AboutWorkmanship() {
 
   return (
     <section className="about-workmanship section">
-      <SectionHeading
-        eyebrow={workmanship.eyebrow}
-        title={workmanship.title}
-        description={workmanship.description}
-      />
-
       <Container>
+        <SectionHeading
+          eyebrow={workmanship.eyebrow}
+          title={workmanship.title}
+          description={workmanship.description}
+        />
+
         <div className="about-workmanship__grid">
-          {workmanshipPlaceholders.map((item) => (
-            <article
-              className={`about-workmanship__item ${item.layout}`}
-              key={item.id}
+          {workmanshipImages.map((image) => (
+            <figure
+              className={`about-workmanship__item ${image.className}`}
+              key={image.id}
             >
-              {/* TODO[ASSET]: Replace with approved Elevated Resin Creations project image and final descriptive alt text. */}
-              <PlaceholderVisual
-                label={item.label}
-                assetName={item.assetName}
-                aspectRatio="gallery"
-              />
-
-              <span className="about-workmanship__meta">
-                <span>Approved project asset required</span>
-                <ArrowUpRight aria-hidden="true" size={18} strokeWidth={2} />
-              </span>
-            </article>
+              <img src={image.src} alt={image.alt} loading="lazy" />
+            </figure>
           ))}
-        </div>
-
-        <div className="about-workmanship__action">
-          <Link className="button button--secondary" to="/projects">
-            <span>Explore Projects</span>
-          </Link>
         </div>
       </Container>
     </section>
   );
-}
+}a

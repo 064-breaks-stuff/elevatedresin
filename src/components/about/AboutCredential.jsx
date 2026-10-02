@@ -1,9 +1,6 @@
-import { BadgeCheck } from "lucide-react";
-
 import Container from "../common/Container";
 import Eyebrow from "../common/Eyebrow";
-import PlaceholderVisual from "../common/PlaceholderVisual";
-import { aboutPage } from "../../data/aboutPage";
+import { aboutPage } from "../../data/about";
 
 export default function AboutCredential() {
   const { credential } = aboutPage;
@@ -18,22 +15,16 @@ export default function AboutCredential() {
 
           <p>{credential.description}</p>
 
-          <div className="about-credential__badge-notice">
-            <BadgeCheck aria-hidden="true" size={24} strokeWidth={1.8} />
-
-            <span>
-              {/* TODO[ASSET]: Replace with approved Approved Resin Rock Installer badge or credential asset. */}
-              Approved credential asset required before production launch.
-            </span>
-          </div>
+          <p className="about-credential__status">
+            Elevated Resin Creations is an approved installer of Resin Rock systems.
+          </p>
         </div>
 
         <div className="about-credential__visual">
-          {/* TODO[ASSET]: Replace with approved installer credential or official Resin Rock supporting asset. */}
-          <PlaceholderVisual
-            label="Approved Resin Rock Installer credential"
-            assetName="PLACEHOLDER-approved-resin-rock-installer-credential.jpg"
-            aspectRatio="square"
+          <img
+            src="/images/resin-rock-approved-installer-badge.jpg"
+            alt="Resin Rock authorized partner badge."
+            loading="lazy"
           />
         </div>
       </Container>

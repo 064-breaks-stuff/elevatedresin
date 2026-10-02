@@ -52,8 +52,12 @@ export default function Header() {
           to="/"
           aria-label={`${site.name} home`}
         >
-          {/* TODO[ASSET]: Replace this text mark with the approved Elevated Resin Creations logo. */}
-          <span className="site-header__brand-mark">ER</span>
+
+        <img
+          className="site-header__brand-logo"
+          src="/images/elevated-resin-creations-logo.jpg"
+          alt="Elevated Resin Creations"
+        />
 
           <span className="site-header__brand-text">
             <strong>Elevated Resin</strong>
