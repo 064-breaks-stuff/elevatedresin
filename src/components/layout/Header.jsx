@@ -58,11 +58,6 @@ export default function Header() {
           src="/images/elevated-resin-creations-logo.png"
           alt="Elevated Resin Creations"
         />
-
-          <span className="site-header__brand-text">
-            <strong>Elevated Resin</strong>
-            <small>Creations</small>
-          </span>
         </Link>
 
         <DesktopNavigation />

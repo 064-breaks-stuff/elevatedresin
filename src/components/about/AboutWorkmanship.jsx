@@ -1,6 +1,6 @@
 import Container from "../common/Container";
 import SectionHeading from "../common/SectionHeading";
-import { aboutPage } from "../../data/about";
+import { aboutPage } from "../../data/aboutPage.js";
 
 const workmanshipImages = [
   {
@@ -54,4 +54,4 @@ export default function AboutWorkmanship() {
       </Container>
     </section>
   );
-}a
+}

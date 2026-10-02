@@ -54,10 +54,12 @@
 
 .site-header__brand-logo {
   display: block;
-  width: clamp(9rem, 16vw, 13rem);
+  width: 11rem;
   height: auto;
-  max-height: 4.25rem;
+  max-height: 4rem;
   object-fit: contain;
+  transform: translate(-10.9rem, -0.75rem) scale(3.1);
+  transform-origin: left center;
 }
 
 .site-header__content {

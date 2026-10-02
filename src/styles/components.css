@@ -410,51 +410,74 @@
 }
 
 .before-after {
-  max-width: 72rem;
-  margin-inline: auto;
+  width: 100%;
 }
 
-.before-after__canvas {
+.before-after__slider {
   position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
-  border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-lg);
+  cursor: col-resize;
   touch-action: none;
   user-select: none;
+  -webkit-user-select: none;
+  background: var(--color-forest-deep);
+}
+
+.before-after__slider img {
+  -webkit-user-drag: none; /* Disables dragging in Chrome, Edge, Safari */
+  
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE 10+ */
+  user-select: none;         /* Standard */
+}
+
+
+.before-after__slider:focus-visible {
+  outline: 3px solid var(--color-gold);
+  outline-offset: 4px;
 }
 
 .before-after__image {
-  border-radius: 0;
-}
-
-.before-after__base {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.before-after__reveal {
   position: absolute;
   inset: 0;
-  z-index: 1;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.before-after__base img,
-.before-after__comparison img {
+  display: block;
   width: 100%;
   height: 100%;
+  max-width: none;
+  pointer-events: none;
+  object-fit: cover;
+  object-position: center;
+}
+
+.before-after__image--before {
+  z-index: 1;
+}
+
+.before-after__after-clip {
+  position: absolute;
+  inset: 0 auto 0 0;
+  z-index: 2;
+  height: 100%;
+  overflow: hidden;
+  border-right: 2px solid var(--color-white);
+}
+
+.before-after__image--after {
+  width: 100%;
+  max-width: none;
 }
 
 .before-after__divider {
   position: absolute;
   top: 0;
   bottom: 0;
-  z-index: 2;
-  width: 0.125rem;
+  z-index: 3;
+  width: 2px;
+  transform: translateX(-50%);
   background: var(--color-white);
-  box-shadow: 0 0 1rem rgb(16 45 34 / 28%);
   pointer-events: none;
 }
 
@@ -467,49 +490,34 @@
   display: grid;
   place-items: center;
   transform: translate(-50%, -50%);
-  border: 0.1875rem solid var(--color-white);
+  border: 2px solid var(--color-white);
   border-radius: 50%;
   background: var(--color-forest-deep);
-  color: var(--color-white);
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 0.25rem 1rem rgb(0 0 0 / 25%);
 }
 
-.before-after__range {
+.before-after__arrow {
   position: absolute;
-  inset: 0;
-  z-index: 3;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  opacity: 0;
-  cursor: ew-resize;
+  top: 50%;
+  width: 0;
+  height: 0;
+  transform: translateY(-50%);
+  border-top: 0.4rem solid transparent;
+  border-bottom: 0.4rem solid transparent;
 }
 
-.before-after__label {
-  position: absolute;
-  z-index: 2;
-  top: var(--space-5);
-  padding: var(--space-2) var(--space-3);
-  border-radius: var(--radius-pill);
-  background: rgb(16 45 34 / 76%);
-  color: var(--color-white);
-  font-size: var(--font-size-xs);
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  pointer-events: none;
+.before-after__arrow--left {
+  left: 0.55rem;
+  border-right: 0.55rem solid var(--color-white);
 }
 
-.before-after__label--before {
-  left: var(--space-5);
+.before-after__arrow--right {
+  right: 0.55rem;
+  border-left: 0.55rem solid var(--color-white);
 }
 
-.before-after__label--after {
-  right: var(--space-5);
-}
-
-.before-after__instruction {
-  margin-top: var(--space-4);
+.before-after__disclaimer {
+  margin-top: var(--space-3);
   color: var(--color-text-muted);
   font-size: var(--font-size-sm);
   text-align: center;
@@ -2886,7 +2894,7 @@
   gap: var(--space-3);
 }
 
-.glow-rock-design-optiorns__visual {
+.glow-rock-design-options__visual {
   overflow: hidden;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);

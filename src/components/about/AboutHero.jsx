@@ -1,8 +1,8 @@
 import Container from "../common/Container";
 import Eyebrow from "../common/Eyebrow";
 import QuoteCTA from "../conversion/QuoteCTA";
-import { aboutPage } from "../../data/about";
-import { site } from "../../data/site";
+import { aboutPage } from "../../data/aboutPage.js";
+import { site } from "../../data/site.js";
 
 export default function AboutHero() {
   const { hero } = aboutPage;

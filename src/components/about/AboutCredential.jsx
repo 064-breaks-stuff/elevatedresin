@@ -1,6 +1,6 @@
 import Container from "../common/Container";
 import Eyebrow from "../common/Eyebrow";
-import { aboutPage } from "../../data/about";
+import { aboutPage } from "../../data/aboutPage.js";
 
 export default function AboutCredential() {
   const { credential } = aboutPage;
