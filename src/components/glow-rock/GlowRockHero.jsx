@@ -1,6 +1,5 @@
 import Container from "../common/Container";
 import Eyebrow from "../common/Eyebrow";
-import PlaceholderVisual from "../common/PlaceholderVisual";
 import QuoteCTA from "../conversion/QuoteCTA";
 import { glowRockPage } from "../../data/glowRock";
 import { site } from "../../data/site";
@@ -24,12 +23,10 @@ export default function GlowRockHero() {
         </div>
 
         <div className="glow-rock-hero__visual">
-          {/* TODO[ASSET]: Replace with approved Glow Rock nighttime project image. */}
-          <PlaceholderVisual
-            label="Glow Rock nighttime outdoor surface"
-            assetName="PLACEHOLDER-glow-rock-hero.jpg"
-            aspectRatio="hero"
-            priority="high"
+          <img
+            src="/images/glow-rock-hero.jpg"
+            alt="Blue-glowing paving slabs across an outdoor patio at night."
+            fetchPriority="high"
           />
         </div>
       </Container>

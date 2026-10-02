@@ -1,6 +1,5 @@
 import Container from "../common/Container";
 import Eyebrow from "../common/Eyebrow";
-import PlaceholderVisual from "../common/PlaceholderVisual";
 import QuoteCTA from "../conversion/QuoteCTA";
 import { rockCretePage } from "../../data/rockCrete";
 import { site } from "../../data/site";
@@ -24,12 +23,10 @@ export default function RockCreteHero() {
         </div>
 
         <div className="rock-crete-hero__visual">
-          {/* TODO[ASSET]: Replace with approved Rock Crete system, foundation, or installation image. */}
-          <PlaceholderVisual
-            label="Rock Crete foundation system visual"
-            assetName="PLACEHOLDER-rock-crete-hero.jpg"
-            aspectRatio="hero"
-            priority="high"
+          <img
+            src="/images/rock-crete-hero.jpg"
+            alt="Finished resin surface outside a commercial building entrance."
+            fetchPriority="high"
           />
         </div>
       </Container>

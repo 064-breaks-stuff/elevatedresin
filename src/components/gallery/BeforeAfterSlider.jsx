@@ -1,136 +1,62 @@
 import { useRef, useState } from "react";
-import { MoveHorizontal } from "lucide-react";
-
-import PlaceholderVisual from "../common/PlaceholderVisual";
-
-const clamp = (value, minimum, maximum) =>
-  Math.min(Math.max(value, minimum), maximum);
 
 export default function BeforeAfterSlider() {
   const [position, setPosition] = useState(50);
   const sliderRef = useRef(null);
 
-  const updatePositionFromClientX = (clientX) => {
-    const slider = sliderRef.current;
+  function updatePosition(clientX) {
+    const bounds = sliderRef.current.getBoundingClientRect();
+    const nextPosition = ((clientX - bounds.left) / bounds.width) * 100;
+    setPosition(Math.max(0, Math.min(100, nextPosition)));
+  }
 
-    if (!slider) {
-      return;
-    }
-
-    const rect = slider.getBoundingClientRect();
-    const nextPosition = ((clientX - rect.left) / rect.width) * 100;
-
-    setPosition(clamp(nextPosition, 0, 100));
-  };
-
-  const handlePointerDown = (event) => {
+  function handlePointerDown(event) {
     event.currentTarget.setPointerCapture(event.pointerId);
-    updatePositionFromClientX(event.clientX);
-  };
+    updatePosition(event.clientX);
+  }
 
-  const handlePointerMove = (event) => {
-    if (!event.currentTarget.hasPointerCapture(event.pointerId)) {
-      return;
+  function handlePointerMove(event) {
+    if (event.currentTarget.hasPointerCapture(event.pointerId)) {
+      updatePosition(event.clientX);
     }
-
-    updatePositionFromClientX(event.clientX);
-  };
-
-  const handleKeyDown = (event) => {
-    const movementMap = {
-      ArrowLeft: -5,
-      ArrowDown: -5,
-      ArrowRight: 5,
-      ArrowUp: 5
-    };
-
-    if (event.key === "Home") {
-      event.preventDefault();
-      setPosition(0);
-      return;
-    }
-
-    if (event.key === "End") {
-      event.preventDefault();
-      setPosition(100);
-      return;
-    }
-
-    if (!(event.key in movementMap)) {
-      return;
-    }
-
-    event.preventDefault();
-
-    setPosition((currentPosition) =>
-      clamp(currentPosition + movementMap[event.key], 0, 100)
-    );
-  };
+  }
 
   return (
     <div className="before-after">
       <div
+        className="before-after__slider"
         ref={sliderRef}
-        className="before-after__canvas"
         onPointerDown={handlePointerDown}
         onPointerMove={handlePointerMove}
       >
-        {/* TODO[ASSET]: Replace with approved matched before/after project photos. */}
         <div className="before-after__base">
-          <PlaceholderVisual
-            label="Before surface"
-            assetName="PLACEHOLDER-before-surface.jpg"
-            aspectRatio="wide"
-            className="before-after__image"
+          <img
+            src="/images/before-after-representative-before.jpg"
+            alt="Representative driveway surface before resurfacing."
           />
         </div>
 
         <div
-          className="before-after__reveal"
-          style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}
-          aria-hidden="true"
+          className="before-after__comparison"
+          style={{ width: `${position}%` }}
         >
-          <PlaceholderVisual
-            label="After resin-bound surface"
-            assetName="PLACEHOLDER-after-resin-surface.jpg"
-            aspectRatio="wide"
-            className="before-after__image"
+          <img
+            src="/images/before-after-representative-after.jpg"
+            alt="Representative driveway surface after resurfacing with a warm-coloured aggregate finish."
           />
         </div>
 
         <div
-          className="before-after__divider"
+          className="before-after__handle"
           style={{ left: `${position}%` }}
           aria-hidden="true"
         >
-          <span className="before-after__handle">
-            <MoveHorizontal size={20} strokeWidth={2} />
-          </span>
+          <span />
         </div>
-
-        <input
-          className="before-after__range"
-          type="range"
-          min="0"
-          max="100"
-          value={position}
-          onChange={(event) => setPosition(Number(event.target.value))}
-          onKeyDown={handleKeyDown}
-          aria-label="Reveal before and after comparison"
-          aria-valuetext={`${Math.round(position)} percent after surface visible`}
-        />
-
-        <span className="before-after__label before-after__label--before">
-          Before
-        </span>
-
-        <span className="before-after__label before-after__label--after">
-          After
-        </span>
       </div>
 
-      <p className="before-after__instruction">
-        Drag the handle or use the arrow keys to compare the surface transformation.
+      <p className="before-after__disclaimer">
+        Representative visual example. Results, colours, and finishes vary by project.
       </p>
     </div>
   );

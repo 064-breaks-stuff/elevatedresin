@@ -1,34 +1,31 @@
-import { ArrowUpRight } from "lucide-react";
-
 import Container from "../common/Container";
-import PlaceholderVisual from "../common/PlaceholderVisual";
 import SectionHeading from "../common/SectionHeading";
 import { resinWallPage } from "../../data/resinWall";
 
-const galleryPlaceholders = [
+const galleryImages = [
   {
-    id: "resin-wall-gallery-01",
-    label: "Vertical Binder project placeholder 01",
-    assetName: "PLACEHOLDER-resin-wall-gallery-01.jpg",
-    layout: "resin-wall-gallery__item--wide"
+    id: "wall-pool",
+    src: "/images/resin-wall-gallery-pool.jpg",
+    alt: "Resin-bound pool surround around a curved residential swimming pool.",
+    className: "resin-wall-gallery__item--wide"
   },
   {
-    id: "resin-wall-gallery-02",
-    label: "Vertical Binder project placeholder 02",
-    assetName: "PLACEHOLDER-resin-wall-gallery-02.jpg",
-    layout: "resin-wall-gallery__item--tall"
+    id: "wall-screened-patio",
+    src: "/images/resin-wall-gallery-screened-patio.jpg",
+    alt: "Dark speckled resin-bound surface in a screened outdoor living area.",
+    className: "resin-wall-gallery__item--tall"
   },
   {
-    id: "resin-wall-gallery-03",
-    label: "Vertical Binder project placeholder 03",
-    assetName: "PLACEHOLDER-resin-wall-gallery-03.jpg",
-    layout: "resin-wall-gallery__item--standard"
+    id: "wall-patio",
+    src: "/images/resin-wall-gallery-patio.jpg",
+    alt: "Light-coloured resin-bound patio beside a screened residential outdoor area.",
+    className: "resin-wall-gallery__item--standard"
   },
   {
-    id: "resin-wall-gallery-04",
-    label: "Vertical Binder project placeholder 04",
-    assetName: "PLACEHOLDER-resin-wall-gallery-04.jpg",
-    layout: "resin-wall-gallery__item--standard"
+    id: "wall-closeup",
+    src: "/images/resin-wall-gallery-wall-closeup.jpg",
+    alt: "Close view of a finished textured retaining-wall surface.",
+    className: "resin-wall-gallery__item--standard"
   }
 ];
 
@@ -37,31 +34,21 @@ export default function ResinWallGallery() {
 
   return (
     <section className="resin-wall-gallery section">
-      <SectionHeading
-        eyebrow={gallery.eyebrow}
-        title={gallery.title}
-        description={gallery.description}
-      />
-
       <Container>
-        <div className="resin-wall-gallery__grid">
-          {galleryPlaceholders.map((item) => (
-            <article
-              className={`resin-wall-gallery__item ${item.layout}`}
-              key={item.id}
-            >
-              {/* TODO[ASSET]: Replace with approved Vertical Binder image and final descriptive alt text. */}
-              <PlaceholderVisual
-                label={item.label}
-                assetName={item.assetName}
-                aspectRatio="gallery"
-              />
+        <SectionHeading
+          eyebrow={gallery.eyebrow}
+          title={gallery.title}
+          description={gallery.description}
+        />
 
-              <span className="resin-wall-gallery__meta">
-                <span>Vertical Binder Placeholder</span>
-                <ArrowUpRight aria-hidden="true" size={18} strokeWidth={2} />
-              </span>
-            </article>
+        <div className="resin-wall-gallery__grid">
+          {galleryImages.map((image) => (
+            <figure
+              className={`resin-wall-gallery__item ${image.className}`}
+              key={image.id}
+            >
+              <img src={image.src} alt={image.alt} loading="lazy" />
+            </figure>
           ))}
         </div>
       </Container>

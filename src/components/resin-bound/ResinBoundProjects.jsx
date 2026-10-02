@@ -3,56 +3,56 @@ import { Link } from "react-router-dom";
 
 import Container from "../common/Container";
 import SectionHeading from "../common/SectionHeading";
-import PlaceholderVisual from "../common/PlaceholderVisual";
 import { resinBoundPage } from "../../data/resinBound";
 
-const projectPlaceholders = [
+const projectImages = [
   {
-    id: "resin-bound-project-01",
-    label: "Resin Bound project placeholder 01",
-    assetName: "PLACEHOLDER-resin-bound-project-01.jpg",
+    id: "resin-patio",
+    src: "/images/resin-bound-project-patio.jpg",
+    alt: "Light-coloured resin-bound patio beside a screened residential outdoor area.",
     className: "resin-bound-projects__item--wide"
   },
   {
-    id: "resin-bound-project-02",
-    label: "Resin Bound project placeholder 02",
-    assetName: "PLACEHOLDER-resin-bound-project-02.jpg",
+    id: "resin-pool",
+    src: "/images/resin-bound-project-pool.jpg",
+    alt: "Resin-bound pool surround around a curved residential swimming pool.",
     className: "resin-bound-projects__item--tall"
   },
   {
-    id: "resin-bound-project-03",
-    label: "Resin Bound project placeholder 03",
-    assetName: "PLACEHOLDER-resin-bound-project-03.jpg",
+    id: "resin-screened-patio",
+    src: "/images/resin-bound-project-screened-patio.jpg",
+    alt: "Dark speckled resin-bound surface in a screened outdoor living area.",
+    className: "resin-bound-projects__item--standard"
+  },
+  {
+    id: "resin-driveway",
+    src: "/images/resin-bound-project-driveway.jpg",
+    alt: "Light-coloured resin-bound driveway leading to a residential entrance.",
     className: "resin-bound-projects__item--standard"
   }
 ];
 
 export default function ResinBoundProjects() {
-  const { projects } = resinBoundPage;
+  const { projects: projectsContent } = resinBoundPage;
 
   return (
     <section className="resin-bound-projects section">
       <SectionHeading
-        eyebrow={projects.eyebrow}
-        title={projects.title}
-        description={projects.description}
+        eyebrow={projectsContent.eyebrow}
+        title={projectsContent.title}
+        description={projectsContent.description}
       />
 
       <Container>
         <div className="resin-bound-projects__grid">
-          {projectPlaceholders.map((project) => (
+          {projectImages.map((project) => (
             <Link
               className={`resin-bound-projects__item ${project.className}`}
               to="/projects"
               key={project.id}
-              aria-label={`View projects: ${project.label}`}
+              aria-label="View all projects"
             >
-              {/* TODO[ASSET]: Replace with approved, verified Elevated Resin Creations Resin Bound project image and final alt text. */}
-              <PlaceholderVisual
-                label={project.label}
-                assetName={project.assetName}
-                aspectRatio="gallery"
-              />
+              <img src={project.src} alt={project.alt} loading="lazy" />
 
               <span className="resin-bound-projects__overlay" aria-hidden="true">
                 <ArrowUpRight size={24} strokeWidth={2} />

@@ -441,8 +441,8 @@
   pointer-events: none;
 }
 
-.before-after__base .placeholder-visual,
-.before-after__reveal .placeholder-visual {
+.before-after__base img,
+.before-after__comparison img {
   width: 100%;
   height: 100%;
 }
@@ -1957,14 +1957,16 @@
   grid-row: span 1;
 }
 
-.resin-bound-projects__item .placeholder-visual {
+.resin-bound-projects__item img {
+  display: block;
+  width: 100%;
   height: 100%;
-  min-height: 100%;
-  border-radius: 0;
+  object-fit: cover;
+  object-position: center;
   transition: transform var(--transition-slow);
 }
 
-.resin-bound-projects__item:hover .placeholder-visual {
+.resin-bound-projects__item:hover img {
   transform: scale(1.035);
 }
 
@@ -2101,6 +2103,45 @@
   box-shadow: var(--shadow-lg);
 }
 
+.projects-hero__visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: clamp(26rem, 56vw, 46rem);
+  border-radius: inherit;
+  object-fit: cover;
+  object-position: center;
+}
+
+.projects-grid__item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform var(--transition-slow);
+}
+
+.projects-grid__item:hover img {
+  transform: scale(1.035);
+}
+
+.before-after__base img,
+.before-after__comparison img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.before-after__disclaimer {
+  margin-top: var(--space-3);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  text-align: center;
+}
+
 .projects-gallery {
   background: var(--color-white);
 }
@@ -2168,7 +2209,7 @@
   grid-row: span 2;
 }
 
-.projects-grid__item .placeholder-visual {
+.projects-grid__item img {
   height: 100%;
   min-height: 100%;
   border-radius: 0;
@@ -2567,6 +2608,15 @@
   box-shadow: 0 2rem 4rem rgb(0 0 0 / 24%);
 }
 
+.glow-rock-hero__visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: clamp(26rem, 56vw, 46rem);
+  object-fit: cover;
+  object-position: center;
+}
+
 .glow-rock-how-it-works {
   background: var(--color-white);
 }
@@ -2597,6 +2647,16 @@
   overflow: hidden;
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-md);
+}
+
+.glow-rock-how-it-works__visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 22rem;
+  border-radius: inherit;
+  object-fit: cover;
+  object-position: center;
 }
 
 .glow-rock-how-it-works__steps-wrapper {
@@ -2867,14 +2927,16 @@
   grid-row: span 2;
 }
 
-.glow-rock-gallery__item .placeholder-visual {
+.glow-rock-gallery__item img {
+  display: block;
+  width: 100%;
   height: 100%;
-  min-height: 100%;
-  border-radius: 0;
+  object-fit: cover;
+  object-position: center;
   transition: transform var(--transition-slow);
 }
 
-.glow-rock-gallery__item:hover .placeholder-visual {
+.glow-rock-gallery__item:hover img {
   transform: scale(1.035);
 }
 
@@ -3051,6 +3113,24 @@
 .rock-crete-hero__visual {
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-lg);
+}
+
+.rock-crete-hero__visual img,
+.rock-crete-foundation__visual img,
+.rock-crete-performance__diagram-visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 22rem;
+  border-radius: inherit;
+  object-fit: cover;
+  object-position: center;
+}
+
+.rock-crete-performance__diagram-visual img {
+  object-fit: contain;
+  background: var(--color-forest-deep);
+  padding: var(--space-3);
 }
 
 .rock-crete-foundation {
@@ -3498,6 +3578,18 @@
   box-shadow: var(--shadow-lg);
 }
 
+.resin-wall-hero__visual img,
+.resin-wall-introduction__visual img,
+.resin-wall-continuity__visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 22rem;
+  border-radius: inherit;
+  object-fit: cover;
+  object-position: center;
+}
+
 .resin-wall-introduction {
   background: var(--color-white);
 }
@@ -3708,6 +3800,19 @@
   background: var(--color-white);
 }
 
+.resin-wall-gallery__item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform var(--transition-slow);
+}
+
+.resin-wall-gallery__item:hover img {
+  transform: scale(1.035);
+}
+
 .resin-wall-gallery .section-heading {
   margin-bottom: var(--space-10);
 }
@@ -3739,17 +3844,6 @@
 .resin-wall-gallery__item--standard {
   grid-column: span 4;
   grid-row: span 2;
-}
-
-.resin-wall-gallery__item .placeholder-visual {
-  height: 100%;
-  min-height: 100%;
-  border-radius: 0;
-  transition: transform var(--transition-slow);
-}
-
-.resin-wall-gallery__item:hover .placeholder-visual {
-  transform: scale(1.035);
 }
 
 .resin-wall-gallery__meta {

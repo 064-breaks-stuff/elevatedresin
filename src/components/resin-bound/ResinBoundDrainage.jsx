@@ -1,6 +1,5 @@
 import Container from "../common/Container";
 import Eyebrow from "../common/Eyebrow";
-import PlaceholderVisual from "../common/PlaceholderVisual";
 import QuoteCTA from "../conversion/QuoteCTA";
 import { resinBoundPage } from "../../data/resinBound";
 
@@ -25,11 +24,10 @@ export default function ResinBoundDrainage() {
         </div>
 
         <div className="resin-bound-drainage__visual">
-          {/* TODO[ASSET]: Replace with approved Resin Bound permeability, drainage, or finished surface project image. */}
-          <PlaceholderVisual
-            label="Resin-bound permeability and drainage visual"
-            assetName="PLACEHOLDER-resin-bound-drainage.jpg"
-            aspectRatio="feature"
+          <img
+            src="/images/resin-bound-permeability-test.jpg"
+            alt="Water flowing through a sample of resin-bound aggregate during a permeability demonstration."
+            loading="lazy"
           />
         </div>
       </Container>

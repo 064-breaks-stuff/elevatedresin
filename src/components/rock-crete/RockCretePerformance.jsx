@@ -1,6 +1,5 @@
 import Container from "../common/Container";
 import Eyebrow from "../common/Eyebrow";
-import PlaceholderVisual from "../common/PlaceholderVisual";
 import { rockCretePage } from "../../data/rockCrete";
 
 export default function RockCretePerformance() {
@@ -40,11 +39,10 @@ export default function RockCretePerformance() {
         </div>
 
         <div className="rock-crete-performance__diagram-visual">
-          {/* TODO[ASSET]: Replace only with approved Rock Crete / Resin Rock system diagram. */}
-          <PlaceholderVisual
-            label="Approved Rock Crete system diagram"
-            assetName="PLACEHOLDER-rock-crete-system-diagram.jpg"
-            aspectRatio="feature"
+          <img
+            src="/images/rock-crete-technical-datasheet.jpg"
+            alt="Rock Crete technical datasheet showing the layered foundation system, properties, and product kit."
+            loading="lazy"
           />
         </div>
       </Container>

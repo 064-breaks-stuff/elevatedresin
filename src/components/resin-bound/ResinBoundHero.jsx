@@ -24,7 +24,7 @@ export default function ResinBoundHero() {
 
         <div className="resin-bound-hero__visual">
           <img
-            src="/images/resin-bound-hero.jpg"
+            src="/images/home-hero-resin-bound.webp"
             alt="Light-coloured resin-bound patio in a furnished residential outdoor living area."
             fetchPriority="high"
           />

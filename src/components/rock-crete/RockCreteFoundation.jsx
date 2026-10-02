@@ -1,6 +1,5 @@
 import Container from "../common/Container";
 import Eyebrow from "../common/Eyebrow";
-import PlaceholderVisual from "../common/PlaceholderVisual";
 import { rockCretePage } from "../../data/rockCrete";
 
 export default function RockCreteFoundation() {
@@ -10,11 +9,10 @@ export default function RockCreteFoundation() {
     <section className="rock-crete-foundation section">
       <Container className="rock-crete-foundation__grid">
         <div className="rock-crete-foundation__visual">
-          {/* TODO[ASSET]: Replace with approved Rock Crete aggregate, sub-base, or installation detail image. */}
-          <PlaceholderVisual
-            label="Rock Crete foundation detail"
-            assetName="PLACEHOLDER-rock-crete-foundation.jpg"
-            aspectRatio="square"
+          <img
+            src="/images/rock-crete-foundation-detail.jpg"
+            alt="Water flowing through an aggregate sample during a permeability demonstration."
+            loading="lazy"
           />
         </div>
 

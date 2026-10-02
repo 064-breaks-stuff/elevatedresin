@@ -1,29 +1,36 @@
-import Eyebrow from "../common/Eyebrow";
 import Container from "../common/Container";
+import Eyebrow from "../common/Eyebrow";
 import QuoteCTA from "../conversion/QuoteCTA";
 import { site } from "../../data/site";
 
-export default function ProjectHero({ page }) {
+export default function ProjectsHero() {
   return (
-    <section className={`project-landing-hero project-landing-hero--${page.slug}`}>
-      <Container className="project-landing-hero__content">
-        <Eyebrow>{page.eyebrow}</Eyebrow>
+    <section className="projects-hero">
+      <Container className="projects-hero__grid">
+        <div className="projects-hero__content">
+          <Eyebrow>Recent work</Eyebrow>
 
-        <h1>{page.heroTitle}</h1>
+          <h1>Outdoor surfaces designed to elevate everyday spaces.</h1>
 
-        <p>{page.heroDescription}</p>
+          <p>
+            Browse completed resin-bound, Glow Rock, Rock Crete, and Resin Wall
+            projects across driveways, patios, pool surrounds, and landscape features.
+          </p>
 
-        <div className="project-landing-hero__actions">
-          <QuoteCTA label={page.primaryCtaLabel} />
-
-          <a className="button button--secondary" href={site.phoneHref}>
-            Call {site.phoneDisplay}
-          </a>
+          <QuoteCTA
+            label="Request a free estimate"
+            to={site.quotePath}
+            variant="primary"
+          />
         </div>
 
-        <p className="project-landing-hero__service-area">
-          {site.serviceArea}
-        </p>
+        <div className="projects-hero__visual">
+          <img
+            src="/images/projects-hero-resin-driveway.jpg"
+            alt="Completed resin driveway outside a residential property."
+            fetchPriority="high"
+          />
+        </div>
       </Container>
     </section>
   );

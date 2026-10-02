@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 import Container from "../common/Container";
 import Eyebrow from "../common/Eyebrow";
-import PlaceholderVisual from "../common/PlaceholderVisual";
 import { resinWallPage } from "../../data/resinWall";
 
 export default function ResinWallContinuity() {
@@ -25,21 +24,19 @@ export default function ResinWallContinuity() {
 
         <div className="resin-wall-continuity__visuals">
           <div className="resin-wall-continuity__visual">
-            {/* TODO[ASSET]: Replace with approved horizontal Resin Bound surface image. */}
-            <PlaceholderVisual
-              label="Horizontal Resin Bound surface"
-              assetName="PLACEHOLDER-resin-wall-horizontal-surface.jpg"
-              aspectRatio="square"
+            <img
+              src="/images/resin-wall-continuity-horizontal.jpg"
+              alt="Light-coloured resin-bound surface in a residential outdoor area."
+              loading="lazy"
             />
             <span>Horizontal Resin Bound</span>
           </div>
 
           <div className="resin-wall-continuity__visual">
-            {/* TODO[ASSET]: Replace with approved Vertical Binder surface image. */}
-            <PlaceholderVisual
-              label="Vertical Resin Rock Binder surface"
-              assetName="PLACEHOLDER-resin-wall-vertical-surface.jpg"
-              aspectRatio="square"
+            <img
+              src="/images/resin-wall-continuity-vertical.jpg"
+              alt="Finished textured retaining-wall surface."
+              loading="lazy"
             />
             <span>Vertical Binder</span>
           </div>

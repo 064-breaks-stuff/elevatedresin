@@ -1,34 +1,31 @@
-import { ArrowUpRight } from "lucide-react";
-
 import Container from "../common/Container";
-import PlaceholderVisual from "../common/PlaceholderVisual";
 import SectionHeading from "../common/SectionHeading";
 import { glowRockPage } from "../../data/glowRock";
 
-const galleryPlaceholders = [
+const galleryImages = [
   {
-    id: "glow-rock-gallery-01",
-    label: "Glow Rock project placeholder 01",
-    assetName: "PLACEHOLDER-glow-rock-gallery-01.jpg",
-    layout: "glow-rock-gallery__item--wide"
+    id: "glow-driveway-dusk",
+    src: "/images/glow-rock-driveway-dusk.jpg",
+    alt: "Blue-glowing geometric driveway pattern outside a residential property at dusk.",
+    className: "glow-rock-gallery__item--wide"
   },
   {
-    id: "glow-rock-gallery-02",
-    label: "Glow Rock project placeholder 02",
-    assetName: "PLACEHOLDER-glow-rock-gallery-02.jpg",
-    layout: "glow-rock-gallery__item--tall"
+    id: "glow-patio",
+    src: "/images/glow-rock-hero.jpg",
+    alt: "Blue-glowing paving slabs across an outdoor patio at night.",
+    className: "glow-rock-gallery__item--tall"
   },
   {
-    id: "glow-rock-gallery-03",
-    label: "Glow Rock project placeholder 03",
-    assetName: "PLACEHOLDER-glow-rock-gallery-03.jpg",
-    layout: "glow-rock-gallery__item--standard"
+    id: "glow-path-border",
+    src: "/images/glow-rock-path-border-night.jpg",
+    alt: "Blue-glowing curved border around a paved residential entrance path at night.",
+    className: "glow-rock-gallery__item--standard"
   },
   {
-    id: "glow-rock-gallery-04",
-    label: "Glow Rock project placeholder 04",
-    assetName: "PLACEHOLDER-glow-rock-gallery-04.jpg",
-    layout: "glow-rock-gallery__item--standard"
+    id: "glow-edge",
+    src: "/images/home-gallery-glow-rock-edge.jpeg",
+    alt: "Pink glowing edge detail beside a landscaped stone bed at night.",
+    className: "glow-rock-gallery__item--standard"
   }
 ];
 
@@ -37,31 +34,21 @@ export default function GlowRockGallery() {
 
   return (
     <section className="glow-rock-gallery section">
-      <SectionHeading
-        eyebrow={gallery.eyebrow}
-        title={gallery.title}
-        description={gallery.description}
-      />
-
       <Container>
-        <div className="glow-rock-gallery__grid">
-          {galleryPlaceholders.map((item) => (
-            <article
-              className={`glow-rock-gallery__item ${item.layout}`}
-              key={item.id}
-            >
-              {/* TODO[ASSET]: Replace with approved Glow Rock project image and final descriptive alt text. */}
-              <PlaceholderVisual
-                label={item.label}
-                assetName={item.assetName}
-                aspectRatio="gallery"
-              />
+        <SectionHeading
+          eyebrow={gallery.eyebrow}
+          title={gallery.title}
+          description={gallery.description}
+        />
 
-              <span className="glow-rock-gallery__meta">
-                <span>Glow Rock Placeholder</span>
-                <ArrowUpRight aria-hidden="true" size={18} strokeWidth={2} />
-              </span>
-            </article>
+        <div className="glow-rock-gallery__grid">
+          {galleryImages.map((image) => (
+            <figure
+              className={`glow-rock-gallery__item ${image.className}`}
+              key={image.id}
+            >
+              <img src={image.src} alt={image.alt} loading="lazy" />
+            </figure>
           ))}
         </div>
       </Container>

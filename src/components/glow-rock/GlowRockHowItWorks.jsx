@@ -1,6 +1,5 @@
 import Container from "../common/Container";
 import Eyebrow from "../common/Eyebrow";
-import PlaceholderVisual from "../common/PlaceholderVisual";
 import { glowRockPage } from "../../data/glowRock";
 
 export default function GlowRockHowItWorks() {
@@ -22,11 +21,10 @@ export default function GlowRockHowItWorks() {
         </div>
 
         <div className="glow-rock-how-it-works__visual">
-          {/* TODO[ASSET]: Replace with approved day-to-night Glow Rock image pair or approved project visual. */}
-          <PlaceholderVisual
-            label="Glow Rock daylight-to-night visual"
-            assetName="PLACEHOLDER-glow-rock-day-to-night.jpg"
-            aspectRatio="feature"
+          <img
+            src="/images/glow-rock-driveway-dusk.jpg"
+            alt="Blue-glowing geometric driveway pattern outside a residential property at dusk."
+            loading="lazy"
           />
         </div>
       </Container>

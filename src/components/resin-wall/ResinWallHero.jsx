@@ -1,6 +1,5 @@
 import Container from "../common/Container";
 import Eyebrow from "../common/Eyebrow";
-import PlaceholderVisual from "../common/PlaceholderVisual";
 import QuoteCTA from "../conversion/QuoteCTA";
 import { resinWallPage } from "../../data/resinWall";
 import { site } from "../../data/site";
@@ -24,12 +23,10 @@ export default function ResinWallHero() {
         </div>
 
         <div className="resin-wall-hero__visual">
-          {/* TODO[ASSET]: Replace with approved Resin Rock Vertical Binder wall, step, or vertical feature image. */}
-          <PlaceholderVisual
-            label="Resin Rock Vertical Binder feature"
-            assetName="PLACEHOLDER-resin-wall-hero.jpg"
-            aspectRatio="hero"
-            priority="high"
+          <img
+            src="/images/resin-wall-hero.jpg"
+            alt="Finished retaining wall beside a landscaped lawn."
+            fetchPriority="high"
           />
         </div>
       </Container>
