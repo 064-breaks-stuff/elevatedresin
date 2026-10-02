@@ -55,7 +55,7 @@ export default function Header() {
 
         <img
           className="site-header__brand-logo"
-          src="/images/elevated-resin-creations-logo.jpg"
+          src="/images/elevated-resin-creations-logo.png"
           alt="Elevated Resin Creations"
         />
 

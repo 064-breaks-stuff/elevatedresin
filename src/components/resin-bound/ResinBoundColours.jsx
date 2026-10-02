@@ -17,7 +17,7 @@ export default function ResinBoundColours() {
         <div className="resin-bound-colours__charts">
           <figure className="resin-bound-colours__chart">
             <img
-              src="/images/resin-rock-colour-chart-vehicle-traffic.jpg"
+              src="/images/resin-rock-colour-chart-vehicle-traffic.png"
               alt="Resin Rock colour chart for vehicle traffic, paths, and patios."
               loading="lazy"
             />
@@ -28,7 +28,7 @@ export default function ResinBoundColours() {
 
           <figure className="resin-bound-colours__chart">
             <img
-              src="/images/resin-rock-colour-chart-primary.jpg"
+              src="/images/resin-rock-colour-chart-primary.png"
               alt="Resin Rock primary colour chart for paths and patios."
               loading="lazy"
             />

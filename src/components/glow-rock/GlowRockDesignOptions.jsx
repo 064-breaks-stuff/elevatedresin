@@ -17,7 +17,7 @@ export default function GlowRockDesignOptions() {
         <div className="glow-rock-design-options__grid">
           <figure className="glow-rock-design-options__card">
             <img
-              src="/images/glow-rock-design-options-glow-stones.jpg"
+              src="/images/glow-rock-design-options-glow-stones.png"
               alt="Glow Stone product features showing available sizes, colours, and applications."
               loading="lazy"
             />
@@ -28,7 +28,7 @@ export default function GlowRockDesignOptions() {
 
           <figure className="glow-rock-design-options__card">
             <img
-              src="/images/glow-rock-design-options-discovery-combo.jpg"
+              src="/images/glow-rock-design-options-discovery-combo.png"
               alt="Glow Path Discovery Combo pavers showing multiple sizes, textures, colours, and laying patterns."
               loading="lazy"
             />
