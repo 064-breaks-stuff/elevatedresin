@@ -24,7 +24,11 @@ export default function ResinBoundPage() {
 
         <meta
           name="description"
-          content="Explore seamless, permeable resin-bound driveways, patios, walkways, pool areas, and outdoor surfaces from Elevated Resin Creations in Menasha, Wisconsin and surrounding areas."
+          content="Explore Resin Bound surface options for suitable Wisconsin driveways, patios, pathways, and pool surrounds. Assess existing construction, drainage, intended use, and care requirements."
+        />
+        <link
+          rel="canonical"
+          href={`${site.domain}/services/resin-bound`}
         />
       </Helmet>
 

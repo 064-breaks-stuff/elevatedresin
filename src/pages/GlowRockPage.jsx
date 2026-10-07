@@ -18,13 +18,14 @@ export default function GlowRockPage() {
   return (
     <>
       <Helmet>
-        <title>
-          Glow Rock | Glow-In-The-Dark Resin Surfacing | {site.name}
-        </title>
-
+        <title>Glow Rock Decorative Options | {site.name}</title>
         <meta
           name="description"
-          content="Explore Glow Rock, a daylight-charged glow-in-the-dark upgrade for resin-bound driveways, patios, pathways, pool areas, and outdoor spaces."
+          content="Explore selected Glow Rock aggregate and paving options for decorative outdoor features. Confirm product suitability, placement, light exposure, and project requirements."
+        />
+        <link
+          rel="canonical"
+          href={`${site.domain}/services/glow-rock`}
         />
       </Helmet>
 
@@ -43,8 +44,7 @@ export default function GlowRockPage() {
             </p>
 
             <h2>
-              Combine a distinctive nighttime feature with a seamless
-              resin-bound surface.
+            Consider selected glow details within a suitable surface project.
             </h2>
 
             <p>

@@ -18,13 +18,14 @@ export default function RockCretePage() {
   return (
     <>
       <Helmet>
-        <title>
-          Rock Crete | Permeable Resin-Bound Foundation | {site.name}
-        </title>
-
+        <title>Rock Crete Foundation Options | {site.name}</title>
         <meta
           name="description"
-          content="Explore Rock Crete, a permeable Resin Rock foundation and binder system for appropriate residential and commercial resin-bound surface projects."
+          content="Discuss Rock Crete foundation and binder-course options within a suitable Resin Rock project. Review supporting construction, drainage, traffic, and project-specific requirements."
+        />
+        <link
+          rel="canonical"
+          href={`${site.domain}/services/rock-crete`}
         />
       </Helmet>
 

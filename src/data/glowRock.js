@@ -1,123 +1,123 @@
 export const glowRockPage = {
   hero: {
-    eyebrow: "Resin Rock System",
-    title: "Glow Rock That Shines Night After Night",
+    eyebrow: "Decorative Glow Options",
+    title: "Explore After-Dark Details for Your Outdoor Project",
     description:
-      "Glow Rock brings a soft, natural nighttime glow to resin-bound driveways, patios, pathways, pool areas, and other outdoor spaces."
+      "Consider selected Glow Rock stones, paving, and decorative accents within a suitable outdoor project. Confirm the exact product, placement, compatibility, and intended appearance."
   },
 
   introduction: {
-    eyebrow: "Glow-In-The-Dark Resin Surfacing",
-    title: "A distinctive finish that continues to stand out after sunset.",
+    eyebrow: "Decorative Surface Details",
+    title: "A changing appearance after sunset.",
     paragraphs: [
-      "As an Approved Resin Rock Installer, Elevated Resin Creations offers Glow Rock as an innovative upgrade for outdoor surfaces. Glow stones absorb sunlight during the day and emit a soft ambient glow after dark.",
-      "Glow Rock can be incorporated into selected Resin Rock surface projects to add a distinctive visual element. Final system selection should be based on the application, the wider project, and the desired design result."
+      "The supplied Glow Rock catalogue describes light-charged products that emit a glow after dark. Actual appearance depends on the selected product, exposure, placement, and surrounding light.",
+      "Elevated Resin Creations can discuss suitable decorative options as part of a larger project. These features are not presented as a substitute for required lighting or a guarantee of nighttime safety."
     ]
   },
 
   howItWorks: {
-    eyebrow: "How Glow Rock Works",
-    title: "Daylight in. Soft nighttime glow out.",
+    eyebrow: "Light Exposure and Placement",
+    title: "Select the product around its intended setting.",
     steps: [
       {
         number: "01",
-        title: "Absorb daylight",
+        title: "Confirm the product",
         description:
-          "Glow stones charge naturally through daylight exposure."
+          "Identify whether the design uses glow aggregate, manufactured paving, or another documented product."
       },
       {
         number: "02",
-        title: "Release a soft glow",
+        title: "Review the setting",
         description:
-          "After dark, the stones emit a subtle ambient glow across the finished surface."
+          "Consider available light exposure, surrounding illumination, placement, and the desired decorative result."
       },
       {
         number: "03",
-        title: "No power required",
+        title: "Agree on the application",
         description:
-          "The glow feature works without electricity, wiring, fixtures, or batteries."
+          "Confirm compatibility, availability, installation requirements, and care guidance before including it in the scope."
       }
     ]
   },
 
   benefits: [
-  {
-    title: "After-Dark Design Detail",
-    description:
-      "Glow stones can add a distinctive daylight-to-night visual feature to selected outdoor projects."
-  },
-  {
-    title: "Wayfinding Accent",
-    description:
-      "A glow feature can help visually define selected paths, edges, steps, and outdoor design details after dark."
-  },
-  {
-    title: "Standout Appearance",
-    description:
-      "Glow stones add a changing visual element that can alter the appearance of an outdoor space after sunset."
-  },
-  {
-    title: "Daylight-Charged Feature",
-    description:
-      "Glow Rock product selection and placement should be confirmed for the individual project, including available daylight exposure and the intended visual result."
-  },
-  {
-    title: "Integrated Design Option",
-    description:
-      "Glow Rock can be considered as an accent within selected Resin Rock surface and landscape projects."
-  },
-  {
-    title: "Project-Specific Compatibility",
-    description:
-      "Whether Glow Rock fits a driveway, patio, pathway, pool area, or landscape feature depends on the chosen system and project conditions."
-  }
-],
+    {
+      title: "After-Dark Appearance",
+      description:
+        "Explore a decorative visual change between daylight and darker conditions."
+    },
+    {
+      title: "Borders and Detail Bands",
+      description:
+        "Consider selected products for decorative edges and coordinated surface details."
+    },
+    {
+      title: "Product Choices",
+      description:
+        "Review the official sheets for available formats and colours, then confirm current availability."
+    },
+    {
+      title: "Placement-Led Design",
+      description:
+        "Account for light exposure and the surrounding setting instead of promising identical results everywhere."
+    },
+    {
+      title: "Coordinated Outdoor Features",
+      description:
+        "Discuss decorative accents alongside the wider patio, pathway, pool, or landscape project."
+    },
+    {
+      title: "Application Assessment",
+      description:
+        "Confirm the exact product’s suitability for traffic, wet areas, and other proposed conditions."
+    }
+  ],
 
   applications: [
     {
-      title: "Driveways",
+      title: "Driveway Details",
       description:
-        "Add a nighttime design feature to resin-bound driveway surfaces."
+        "Discuss selected decorative details only where the product and vehicular specification support the proposed use."
     },
     {
       title: "Walkways & Pathways",
       description:
-        "Create softly visible outdoor routes, paths, garden connections, and boundaries."
+        "Explore decorative route and border features without replacing required lighting."
     },
     {
       title: "Patios",
       description:
-        "Bring a distinctive after-dark design detail to entertaining and outdoor living spaces."
+        "Consider after-dark design details within an assessed outdoor-living project."
     },
     {
       title: "Pool Areas",
       description:
-        "Consider Glow Rock for pool surrounds and nearby pathways where visibility is important."
+        "Confirm wet-area suitability and product requirements before adding a decorative pool-area feature."
     },
     {
       title: "Garden Features",
       description:
-        "Use glow stone finishes in landscaped areas, borders, paths, and decorative outdoor details."
+        "Explore coordinated borders, paths, and suitable landscape accents."
     },
     {
       title: "Commercial Spaces",
       description:
-        "Explore Glow Rock as a distinctive exterior feature for selected commercial outdoor areas."
+        "Assess product compatibility and the project’s lighting, traffic, and maintenance requirements."
     }
   ],
 
   designOptions: {
-    eyebrow: "Design Options",
-    title: "A glow feature that can be considered as part of the wider outdoor design.",
+    eyebrow: "Official Product Information",
+    title: "Compare glow aggregate and manufactured paving options.",
     description:
-      "Glow Rock is available across multiple product lines, including stones in three sizes, pavers, polymeric sand and glow sand, pool copings, galaxy glow pebbles, and other Resin Rock product options. Final product and finish selection should be confirmed for the individual project."
+      "The supplied sheets show Glow Stone features and Discovery Combo paving. These are different product formats; confirm current availability, specification, and suitability for the proposed application."
   },
 
   gallery: {
-    eyebrow: "Glow Rock Inspiration",
-    title: "Placeholder space for approved Glow Rock project imagery.",
+    eyebrow: "Decorative Installation Examples",
+    title: "Explore glow patterns, paving, and borders.",
     description:
-      "Replace each visual only with an approved Glow Rock image and final descriptive alt text. Do not add project locations, duration claims, or outcome claims unless they are verified."
+      "Approved photographs illustrate decorative installations. They are not identified as Wisconsin projects or measurements of brightness, duration, safety, or performance."
   }
 };
 

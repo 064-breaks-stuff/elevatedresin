@@ -21,7 +21,11 @@ export default function ResinWallPage() {
 
         <meta
           name="description"
-          content="Explore Resin Rock Vertical Binder for suitable walls, steps, vertical edges, and decorative outdoor stone surfacing features."
+          content="Discuss Resin Rock Vertical Binder for suitable wall faces, step risers, edges, and decorative landscape details. Assess substrate condition, preparation, and application requirements."
+        />
+        <link
+          rel="canonical"
+          href={`${site.domain}/services/resin-wall`}
         />
       </Helmet>
 

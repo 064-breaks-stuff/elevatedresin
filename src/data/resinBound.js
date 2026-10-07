@@ -1,148 +1,149 @@
 export const resinBoundPage = {
   hero: {
-    eyebrow: "Resin Rock System",
-    title: "Resin-Bound Driveways, Patios & Outdoor Surfaces",
+    eyebrow: "Resin Rock Surface Options",
+    title: "Resin Bound for Suitable Driveways, Patios & Outdoor Spaces",
     description:
-      "Elevated Resin Creations installs seamless, decorative resin-bound surfaces for driveways, patios, walkways, pool areas, landscaped spaces, and commercial environments."
+      "Explore an aggregate-and-resin finish selected around the existing construction, intended use, drainage approach, and appearance you want. Every application requires assessment before system selection."
   },
 
   introduction: {
     eyebrow: "What Is Resin Bound?",
-    title: "A refined stone surface designed for practical outdoor performance.",
+    title: "A decorative stone finish within a complete surface system.",
     paragraphs: [
-      "Resin-bound surfacing combines selected stone aggregate with resin to create a seamless, decorative finish. It is designed for outdoor areas where appearance, drainage, durability, and low-maintenance performance matter.",
-      "As an Approved Resin Rock Installer, Elevated Resin Creations uses Resin Rock systems for residential and commercial projects, helping create finished surfaces for a range of outdoor spaces."
+      "Resin-bound surfacing combines selected aggregate and resin into a decorative wearing surface. The finish and the construction supporting it serve different purposes; the visible layer should not be treated as a replacement for a suitable foundation.",
+      "As an Approved Resin Rock Installer, Elevated Resin Creations helps assess appropriate surface and foundation options for residential and selected commercial projects."
     ]
   },
 
   applications: [
-  {
-    title: "Driveways",
-    description:
-      "A resin-bound surface option to consider for complete driveway projects after reviewing vehicle use, the existing base, drainage, and selected system."
-  },
-  {
-    title: "Patios",
-    description:
-      "A decorative, seamless finish option for suitable patio and outdoor-living projects."
-  },
-  {
-    title: "Walkways & Pathways",
-    description:
-      "A surface option to consider for paths, garden routes, entrances, and outdoor connections based on the intended use and selected system."
-  },
-  {
-    title: "Pool Areas",
-    description:
-      "A potential surface option for pool surrounds and related outdoor areas where system selection, drainage, and project conditions are assessed."
-  },
-  {
-    title: "Landscaped Spaces",
-    description:
-      "Stone-and-resin finish options that can complement gardens, borders, and integrated landscape design."
-  },
-  {
-    title: "Commercial Areas",
-    description:
-      "A resin-bound system option to review for selected commercial outdoor projects based on expected use and site conditions."
-  }
-],
+    {
+      title: "Driveways",
+      description:
+        "Assess vehicle use, existing construction, preparation, drainage, and the proposed driveway system."
+    },
+    {
+      title: "Patios",
+      description:
+        "Consider a coordinated finish for outdoor living, furniture use, thresholds, and seasonal care."
+    },
+    {
+      title: "Walkways & Pathways",
+      description:
+        "Plan route width, transitions, foot traffic, drainage, and the requirements of the selected finish."
+    },
+    {
+      title: "Pool Areas",
+      description:
+        "Confirm wet-area suitability, documented traction characteristics, chemical compatibility, and edge details."
+    },
+    {
+      title: "Landscaped Spaces",
+      description:
+        "Coordinate suitable horizontal surfaces with paths, borders, planting beds, and landscape details."
+    },
+    {
+      title: "Commercial Areas",
+      description:
+        "Review the actual traffic, loading, exposure, drainage, and specification requirements before proposing a system."
+    }
+  ],
 
   benefits: [
-  {
-    title: "Seamless Stone Finish",
-    description:
-      "A continuous aggregate-and-resin surface option without the jointed appearance of many traditional outdoor finishes."
-  },
-  {
-    title: "Project-Specific Surface Selection",
-    description:
-      "Aggregate, finish, base preparation, and system selection are considered around the intended use, drainage needs, and project conditions."
-  },
-  {
-    title: "Permeable System Option",
-    description:
-      "Where a permeable Resin Rock system and suitable base preparation are selected, water can move through the surface rather than remaining on top."
-  },
-  {
-    title: "Maintenance Guidance",
-    description:
-      "Ongoing care requirements depend on the system, use, and site conditions; regular sweeping and rinsing may be appropriate."
-  },
-  {
-    title: "Decorative Choice",
-    description:
-      "Explore more than 30 stone colour options for a finish considered alongside the property, intended use, and wider outdoor design."
-  },
-  {
-    title: "Wisconsin-Aware Planning",
-    description:
-      "Outdoor system selection should consider seasonal temperature changes, rain, snowmelt, freeze/thaw conditions, drainage, and substrate assessment."
-  }
-],
+    {
+      title: "Coordinated Stone Appearance",
+      description:
+        "Explore aggregate finishes and borders that complement the property. Movement details and construction joints must still be assessed where required."
+    },
+    {
+      title: "Application-Specific Selection",
+      description:
+        "Consider the finish, preparation, foundation, and intended use together instead of assuming one specification fits every project."
+    },
+    {
+      title: "Drainage-Aware Planning",
+      description:
+        "Assess the selected surface and the water-management route beneath or around it. Surface permeability alone does not establish full-system drainage."
+    },
+    {
+      title: "Defined Care Requirements",
+      description:
+        "Request maintenance instructions for the exact installed system, including cleaning and winter-use guidance."
+    },
+    {
+      title: "Decorative Choice",
+      description:
+        "Review the official colour charts and confirm available blends, intended applications, and the final finish during planning."
+    },
+    {
+      title: "Wisconsin Project Context",
+      description:
+        "Discuss winter maintenance, rain and snowmelt, seasonal installation conditions, and existing-base suitability."
+    }
+  ],
 
   drainage: {
-  eyebrow: "Permeability & Drainage",
-  title: "Drainage planning starts with the selected system and base.",
-  paragraphs: [
-    "Where an appropriate permeable Resin Rock system and suitable base preparation are selected, water can move through the surface rather than remaining on top. This may help reduce standing water and puddles.",
-    "Drainage performance depends on the selected system, the existing or prepared base, installation details, and site conditions. A project assessment helps confirm the most suitable approach."
-  ]
-},
+    eyebrow: "Surface Versus System",
+    title: "Where will the water go after it reaches the surface?",
+    paragraphs: [
+      "The drainage approach depends on the selected finish and complete construction. An existing concrete slab beneath a resin-bound overlay should not be assumed to allow water to pass into the soil.",
+      "A proposed permeable build-up needs suitable supporting layers and a defined infiltration or drainage route. Grading, soil, outlets, installation, and maintenance must be considered before promising an outcome."
+    ]
+  },
 
   colours: {
-    eyebrow: "Colour & Finish Options",
-    title: "A stone finish tailored to the character of your space.",
+    eyebrow: "Official Colour Charts",
+    title: "Choose a finish with the surrounding property in mind.",
     description:
-      "Resin Rock offers more than 30 stone color options for resin-bound surfaces. Final blend selection should be considered alongside the surrounding property, intended use of the space, and the overall outdoor design."
+      "Review the supplied Resin Rock colour charts, then confirm current availability and suitability for your application. The chart identifies different intended uses; do not assume every blend is suitable for vehicle traffic."
   },
 
   preparation: {
-    eyebrow: "Existing Surfaces & Preparation",
-    title: "A sound base is essential to a long-lasting result.",
+    eyebrow: "Existing Construction",
+    title: "Assess the base before selecting the finish.",
     paragraphs: [
-      "In many cases, resin-bound surfacing can be installed over existing concrete or tarmac when the base is stable, clean, and properly prepared. Each project should be assessed before installation.",
-      "Any weak areas, movement, drainage problems, failing patches, or cracks that indicate base failure may need to be repaired before a new resin-bound surface is installed."
+      "Resurfacing may be appropriate where the existing construction meets the selected system’s requirements after assessment and preparation. Discuss movement, weak areas, cracks, levels, drainage, and compatibility.",
+      "A decorative overlay is not a remedy for structural failure. Repairs, replacement, or a different foundation approach may be necessary before installation."
     ]
   },
 
   aftercare: {
-    eyebrow: "Installation & Aftercare",
-    title: "Clear guidance for using and maintaining your new surface.",
+    eyebrow: "Installation & Care",
+    title: "Confirm timing and maintenance for the installed system.",
     items: [
       {
-        title: "Installation timing",
+        title: "Installation schedule",
         description:
-          "Project timing depends on the size of the area, preparation requirements, and weather conditions. Timing is confirmed after the site and project requirements are assessed."
+          "Confirm a project-specific schedule based on preparation, area, access, the selected system, and installation conditions."
       },
       {
-        title: "Foot traffic",
+        title: "Pedestrian access",
         description:
-          "Foot traffic is typically possible after about 24 hours, depending on conditions."
+          "Use the installer’s written release and current product guidance rather than assuming a universal opening time."
       },
       {
-        title: "Vehicle traffic",
+        title: "Vehicle access",
         description:
-          "Vehicles usually access the surface after 48–72 hours, depending on conditions."
+          "Confirm vehicle opening times and any loading or use restrictions for the actual driveway specification."
       },
       {
-        title: "Ongoing maintenance",
+        title: "Cleaning and winter care",
         description:
-          "Sweep regularly and rinse as needed. Occasional light pressure washing can help restore a fresh appearance."
+          "Request approved cleaning methods, pressure-washing limits, snow-clearing guidance, and deicer instructions."
       }
     ]
   },
 
   projects: {
-    eyebrow: "Resin-Bound Project Inspiration",
-    title: "See what a seamless outdoor surface can make possible.",
+    eyebrow: "Installation Examples",
+    title: "Explore different resin-bound surface settings.",
     description:
-      "This section is reserved for approved Elevated Resin Creations Resin Bound project imagery. Replace each placeholder only with a verified project image and final descriptive alt text."
+      "These approved installation photographs illustrate finishes and applications. They are not identified as Wisconsin projects or evidence of suitability for your own property."
   }
 };
 
 export const resinBoundFaqIds = [
   "base-condition",
+  "permeability",
   "maintenance",
   "pricing"
 ];

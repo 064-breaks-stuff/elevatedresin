@@ -62,3 +62,9 @@ iframe {
   display: block;
   width: 100%;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

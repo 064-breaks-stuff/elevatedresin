@@ -14,7 +14,7 @@ export default function PageShell() {
       <AnnouncementBar />
       <Header />
 
-      <main id="main-content" tabIndex="-1">
+      <main id="main-content" tabIndex={-1}>
         <Outlet />
       </main>
 

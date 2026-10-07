@@ -1,90 +1,90 @@
 export const resinWallPage = {
   hero: {
-    eyebrow: "Resin Rock System",
-    title: "Resin Rock Vertical Binder for Walls, Steps & Vertical Features",
+    eyebrow: "Vertical Stone-Surfacing Options",
+    title: "Resin Wall for Suitable Walls, Step Faces & Vertical Details",
     description:
-      "Resin Rock Vertical Binder is a polyurethane-based system for vertical stone surfacing on walls, steps, edges, and decorative outdoor features."
+      "Discuss Resin Rock Vertical Binder for an assessed vertical stone-surfacing application. Substrate condition, exposure, preparation, and finish requirements determine suitability."
   },
 
   introduction: {
-    eyebrow: "Vertical Stone Surfacing",
-    title: "Bring the Resin Rock look beyond the ground.",
+    eyebrow: "Beyond Horizontal Surfaces",
+    title: "Coordinate vertical details with the wider outdoor design.",
     paragraphs: [
-      "As an Approved Resin Rock Installer, Elevated Resin Creations brings Resin Rock innovation beyond horizontal outdoor surfaces. Resin Rock Vertical Binder is engineered for vertical stone surfacing where a cohesive resin-bound appearance is desired.",
-      "This porous, aggregate-bound system allows a seamless coating on suitable vertical faces, helping carry the natural stone look from driveways, patios, pathways, and other finished surfaces onto walls, steps, and decorative features."
+      "Elevated Resin Creations can assess selected walls, step faces, edges, and decorative features for appropriate vertical stone surfacing.",
+      "The vertical application requires its own specification and preparation. Do not transfer horizontal-surface drainage, loading, or maintenance claims to a wall finish."
     ]
   },
 
   features: [
-  {
-    title: "Vertical Stone-Surface Option",
-    description:
-      "A Resin Rock system option to consider for suitable outdoor walls, steps, edges, and decorative vertical features."
-  },
-  {
-    title: "Project-Specific Preparation",
-    description:
-      "Vertical surfaces require assessment of the substrate, condition, preparation, exposure, and intended finish before system selection."
-  },
-  {
-    title: "Coordinated Design",
-    description:
-      "Vertical Binder can be considered where the goal is to coordinate selected vertical details with the wider outdoor surface design."
-  },
-  {
-    title: "System-Led Selection",
-    description:
-      "The appropriate materials and installation approach depend on the individual surface, project conditions, and wider Resin Rock system."
-  },
-  {
-    title: "Landscape Project Integration",
-    description:
-      "Suitable vertical details can be planned alongside paths, borders, surrounds, and other integrated landscape features."
-  }
-],
+    {
+      title: "Vertical Application Assessment",
+      description:
+        "Confirm the proposed face, existing material, condition, and exposure."
+    },
+    {
+      title: "Specified Preparation",
+      description:
+        "Establish substrate suitability and preparation requirements before installation."
+    },
+    {
+      title: "Coordinated Appearance",
+      description:
+        "Consider colour and detail relationships with neighbouring paths, patios, and landscape surfaces."
+    },
+    {
+      title: "Product-Specific Selection",
+      description:
+        "Confirm the actual materials and installation approach for the vertical application."
+    },
+    {
+      title: "Landscape Integration",
+      description:
+        "Plan suitable decorative faces alongside the wider landscape project without treating them as structural repairs."
+    }
+  ],
 
   applications: [
     {
       title: "Walls",
       description:
-        "Create a coordinated vertical stone surface on suitable outdoor walls."
+        "Assess suitable outdoor wall faces for a decorative stone-surfacing application."
     },
     {
-      title: "Steps",
+      title: "Step Faces",
       description:
-        "Extend the resin-bound stone appearance onto suitable step faces and related vertical details."
+        "Consider selected vertical risers and details separately from the walking surface."
     },
     {
       title: "Vertical Edges",
       description:
-        "Finish vertical edges where a continuous stone appearance is desired."
+        "Review suitable edge faces where a coordinated appearance is desired."
     },
     {
       title: "Decorative Features",
       description:
-        "Use vertical binder for selected decorative outdoor features and stone-surfaced elements."
+        "Assess selected landscape features for the appropriate vertical specification."
     }
   ],
 
   continuity: {
-    eyebrow: "A Unified Outdoor Finish",
-    title: "Connect horizontal resin-bound surfaces with vertical stone details.",
+    eyebrow: "Coordinated Design",
+    title: "Horizontal and vertical finishes need separate specifications.",
     description:
-      "Resin Rock Vertical Binder can help carry a coordinated stone appearance from horizontal resin-bound surfaces onto appropriate walls, steps, edges, and decorative features. Final system suitability should be assessed for the individual project."
+      "Explore how suitable vertical details can complement nearby horizontal surfaces. The images illustrate different applications, not a matched project or proof that the same product is used in both."
   },
 
   gallery: {
-    eyebrow: "Vertical Binder Inspiration",
-    title: "Placeholder space for approved vertical stone surfacing imagery.",
+    eyebrow: "Landscape and Surface Examples",
+    title: "Explore horizontal settings and vertical detail examples.",
     description:
-      "Replace these placeholders only with approved Resin Rock Vertical Binder project images and final descriptive alt text. Do not add project locations, duration claims, or outcomes unless verified."
+      "This gallery includes horizontal resin-bound surfaces and vertical landscape details. Not every image shows Vertical Binder; the photographs are not identified as Wisconsin installations."
   },
 
   faq: {
-    eyebrow: "Vertical Binder Questions",
-    title: "Questions about walls, steps, and vertical stone surfacing.",
+    eyebrow: "Vertical Application Questions",
+    title: "Discuss the substrate, finish, and maintenance requirements.",
     description:
-      "Review common questions related to installation preparation, maintenance, appearance, and requesting a project quote."
+      "Confirm the proposed application and care instructions. Decorative surfacing must not be represented as a repair for structural wall failure."
   }
 };
 

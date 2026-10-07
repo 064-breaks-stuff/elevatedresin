@@ -6846,3 +6846,89 @@
   line-height: 1.6;
   text-align: center;
 }
+
+/* Formatting audit: homepage grids and official product charts */
+
+/* Six benefits: balanced desktop rows, readable tablet/mobile cards. */
+.home-benefits .home-benefits__grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+/* Five project types: avoid an isolated fifth card on desktop. */
+.home-services .home-services__grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+/*
+ * The former Glow Rock layout uses this same grid class and has later
+ * declarations that override the official-chart layout.
+ * This more specific rule restores two equal, top-aligned chart columns.
+ */
+.glow-rock-design-options .glow-rock-design-options__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: var(--space-6);
+}
+
+.glow-rock-design-options .glow-rock-design-options__card,
+.resin-bound-colours .resin-bound-colours__chart {
+  min-width: 0;
+}
+
+/* Preserve complete product sheets without cropping or fixed-height scaling. */
+.glow-rock-design-options .glow-rock-design-options__card img,
+.resin-bound-colours .resin-bound-colours__chart img {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Keep table cell content aligned at the top as descriptions wrap. */
+.home-comparison .comparison-table th,
+.home-comparison .comparison-table td {
+  vertical-align: top;
+}
+
+@media (max-width: 68rem) {
+  .home-benefits .home-benefits__grid,
+  .home-services .home-services__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 48rem) {
+  .glow-rock-design-options .glow-rock-design-options__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 42rem) {
+  .home-benefits .home-benefits__grid,
+  .home-services .home-services__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*
+ * Existing reduced-motion rules still target placeholder elements in
+ * several galleries. Target the actual image elements now rendered.
+ */
+@media (prefers-reduced-motion: reduce) {
+  .project-preview__item:hover img,
+  .service-card:hover .service-card__visual,
+  .resin-bound-projects__item:hover img,
+  .projects-grid__item:hover img,
+  .glow-rock-gallery__item:hover img,
+  .resin-wall-gallery__item:hover img,
+  .about-workmanship__item:hover img,
+  .home-services__card:hover,
+  .home-services__card:focus-visible {
+    transform: none;
+  }
+}
