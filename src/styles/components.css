@@ -5834,3 +5834,423 @@
     width: 100%;
   }
 }
+
+/* Standalone Driveways page */
+
+.driveways-page {
+  min-width: 0;
+}
+
+.driveways-page .driveways-page__heading {
+  max-width: 48rem;
+}
+
+.driveways-page .driveways-page__heading h2 {
+  margin-top: var(--space-4);
+}
+
+.driveways-page .driveways-page__heading > p:last-child {
+  margin-top: var(--space-5);
+  color: var(--color-text-muted);
+}
+
+.driveways-page a:not(.button) {
+  text-underline-offset: 0.2em;
+}
+
+.driveways-page a:not(.button):hover {
+  text-decoration: underline;
+}
+
+.driveways-page .button {
+  line-height: 1.3;
+}
+
+.driveways-hero {
+  padding-block: clamp(3rem, 6vw, 6rem);
+  background: var(--color-mist);
+}
+
+.driveways-hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
+}
+
+.driveways-hero__content {
+  min-width: 0;
+}
+
+.driveways-hero h1 {
+  max-width: 15ch;
+  margin-top: var(--space-4);
+  font-size: clamp(2.6rem, 4.6vw, 4.8rem);
+  line-height: 1.06;
+}
+
+.driveways-hero__description {
+  max-width: 43rem;
+  margin-top: var(--space-6);
+  color: var(--color-text-muted);
+}
+
+.driveways-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-5);
+  margin-top: var(--space-8);
+}
+
+.driveways-hero__actions > a:not(.button) {
+  color: var(--color-forest);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+}
+
+.driveways-hero__service-area {
+  margin-top: var(--space-6);
+  color: var(--color-forest);
+  font-size: var(--font-size-sm);
+}
+
+.driveways-hero__image {
+  min-width: 0;
+  margin: 0;
+}
+
+.driveways-hero__image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--radius-lg);
+}
+
+.driveways-hero__image figcaption {
+  margin-top: var(--space-3);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-xs);
+  line-height: 1.5;
+}
+
+.driveways-assessment {
+  background: var(--color-white);
+  scroll-margin-top: 7rem;
+}
+
+.driveways-assessment__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  align-items: start;
+  gap: clamp(2rem, 5vw, 5rem);
+}
+
+.driveways-assessment__list {
+  display: grid;
+  gap: var(--space-6);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.driveways-assessment__list li {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr);
+  align-items: start;
+  gap: var(--space-4);
+  padding-bottom: var(--space-6);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.driveways-assessment__number {
+  display: grid;
+  width: 3rem;
+  height: 3rem;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--color-sand);
+  color: var(--color-forest);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+}
+
+.driveways-assessment__list h3 {
+  font-size: var(--font-size-xl);
+}
+
+.driveways-assessment__list p {
+  margin-top: var(--space-3);
+  color: var(--color-text-muted);
+}
+
+.driveways-winter {
+  background: var(--color-sand);
+}
+
+.driveways-winter__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-6);
+  margin-top: var(--space-10);
+}
+
+.driveways-winter__grid article {
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-white);
+}
+
+.driveways-winter__grid p {
+  margin-top: var(--space-4);
+  color: var(--color-text-muted);
+}
+
+.driveways-winter__note {
+  max-width: 52rem;
+  margin-top: var(--space-6);
+  color: var(--color-ink);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+}
+
+.driveways-comparison {
+  background: var(--color-white);
+}
+
+.driveways-comparison__scroll {
+  max-width: 100%;
+  margin-top: var(--space-10);
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.driveways-comparison__table {
+  width: 100%;
+  min-width: 42rem;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+}
+
+.driveways-comparison__table th,
+.driveways-comparison__table td {
+  padding: var(--space-5);
+  vertical-align: top;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.driveways-comparison__table thead th {
+  background: var(--color-forest);
+  color: var(--color-white);
+}
+
+.driveways-comparison__table tbody th {
+  width: 20%;
+  background: var(--color-mist);
+  color: var(--color-ink);
+}
+
+.driveways-comparison__table td {
+  width: 40%;
+  color: var(--color-text-muted);
+}
+
+.driveways-comparison__table tbody tr:last-child th,
+.driveways-comparison__table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.driveways-comparison__systems {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-6);
+  margin-top: var(--space-8);
+}
+
+.driveways-comparison__systems article {
+  padding: var(--space-6);
+  border-left: 3px solid var(--color-forest);
+  background: var(--color-mist);
+}
+
+.driveways-comparison__systems p {
+  margin-top: var(--space-4);
+  color: var(--color-text-muted);
+}
+
+.driveways-comparison__systems a {
+  display: inline-block;
+  margin-top: var(--space-5);
+  color: var(--color-forest);
+  font-weight: 700;
+  font-size: var(--font-size-sm);
+}
+
+.driveways-examples {
+  background: var(--color-mist);
+}
+
+.driveways-examples__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-6);
+  margin-top: var(--space-10);
+}
+
+.driveways-examples__grid figure {
+  min-width: 0;
+  margin: 0;
+}
+
+.driveways-examples__grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  object-position: center;
+}
+
+.driveways-examples__grid figcaption {
+  margin-top: var(--space-3);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.driveways-examples__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-5);
+  margin-top: var(--space-6);
+}
+
+.driveways-examples__links a {
+  color: var(--color-forest);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+}
+
+.driveways-faqs {
+  margin-top: clamp(3rem, 6vw, 5rem);
+  padding-top: clamp(2rem, 4vw, 4rem);
+  border-top: 1px solid var(--color-border);
+}
+
+.driveways-faqs > h2 {
+  max-width: 45rem;
+}
+
+.driveways-faqs__list {
+  display: grid;
+  gap: var(--space-3);
+  max-width: 60rem;
+  margin-top: var(--space-8);
+}
+
+.driveways-faqs__list details {
+  padding: var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-white);
+}
+
+.driveways-faqs__list summary {
+  cursor: pointer;
+  color: var(--color-ink);
+  font-weight: 700;
+}
+
+.driveways-faqs__list summary:focus-visible {
+  outline: 0.1875rem solid var(--color-focus);
+  outline-offset: 0.25rem;
+}
+
+.driveways-faqs__list details p {
+  max-width: 52rem;
+  margin-top: var(--space-4);
+  color: var(--color-text-muted);
+}
+
+.driveways-cta {
+  background: var(--color-sand);
+}
+
+.driveways-cta__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.driveways-cta__actions {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-4);
+}
+
+.driveways-cta__actions > a:not(.button) {
+  color: var(--color-forest);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+}
+
+@media (max-width: 68rem) {
+  .driveways-hero__grid,
+  .driveways-assessment__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .driveways-hero h1 {
+    max-width: 19ch;
+  }
+
+  .driveways-hero__image img {
+    aspect-ratio: 16 / 10;
+  }
+
+  .driveways-cta__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 42rem) {
+  .driveways-hero {
+    padding-block: var(--space-12);
+  }
+
+  .driveways-hero h1 {
+    font-size: clamp(2.4rem, 10vw, 3.5rem);
+  }
+
+  .driveways-hero__actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .driveways-hero__actions .button,
+  .driveways-cta__actions,
+  .driveways-cta__actions .button {
+    width: 100%;
+  }
+
+  .driveways-winter__grid,
+  .driveways-comparison__systems,
+  .driveways-examples__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .driveways-assessment__list li {
+    grid-template-columns: 2.5rem minmax(0, 1fr);
+  }
+
+  .driveways-assessment__number {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
