@@ -19,7 +19,7 @@ export default function HomeHero() {
           <div className="home-hero__actions">
             <QuoteCTA
               label={homeHero.primaryCta.label}
-              ariaLabel="Request a free quote"
+              ariaLabel={homeHero.primaryCta.label}
             />
 
             <Button to={homeHero.secondaryCta.to} variant="secondary">

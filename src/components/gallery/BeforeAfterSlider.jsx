@@ -3,36 +3,70 @@ import { useRef, useState } from "react";
 export default function BeforeAfterSlider() {
   const [position, setPosition] = useState(50);
   const sliderRef = useRef(null);
-  const draggingRef = useRef(false);
+  const activePointerRef = useRef(null);
 
   function setSliderPosition(clientX) {
-    const bounds = sliderRef.current.getBoundingClientRect();
-    const nextPosition = ((clientX - bounds.left) / bounds.width) * 100;
+    const bounds = sliderRef.current?.getBoundingClientRect();
 
+    if (!bounds || bounds.width <= 0) return;
+
+    const nextPosition = ((clientX - bounds.left) / bounds.width) * 100;
     setPosition(Math.max(0, Math.min(100, nextPosition)));
   }
 
   function handlePointerDown(event) {
-    draggingRef.current = true;
+    if (!event.isPrimary || event.button !== 0) return;
+
+    activePointerRef.current = event.pointerId;
+    event.currentTarget.focus({ preventScroll: true });
     event.currentTarget.setPointerCapture(event.pointerId);
     setSliderPosition(event.clientX);
   }
 
   function handlePointerMove(event) {
-    if (!draggingRef.current) return;
+    if (activePointerRef.current !== event.pointerId) return;
     setSliderPosition(event.clientX);
   }
 
   function handlePointerEnd(event) {
-    draggingRef.current = false;
+    if (activePointerRef.current !== event.pointerId) return;
+
+    activePointerRef.current = null;
 
     if (event.currentTarget.hasPointerCapture(event.pointerId)) {
       event.currentTarget.releasePointerCapture(event.pointerId);
     }
   }
 
+  function handleKeyDown(event) {
+    const step = event.shiftKey ? 10 : 2;
+
+    switch (event.key) {
+      case "ArrowRight":
+      case "ArrowUp":
+        event.preventDefault();
+        setPosition((value) => Math.min(100, value + step));
+        break;
+      case "ArrowLeft":
+      case "ArrowDown":
+        event.preventDefault();
+        setPosition((value) => Math.max(0, value - step));
+        break;
+      case "Home":
+        event.preventDefault();
+        setPosition(0);
+        break;
+      case "End":
+        event.preventDefault();
+        setPosition(100);
+        break;
+      default:
+        break;
+    }
+  }
+
   return (
-    <div className="before-after">
+    <div className="before-after before-after--fixed">
       <div
         ref={sliderRef}
         className="before-after__slider"
@@ -40,31 +74,42 @@ export default function BeforeAfterSlider() {
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerEnd}
         onPointerCancel={handlePointerEnd}
+        onLostPointerCapture={() => {
+          activePointerRef.current = null;
+        }}
+        onKeyDown={handleKeyDown}
         onDragStart={(event) => event.preventDefault()}
         role="slider"
-        tabIndex="0"
-        aria-label="Compare representative before and after driveway images"
-        aria-valuemin="0"
-        aria-valuemax="100"
+        tabIndex={0}
+        aria-label="Representative driveway comparison"
+        aria-orientation="horizontal"
+        aria-valuemin={0}
+        aria-valuemax={100}
         aria-valuenow={Math.round(position)}
+        aria-valuetext={`${Math.round(position)} percent after image revealed`}
       >
         <img
           className="before-after__image before-after__image--before"
           src="/images/before-after-representative-before.png"
-          alt="Representative driveway surface before resurfacing."
-          draggable="false"
+          alt="Representative driveway before resurfacing."
+          draggable={false}
+          loading="lazy"
+          decoding="async"
         />
 
         <div
           className="before-after__after-clip"
-          style={{ width: `${position}%` }}
-          aria-hidden="true"
+          style={{
+            clipPath: `inset(0 ${100 - position}% 0 0)`
+          }}
         >
           <img
             className="before-after__image before-after__image--after"
             src="/images/before-after-representative-after.png"
-            alt=""
-            draggable="false"
+            alt="Representative driveway with a warm-coloured aggregate finish."
+            draggable={false}
+            loading="lazy"
+            decoding="async"
           />
         </div>
 
@@ -81,7 +126,8 @@ export default function BeforeAfterSlider() {
       </div>
 
       <p className="before-after__disclaimer">
-        Representative visual example. Results, colours, and finishes vary by project.
+        Representative visual example, not an Elevated Resin Creations
+        installation. Results, colours, and finishes vary by project.
       </p>
     </div>
   );

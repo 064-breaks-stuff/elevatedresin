@@ -1,65 +1,62 @@
 export const faqs = [
   {
     id: "existing-surfaces",
-    question:
-      "Can you install resin-bound over existing concrete or tarmac?",
+    question: "Can resin-bound surfacing be installed over existing concrete or asphalt?",
     answer:
-      "In many cases, yes—if the base is stable, clean, and properly prepared. We’ll inspect and confirm before installing."
+      "It may be appropriate when the existing construction is suitable for the selected system. We assess condition, movement, preparation requirements, drainage, and intended use before recommending an overlay. An overlay over an existing slab should not be assumed to drain through that slab into the soil."
   },
   {
     id: "base-condition",
-    question:
-      "What base condition is required for a long-lasting installation?",
+    question: "What needs to be checked beneath the finished surface?",
     answer:
-      "The base must be solid, well-bonded, and correctly drained. Any weak areas, movement, or failing patches must be repaired first."
+      "The assessment considers stability, weak areas, movement, levels, drainage, and compatibility with the proposed system. Resurfacing is not a substitute for addressing structural failure or an unsuitable foundation."
   },
   {
     id: "cover-cracks",
-    question: "Can resin-bound cover cracks?",
+    question: "Can resin-bound surfacing cover cracks?",
     answer:
-      "Minor cracks can often be treated during preparation. If cracks show movement or base failure, repairs or a new base solution may be needed."
+      "Cracks need assessment before a resurfacing recommendation. Preparation or repairs may be possible in some cases, but active movement or a failing base can affect the new finish. Resin surfacing should not be described as a way to stabilize moving construction."
   },
   {
     id: "permeability",
-    question:
-      "Is resin-bound permeable, and does it help reduce puddles?",
+    question: "Is every resin-bound installation fully permeable?",
     answer:
-      "Yes—when built as a permeable system, water drains through the surface and sub-base, helping reduce standing water and runoff."
+      "No. Surface permeability and full-system drainage are different. Water movement depends on the selected surface, supporting layers, existing construction, grading, soil, outlets, and maintenance. The proposal should explain whether the project is an overlay or a designed permeable build-up."
   },
   {
     id: "installation-time",
     question: "How long does installation take?",
     answer:
-      "Most projects are completed quickly, depending on area size, prep work, and weather. We confirm timing after a site check."
+      "Timing depends on the area, preparation, selected system, access, and installation conditions. Request a project-specific schedule rather than assuming all projects can be completed in the same time."
   },
   {
     id: "walk-drive-time",
-    question: "When can I walk or drive on it?",
+    question: "When can I walk or drive on the finished surface?",
     answer:
-      "Foot traffic is typically possible after about 24 hours, and vehicles usually after 48–72 hours, depending on conditions. We provide exact aftercare guidance."
+      "Opening times must follow the selected system’s current guidance and the conditions of the installation. Confirm pedestrian and vehicle release times with the installer before using the surface."
   },
   {
     id: "slip-resistance",
-    question: "Is it slip-resistant, especially around pools?",
+    question: "How is suitability for wet areas assessed?",
     answer:
-      "Yes, and we can recommend the right aggregate blend and finish for higher-slip-risk areas like pool surrounds and shaded walkways."
+      "Ask for documented traction characteristics for the exact product and finish being proposed. Pool surrounds and shaded routes also require consideration of slope, transitions, water, cleaning, and maintenance. No outdoor surface is presented as slip-proof."
   },
   {
     id: "colour-fade",
-    question: "Will the color fade over time?",
+    question: "What should I ask about colour and appearance over time?",
     answer:
-      "Using UV-stable resin and quality stone helps maintain appearance long-term. Natural stone may mellow slightly over time, which is normal."
+      "Confirm the exposed binder, aggregate blend, and manufacturer guidance for the proposed finish. Ask about documented UV performance, natural material variation, cleaning, and any applicable warranty terms rather than assuming every resin system behaves alike."
   },
   {
     id: "maintenance",
-    question: "How do I maintain a resin-bound surface?",
+    question: "How do I maintain the finished surface?",
     answer:
-      "Simple upkeep: sweep regularly and rinse as needed. Occasional light pressure washing can restore a fresh look."
+      "Request written care instructions for the exact installed system. Discuss debris removal, cleaning, stains, drainage inspection, snow-clearing equipment, and deicers. Use pressure washing or cleaning products only within the applicable guidance."
   },
   {
     id: "pricing",
-    question: "How is pricing calculated, and how do I get a quote?",
+    question: "How is pricing calculated, and how do I request an estimate?",
     answer:
-      "Pricing depends on area size, base condition, prep needs, edging details, and stone blend or design. Share measurements or photos, or request a site visit for an accurate quote."
+      "The scope considers area, existing construction, preparation, foundation requirements, edging, drainage, and finish choices. Share your location, measurements, photographs, and intended use so we can discuss an appropriate project-specific estimate."
   }
 ];

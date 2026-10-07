@@ -6718,3 +6718,131 @@
     grid-column: auto;
   }
 }
+
+/* Qualified homepage benefits */
+
+.home-benefits__qualified-card {
+  min-width: 0;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-white);
+}
+
+.home-benefits__qualified-card h3 {
+  font-size: var(--font-size-xl);
+}
+
+.home-benefits__qualified-card p {
+  margin-top: var(--space-4);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-body);
+}
+
+/* Full-size stacked before/after layers */
+
+.before-after--fixed .before-after__slider {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  cursor: ew-resize;
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.before-after--fixed .before-after__slider:focus-visible {
+  outline: 0.1875rem solid var(--color-focus);
+  outline-offset: 0.25rem;
+}
+
+.before-after--fixed .before-after__image {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+
+.before-after--fixed .before-after__image--before {
+  z-index: 1;
+}
+
+.before-after--fixed .before-after__after-clip {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 0;
+  pointer-events: none;
+  transition: none;
+}
+
+.before-after--fixed .before-after__image--after {
+  width: 100%;
+  height: 100%;
+}
+
+.before-after--fixed .before-after__divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+  width: 2px;
+  transform: translateX(-50%);
+  background: var(--color-white);
+  pointer-events: none;
+  transition: none;
+}
+
+.before-after--fixed .before-after__handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  width: 3rem;
+  height: 3rem;
+  place-items: center;
+  transform: translate(-50%, -50%);
+  border: 2px solid var(--color-white);
+  border-radius: 50%;
+  background: var(--color-forest-deep);
+  box-shadow: var(--shadow-sm);
+}
+
+.before-after--fixed .before-after__arrow {
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 0;
+  transform: translateY(-50%);
+  border-top: 0.4rem solid transparent;
+  border-bottom: 0.4rem solid transparent;
+}
+
+.before-after--fixed .before-after__arrow--left {
+  left: 0.55rem;
+  border-right: 0.55rem solid var(--color-white);
+}
+
+.before-after--fixed .before-after__arrow--right {
+  right: 0.55rem;
+  border-left: 0.55rem solid var(--color-white);
+}
+
+.before-after--fixed .before-after__disclaimer {
+  margin-top: var(--space-4);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+  text-align: center;
+}

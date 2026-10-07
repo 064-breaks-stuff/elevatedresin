@@ -4,35 +4,39 @@ export const services = [
     name: "Resin Bound",
     route: "/services/resin-bound",
     description:
-      "Seamless, slip-resistant, and fully permeable resin-bound driveways and patios built for long-term performance in all conditions.",
+      "A decorative aggregate surface option selected around existing construction, intended use, finish goals, and the complete drainage approach.",
     image: "/images/service-resin-bound.jpeg",
-    imageAlt: "Light-coloured resin-bound surface leading to a home entrance.",
+    imageAlt:
+      "Light-coloured resin-bound surface leading to a home entrance."
   },
   {
     slug: "glow-rock",
     name: "Glow Rock",
     route: "/services/glow-rock",
     description:
-      "Sunlight-absorbing glow stones that naturally illuminate driveways, patios, and pathways at night.",
+      "Selected decorative glow-stone and paving options for suitable outdoor accents. Confirm the exact product and application during planning.",
     image: "/images/service-glow-rock.webp",
-    imageAlt: "Blue-glowing paving slabs across an outdoor patio at night.",
+    imageAlt:
+      "Blue-glowing paving slabs across an outdoor patio at night."
   },
   {
     slug: "rock-crete",
     name: "Rock Crete",
     route: "/services/rock-crete",
     description:
-      "A permeable, durable foundation system designed to support high-performance resin-bound surfaces.",
-   image: "/images/service-rock-crete.jpg",
-   imageAlt: "Finished outdoor surface on a furnished residential terrace.",
+      "A foundation and sub-base option considered as part of an appropriate Resin Rock construction—not an interchangeable decorative surface finish.",
+    image: "/images/service-rock-crete.jpg",
+    imageAlt:
+      "Finished outdoor surface on a furnished residential terrace."
   },
   {
     slug: "resin-wall",
     name: "Resin Wall",
     route: "/services/resin-wall",
     description:
-      "Weatherproof resin wall coatings that match resin-bound surfaces for a cohesive outdoor finish.",
+      "A vertical stone-surfacing option for suitable wall, step, and landscape details, subject to assessment of the proposed application.",
     image: "/images/service-resin-wall.jpg",
-    imageAlt: "Finished retaining wall beside a landscaped lawn.",
+    imageAlt:
+      "Finished retaining wall beside a landscaped lawn."
   }
 ];

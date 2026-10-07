@@ -21,12 +21,13 @@ export default function HomePage() {
     <>
       <Helmet>
         <title>
-          Elevated Resin Creations | Resin-Bound Driveways & Patios in Menasha, WI
+          Elevated Resin Creations | Wisconsin Resin Surfacing Projects
         </title>
         <meta
           name="description"
-          content="Elevated Resin Creations installs premium resin-bound driveways, patios, pathways, pool decks, and outdoor surfaces in Menasha, Wisconsin and surrounding areas."
+          content="Plan resin-bound driveways, patios, pool surrounds, pathways, and landscape details with Elevated Resin Creations. Serving Menasha, surrounding areas, and statewide for qualifying projects."
         />
+        <link rel="canonical" href={`${site.domain}/`} />
       </Helmet>
 
       <HomeHero />
@@ -34,9 +35,9 @@ export default function HomePage() {
 
       <section className="home-transformation section">
         <SectionHeading
-          eyebrow="Planning a Complete Surface Project"
-          title="Start with the space, the conditions, and the result you want."
-          description="A professional project assessment helps determine whether resurfacing may be appropriate for the existing surface and which Resin Rock system may suit the drainage, intended use, and finish requirements."
+          eyebrow="Representative Design Comparison"
+          title="Explore a different finish—not a guaranteed project outcome."
+          description="This illustrative before-and-after pair is not an Elevated Resin Creations installation. Your project begins with an assessment of the existing construction, intended use, drainage, and finish requirements."
         />
 
         <Container>
@@ -52,9 +53,9 @@ export default function HomePage() {
 
       <section className="home-gallery section">
         <SectionHeading
-          eyebrow="Project Gallery"
-          title="Verified project imagery will be added as it is approved."
-          description="Project photography, descriptions, and alt text are published only after they have been verified and approved for Elevated Resin Creations."
+          eyebrow="Installation Gallery"
+          title="Explore approved outdoor-surface examples."
+          description="Browse approved installation photographs across driveway, pool, and decorative applications. These images are not identified as Wisconsin projects; your system and scope will be selected for your own property."
         />
 
         <Container>
@@ -67,8 +68,8 @@ export default function HomePage() {
 
       <QuoteFormSection
         eyebrow="Request a Project Estimate"
-        title="Tell us about the complete outdoor project you are planning."
-        description={`Share your driveway, patio, pool deck, walkway, or landscape project with ${site.name}. We will review the existing surface, intended use, drainage considerations, and project scope with you.`}
+        title="Tell us what your outdoor space needs to handle."
+        description={`Share your location, photographs, approximate area, and project goals with ${site.name}. We will discuss the existing construction, intended use, drainage considerations, and appropriate scope.`}
       />
     </>
   );

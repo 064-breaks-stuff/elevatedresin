@@ -1,8 +1,10 @@
+import { site } from "./site";
+
 export const homeHero = {
-  eyebrow: "Complete Outdoor Resurfacing Projects",
-  title: "Plan a driveway, patio, pool deck, pathway, or landscape transformation.",
+  eyebrow: "Approved Resin Rock Installer",
+  title: "Natural-stone finishes. A project planned around your Wisconsin property.",
   description:
-    "Elevated Resin Creations helps homeowners plan complete resin surfacing projects around the existing surface, drainage, intended use, and finish they want to achieve.",
+    "Explore driveways, patios, pool surrounds, pathways, and landscape details with Elevated Resin Creations. We assess the existing construction, intended use, drainage, and finish requirements before recommending an approach.",
   primaryCta: {
     label: "Request a Project Estimate"
   },
@@ -10,90 +12,226 @@ export const homeHero = {
     label: "Explore Project Types",
     to: "/services"
   },
-  serviceLine:
-    "Serving Menasha, Wisconsin, surrounding areas, and statewide for qualifying projects."
+  serviceLine: site.serviceArea
 };
 
 export const trustItems = [
-  "Project-focused planning",
-  "System selection for suitable surfaces",
-  "Drainage-aware options",
-  "30+ finish options"
+  site.credential,
+  "Existing-surface assessment",
+  "Application-specific system selection",
+  "Drainage-conscious project planning"
 ];
 
 export const resinBoundValue = {
-  eyebrow: "Built for Wisconsin Conditions",
-  title: "Resurface, don’t replace—where the project is suitable.",
+  eyebrow: "Surface and Construction",
+  title: "Resurfacing and a fully permeable build-up are different approaches.",
   paragraphs: [
-    "When an existing concrete or prepared surface is stable, clean, and appropriate for the selected Resin Rock system, resurfacing may offer an alternative to full demolition and replacement. Each project begins with an assessment of the substrate, drainage, intended use, and finish requirements.",
-    "Wisconsin outdoor spaces experience seasonal temperature changes, rain, snowmelt, and freeze/thaw cycles. Where a permeable system and suitable base preparation are selected, water can move through the surface rather than remaining on top, which may help reduce standing water and puddles. Results depend on the selected system, base, installation, and site conditions."
+    "A suitable existing surface may offer an opportunity for resurfacing after assessment and preparation. Active movement, weak areas, and structural failure must be addressed rather than hidden beneath a decorative finish.",
+    "A permeable surface does not establish the drainage performance of the whole installation. The supporting layers, existing slab, grading, soil, outlets, and maintenance determine where water can go. Your project should identify the proposed construction and water-management approach.",
+    "For Wisconsin projects, discuss rain and snowmelt, winter maintenance, vehicle or foot traffic, and installation conditions before choosing a finish."
   ],
   cta: {
-    label: "Explore Project Types",
-    to: "/services"
+    label: "Explore Resin Bound",
+    to: "/services/resin-bound"
   }
 };
+
+export const homeBenefitItems = [
+  {
+    title: "A coordinated stone finish",
+    description:
+      "Explore aggregate colours and borders that complement your home, garden, and connected outdoor spaces."
+  },
+  {
+    title: "Resurfacing where suitable",
+    description:
+      "Discuss whether existing construction can remain after assessment. Suitability—not appearance alone—determines the preparation required."
+  },
+  {
+    title: "Water management considered",
+    description:
+      "Choose the surface and supporting construction together. Permeability and drainage must be evaluated for the actual proposed system."
+  },
+  {
+    title: "Details designed around use",
+    description:
+      "Include vehicle access, walking routes, pool edges, thresholds, and planting-bed boundaries in the scope."
+  },
+  {
+    title: "System-specific care",
+    description:
+      "Request cleaning, snow-clearing, deicing, and return-to-use guidance for the exact products installed."
+  },
+  {
+    title: "A clear project scope",
+    description:
+      "Understand what stays, what is prepared or replaced, which system is proposed, and how access will be managed."
+  }
+];
 
 export const processSteps = [
   {
     number: "01",
-    title: "Tell us about your project",
+    title: "Share the project",
     description:
-      "Share the type of outdoor space you want to transform and any details that will help us understand your project."
+      "Send your location, photographs, approximate area, intended use, and any drainage or access concerns."
   },
   {
     number: "02",
-    title: "We review your space and requirements",
+    title: "Assess the construction",
     description:
-      "We consider the intended use of the area, the existing surface, and the preparation needed for the right system."
+      "Review the existing surface, preparation needs, transitions, drainage, and suitability for the proposed application."
   },
   {
     number: "03",
-    title: "Choose the right system and finish",
+    title: "Confirm the system and scope",
     description:
-      "Select the appropriate Resin Rock solution and finish for your driveway, patio, pathway, pool area, wall, or commercial space."
+      "Agree on the finish, foundation approach where needed, boundaries, preparation, and project-specific scheduling conditions."
   },
   {
     number: "04",
-    title: "Transform your outdoor space",
+    title: "Install, protect, and hand over",
     description:
-      "Move forward with a refined resin-bound surface designed to deliver a seamless, durable, and low-maintenance finish."
+      "Follow the selected system’s installation requirements, confirm when the area can return to use, and provide applicable care guidance."
   }
 ];
 
 export const comparisonRows = [
   {
-    feature: "Surface and finish options",
-    resinBound: "Multiple aggregate and finish options",
-    looseGravel: "Limited containment and finish control",
-    pavers: "Multiple styles and layouts",
-    concrete: "Finish options vary by installation"
+    feature: "Finish and design",
+    resinBound: "Aggregate finish with application-specific borders and details",
+    looseGravel: "Loose aggregate with edging and containment to consider",
+    pavers: "Unit styles, joint patterns, borders, and layouts",
+    concrete: "Plain or decorative finishes with joint details"
   },
   {
-    feature: "Drainage approach",
-    resinBound: "Permeable systems may be suitable with the right base",
-    looseGravel: "Varies by aggregate, base, and containment",
-    pavers: "Varies by paver, joint, base, and layout",
-    concrete: "Depends on slope, joints, and drainage design"
+    feature: "Water management",
+    resinBound: "Confirm surface permeability and the complete drainage build-up",
+    looseGravel: "Assess aggregate, supporting layers, grading, and runoff",
+    pavers: "Confirm whether the proposed assembly is permeable or conventionally drained",
+    concrete: "Distinguish conventional dense concrete from a designed pervious system"
   },
   {
-    feature: "Project suitability",
-    resinBound: "Depends on substrate, traffic, drainage, and system selection",
-    looseGravel: "Depends on containment, maintenance, and intended use",
-    pavers: "Depends on base preparation, layout, and intended use",
-    concrete: "Depends on condition, drainage, and replacement scope"
+    feature: "Existing construction",
+    resinBound: "Assess substrate suitability before proposing an overlay",
+    looseGravel: "Assess support, containment, levels, and intended traffic",
+    pavers: "Assess the base, levels, edge restraint, and installation scope",
+    concrete: "Assess whether repair, resurfacing, or replacement is appropriate"
   },
   {
-    feature: "Maintenance needs",
-    resinBound: "Maintenance needs vary by system and site conditions",
-    looseGravel: "Regular raking and aggregate management may be needed",
-    pavers: "Joint, settlement, and weed management may be needed",
-    concrete: "Cleaning, joint, and crack maintenance may be needed"
+    feature: "Wisconsin winter use",
+    resinBound: "Request system-specific snow-clearing and deicing guidance",
+    looseGravel: "Discuss snow-clearing equipment and aggregate displacement",
+    pavers: "Discuss joints, levels, drainage, and winter-maintenance guidance",
+    concrete: "Request finish-specific winter care and deicing guidance"
+  },
+  {
+    feature: "Cost and maintenance",
+    resinBound: "Compare preparation, installation, and documented care requirements",
+    looseGravel: "Compare installation scope and ongoing aggregate management",
+    pavers: "Compare installation scope and joint or settlement maintenance",
+    concrete: "Compare installation scope and cleaning, joint, or repair requirements"
   }
 ];
 
 export const homepageFaqIds = [
   "base-condition",
+  "permeability",
   "maintenance",
   "pricing"
+];
+
+/*
+ * Internal evidence inventory.
+ * These entries are dependencies, not publishable metrics.
+ * Do not render pending values as counters or performance claims.
+ */
+export const homepageMetricDependencies = [
+  {
+    id: "business-proof",
+    placement: "Trust/proof",
+    requestedMetrics: [
+      "Completed project count",
+      "Installed square footage",
+      "Years operating",
+      "Review rating and review count"
+    ],
+    value: null,
+    unit: null,
+    source: null,
+    applicableService: "Elevated Resin Creations",
+    reportingDate: null,
+    qualification: "Requires dated business records or verified review evidence.",
+    status: "pending",
+    publishable: false
+  },
+  {
+    id: "featured-project",
+    placement: "Featured project",
+    requestedMetrics: [
+      "Project area",
+      "Verified location",
+      "Installation duration",
+      "Documented outcome"
+    ],
+    value: null,
+    unit: null,
+    source: null,
+    applicableService: "A specific approved project",
+    reportingDate: null,
+    qualification: "Requires project records tied to the displayed installation.",
+    status: "pending",
+    publishable: false
+  },
+  {
+    id: "product-performance",
+    placement: "Benefits/comparison",
+    requestedMetrics: [
+      "Tested product performance",
+      "Documented maintenance requirements",
+      "Comparable project cost figures"
+    ],
+    value: null,
+    unit: null,
+    source: null,
+    applicableService: "The exact installed system and application",
+    reportingDate: null,
+    qualification:
+      "Requires original evidence, test conditions, comparator, and system identification.",
+    status: "pending",
+    publishable: false
+  },
+  {
+    id: "installation-and-opening",
+    placement: "Process",
+    requestedMetrics: [
+      "Installation window",
+      "Pedestrian opening time",
+      "Vehicle opening time"
+    ],
+    value: null,
+    unit: null,
+    source: null,
+    applicableService: "The exact installed system",
+    reportingDate: null,
+    qualification: "Requires current guidance with weather and project conditions.",
+    status: "pending",
+    publishable: false
+  },
+  {
+    id: "warranty-and-response",
+    placement: "Warranty/final CTA",
+    requestedMetrics: [
+      "Written warranty duration",
+      "Verified response-time commitment"
+    ],
+    value: null,
+    unit: null,
+    source: null,
+    applicableService: "Elevated Resin Creations",
+    reportingDate: null,
+    qualification: "Requires approved written terms and applicable exclusions.",
+    status: "pending",
+    publishable: false
+  }
 ];
