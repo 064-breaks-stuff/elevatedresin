@@ -6254,3 +6254,467 @@
     height: 2.5rem;
   }
 }
+
+/* Standalone application pages: patios, pools, pathways, landscapes */
+
+.application-page {
+  min-width: 0;
+}
+
+.application-page .application-page__heading {
+  max-width: 48rem;
+}
+
+.application-page .application-page__heading h1,
+.application-page .application-page__heading h2 {
+  margin-top: var(--space-4);
+}
+
+.application-page .application-page__heading h1 {
+  font-size: clamp(2.5rem, 4.8vw, 4.8rem);
+  line-height: 1.06;
+}
+
+.application-page .application-page__heading > p:not(.eyebrow) {
+  margin-top: var(--space-5);
+  color: var(--color-text-muted);
+}
+
+.application-page .application-page__heading .application-page__service-area {
+  color: var(--color-forest);
+  font-size: var(--font-size-sm);
+}
+
+.application-page .application-page__split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
+}
+
+.application-page .application-page__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-5);
+  margin-top: var(--space-6);
+}
+
+.application-page .button {
+  line-height: 1.3;
+}
+
+.application-page a:not(.button) {
+  color: var(--color-forest);
+  font-weight: 700;
+  text-underline-offset: 0.2em;
+}
+
+.application-page a:not(.button):hover {
+  text-decoration: underline;
+}
+
+.application-page .application-page__photo {
+  min-width: 0;
+  margin: 0;
+}
+
+.application-page .application-page__photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--radius-lg);
+}
+
+.application-page .application-page__photo figcaption {
+  margin-top: var(--space-3);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  line-height: 1.5;
+}
+
+.application-page .application-page__cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-6);
+  margin-top: var(--space-8);
+}
+
+.application-page .application-page__cards article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-white);
+}
+
+.application-page .application-page__cards p,
+.application-page .application-page__text-item p {
+  margin-top: var(--space-4);
+  color: var(--color-text-muted);
+}
+
+.application-page .application-page__cards a {
+  margin-top: auto;
+  padding-top: var(--space-5);
+  font-size: var(--font-size-sm);
+}
+
+.application-page .application-page__text-item {
+  margin-top: var(--space-6);
+}
+
+.application-page .application-page__checklist {
+  display: grid;
+  gap: var(--space-5);
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.application-page .application-page__checklist li {
+  padding-left: var(--space-2);
+}
+
+.application-page .application-page__gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-6);
+  margin-top: var(--space-8);
+}
+
+.application-page .application-page__steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-8);
+  margin-top: var(--space-8);
+  padding-left: 1.5rem;
+  list-style: decimal;
+}
+
+.application-page .application-page__steps li {
+  padding-left: var(--space-2);
+}
+
+.application-page .application-page__steps p {
+  margin-top: var(--space-4);
+  color: var(--color-text-muted);
+}
+
+.application-page .application-page__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-5);
+  margin-top: var(--space-8);
+  font-size: var(--font-size-sm);
+}
+
+.application-page .application-page__faqs {
+  max-width: 60rem;
+  margin-top: var(--space-12);
+}
+
+.application-page .application-page__faqs > h2 {
+  margin-bottom: var(--space-6);
+}
+
+.application-page .application-page__faqs details {
+  margin-top: var(--space-3);
+  padding: var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-white);
+}
+
+.application-page .application-page__faqs summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.application-page .application-page__faqs summary:focus-visible {
+  outline: 0.1875rem solid var(--color-focus);
+  outline-offset: 0.25rem;
+}
+
+.application-page .application-page__faqs details p {
+  margin-top: var(--space-4);
+  color: var(--color-text-muted);
+}
+
+.application-page .application-page__cta {
+  background: var(--color-sand);
+}
+
+.application-page .application-page__cta-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(15rem, 0.5fr);
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.application-page .application-page__cta .application-page__actions {
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 0;
+}
+
+/* Patio composition */
+
+.patios-page__hero {
+  padding-block: clamp(3rem, 6vw, 6rem);
+  background: var(--color-mist);
+}
+
+.patios-page__hero h1 {
+  max-width: 17ch;
+}
+
+.patios-page__hero .application-page__photo img {
+  aspect-ratio: 4 / 5;
+}
+
+.patios-page__design,
+.patios-page__gallery {
+  background: var(--color-white);
+}
+
+.patios-page__seasonal {
+  background: var(--color-sand);
+}
+
+.patios-page__design {
+  scroll-margin-top: 7rem;
+}
+
+.patios-page__planning {
+  background: var(--color-mist);
+}
+
+/* Pool composition: wide hero and separate wet-area/edge sections */
+
+.pool-decks-page__hero {
+  padding-block: clamp(3rem, 6vw, 6rem);
+  background: var(--color-mist);
+}
+
+.pool-decks-page__hero .application-page__heading {
+  max-width: 58rem;
+}
+
+.pool-decks-page__hero h1 {
+  max-width: 21ch;
+}
+
+.pool-decks-page .pool-decks-page__hero-photo {
+  margin-top: var(--space-8);
+}
+
+.pool-decks-page .pool-decks-page__hero-photo img {
+  aspect-ratio: 16 / 7;
+}
+
+.pool-decks-page__wet,
+.pool-decks-page__systems,
+.pool-decks-page__questions {
+  background: var(--color-white);
+}
+
+.pool-decks-page__details {
+  background: var(--color-sand);
+}
+
+.pool-decks-page__gallery {
+  background: var(--color-mist);
+}
+
+.pool-decks-page__questions .application-page__faqs {
+  margin-top: 0;
+}
+
+/* Pathway composition: image-led hero and route list */
+
+.walkways-page__hero {
+  padding-block: clamp(3rem, 6vw, 6rem);
+  background: var(--color-sand);
+}
+
+.walkways-page__hero h1 {
+  max-width: 17ch;
+}
+
+.walkways-page__hero .application-page__photo img {
+  aspect-ratio: 4 / 5;
+}
+
+.walkways-page__connections,
+.walkways-page__weather {
+  background: var(--color-white);
+}
+
+.walkways-page__transitions,
+.walkways-page__examples {
+  background: var(--color-mist);
+}
+
+.walkways-page__route-list {
+  display: grid;
+  margin-top: var(--space-8);
+}
+
+.walkways-page__route-list article {
+  display: grid;
+  grid-template-columns: minmax(0, 0.6fr) minmax(0, 1fr);
+  gap: var(--space-6);
+  padding-block: var(--space-6);
+  border-top: 1px solid var(--color-border);
+}
+
+.walkways-page__route-list p {
+  color: var(--color-text-muted);
+}
+
+.walkways-page__examples-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: var(--space-8);
+}
+
+.walkways-page .walkways-page__faq-panel {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin-top: var(--space-5);
+}
+
+/* Landscape composition: wide integration hero and asymmetric gallery */
+
+.landscape-page__hero {
+  padding-block: clamp(3rem, 6vw, 6rem);
+  background: var(--color-mist);
+}
+
+.landscape-page__hero .application-page__heading {
+  max-width: 58rem;
+}
+
+.landscape-page__hero h1 {
+  max-width: 22ch;
+}
+
+.landscape-page .landscape-page__hero-photo {
+  margin-top: var(--space-8);
+}
+
+.landscape-page .landscape-page__hero-photo img {
+  aspect-ratio: 21 / 9;
+}
+
+.landscape-page__applications,
+.landscape-page__care {
+  background: var(--color-white);
+}
+
+.landscape-page__borders {
+  background: var(--color-sand);
+}
+
+.landscape-page__gallery {
+  background: var(--color-mist);
+}
+
+.landscape-page__care-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: clamp(2rem, 5vw, 5rem);
+}
+
+.landscape-page__system-list {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.landscape-page__system-list article {
+  padding: var(--space-6);
+  border-left: 3px solid var(--color-forest);
+  background: var(--color-mist);
+}
+
+.landscape-page__system-list p {
+  margin-top: var(--space-4);
+  color: var(--color-text-muted);
+}
+
+.landscape-page__system-list a {
+  display: inline-block;
+  margin-top: var(--space-5);
+  font-size: var(--font-size-sm);
+}
+
+.landscape-page__gallery-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: var(--space-6);
+  margin-top: var(--space-8);
+}
+
+/* Responsive application layouts */
+
+@media (max-width: 68rem) {
+  .application-page .application-page__split,
+  .application-page .application-page__cta-layout,
+  .landscape-page__care-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .application-page .application-page__cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .patios-page__hero .application-page__photo img,
+  .walkways-page__hero .application-page__photo img {
+    aspect-ratio: 16 / 10;
+  }
+}
+
+@media (max-width: 42rem) {
+  .application-page .application-page__heading h1 {
+    font-size: clamp(2.4rem, 10vw, 3.5rem);
+  }
+
+  .application-page .application-page__cards,
+  .application-page .application-page__gallery,
+  .application-page .application-page__steps,
+  .walkways-page__route-list article,
+  .walkways-page__examples-layout,
+  .landscape-page__gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .application-page .application-page__actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .application-page .application-page__actions .button {
+    width: 100%;
+  }
+
+  .application-page .application-page__cta .application-page__actions {
+    align-items: stretch;
+  }
+
+  .pool-decks-page .pool-decks-page__hero-photo img,
+  .landscape-page .landscape-page__hero-photo img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .walkways-page .walkways-page__faq-panel {
+    grid-column: auto;
+  }
+}
