@@ -80,12 +80,12 @@ export const rockCretePage = {
         "Consider foundation requirements for suitable patios, pathways, and coordinated outdoor areas."
     },
     {
-      title: "Commercial Projects",
+      title: "Commercial Surfaces",
       description:
         "Confirm project-specific loading and specification requirements before recommending a construction."
     },
     {
-      title: "Decorative Integration",
+      title: "Glow Rock Pairing",
       description:
         "Discuss compatibility with selected finished surfaces and Glow Rock details without treating an accent as structural evidence."
     }

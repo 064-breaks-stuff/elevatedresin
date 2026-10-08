@@ -16,12 +16,6 @@ const workmanshipImages = [
     className: "about-workmanship__item--tall"
   },
   {
-    id: "resin-wall",
-    src: "/images/about-workmanship-resin-wall.jpg",
-    alt: "Close view of a finished textured retaining-wall surface.",
-    className: "about-workmanship__item--standard"
-  },
-  {
     id: "glow-driveway",
     src: "/images/about-workmanship-glow-driveway.jpg",
     alt: "Blue-glowing geometric driveway pattern outside a residential property at dusk.",

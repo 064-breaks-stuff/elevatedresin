@@ -64,8 +64,6 @@ export const aboutPage = {
 
   workmanship: {
     eyebrow: "Workmanship & Project Inspiration",
-    title: "A placeholder for approved Elevated Resin Creations project imagery.",
-    description:
-      "Replace these placeholders only with approved project visuals and final descriptive alt text. Do not add project locations, square footage, duration, or outcome claims unless verified."
+    title: "Elevated Resin Creations project imagery."
   }
 };

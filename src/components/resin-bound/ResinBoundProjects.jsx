@@ -19,14 +19,8 @@ const projectImages = [
     className: "resin-bound-projects__item--tall"
   },
   {
-    id: "resin-screened-patio",
-    src: "/images/resin-bound-project-screened-patio.jpg",
-    alt: "Dark speckled resin-bound surface in a screened outdoor living area.",
-    className: "resin-bound-projects__item--standard"
-  },
-  {
     id: "resin-driveway",
-    src: "/images/resin-bound-project-driveway.jpg",
+    src: "/images/about-resin-driveway.jpg",
     alt: "Light-coloured resin-bound driveway leading to a residential entrance.",
     className: "resin-bound-projects__item--standard"
   }

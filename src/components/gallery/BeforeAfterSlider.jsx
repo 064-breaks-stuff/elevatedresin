@@ -90,7 +90,7 @@ export default function BeforeAfterSlider() {
       >
         <img
           className="before-after__image before-after__image--before"
-          src="/images/before-after-representative-before.png"
+          src="/images/before.jpg"
           alt="Representative driveway before resurfacing."
           draggable={false}
           loading="lazy"
@@ -105,7 +105,7 @@ export default function BeforeAfterSlider() {
         >
           <img
             className="before-after__image before-after__image--after"
-            src="/images/before-after-representative-after.png"
+            src="/images/after.jpg"
             alt="Representative driveway with a warm-coloured aggregate finish."
             draggable={false}
             loading="lazy"

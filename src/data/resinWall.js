@@ -50,7 +50,7 @@ export const resinWallPage = {
         "Assess suitable outdoor wall faces for a decorative stone-surfacing application."
     },
     {
-      title: "Step Faces",
+      title: "Steps",
       description:
         "Consider selected vertical risers and details separately from the walking surface."
     },

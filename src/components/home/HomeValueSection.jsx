@@ -9,7 +9,7 @@ export default function HomeValueSection() {
       <Container className="home-value__grid">
         <div className="home-value__visual">
           <img
-            src="/images/home-resin-bound-landscape-path.png"
+            src="/images/resin-path.jpg"
             alt="Curved light-coloured resin-bound path through landscaped garden beds."
             loading="lazy"
           />

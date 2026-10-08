@@ -32,7 +32,7 @@ export default function HomeHero() {
 
         <div className="home-hero__visual">
           <img
-            src="/images/home-resin-driveway-hero.jpg"
+            src="/images/home-driveway.jpg"
             alt="Completed resin driveway with a multicolored aggregate surface outside a residential property."
             fetchPriority="high"
           />

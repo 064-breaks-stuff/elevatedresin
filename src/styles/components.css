@@ -6902,7 +6902,7 @@
   }
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 48rem) {r
   .glow-rock-design-options .glow-rock-design-options__grid {
     grid-template-columns: 1fr;
   }

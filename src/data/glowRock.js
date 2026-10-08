@@ -75,7 +75,7 @@ export const glowRockPage = {
 
   applications: [
     {
-      title: "Driveway Details",
+      title: "Driveways",
       description:
         "Discuss selected decorative details only where the product and vehicular specification support the proposed use."
     },

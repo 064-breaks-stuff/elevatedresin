@@ -1,15 +1,10 @@
 import { Helmet } from "react-helmet-async";
-import { CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 import Container from "../components/common/Container";
-import Eyebrow from "../components/common/Eyebrow";
-import { contactPage } from "../data/contactPage";
 import { site } from "../data/site";
 
 export default function ThankYouPage() {
-  const { thankYou } = contactPage;
-
   return (
     <>
       <Helmet>
@@ -17,29 +12,59 @@ export default function ThankYouPage() {
 
         <meta
           name="description"
-          content="Your Elevated Resin Creations quote request has been received."
+          content="Thank you for contacting Elevated Resin Creations about your outdoor surface project."
         />
+
+        <meta name="robots" content="noindex, follow" />
       </Helmet>
 
-      <section className="thank-you-page">
+      <section
+        className="thank-you-page section"
+        aria-labelledby="thank-you-title"
+      >
         <Container className="thank-you-page__content">
           <div className="thank-you-page__icon" aria-hidden="true">
-            <CheckCircle2 size={42} strokeWidth={1.6} />
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              focusable="false"
+            >
+              <path d="m5 12 4 4L19 6" />
+            </svg>
           </div>
 
-          <Eyebrow>{thankYou.eyebrow}</Eyebrow>
+          <p className="eyebrow">Project Enquiry</p>
 
-          <h1>{thankYou.title}</h1>
+          <h1 id="thank-you-title">
+            Thank you for getting in touch.
+          </h1>
 
-          <p>{thankYou.description}</p>
+          <p>
+            Your project enquiry is the starting point for a conversation
+            about your property, intended use, existing construction,
+            drainage, and finish preferences.
+          </p>
+
+          <p>
+            Keep any photographs, approximate measurements, and questions
+            about access or drainage handy for the next discussion.
+            Submitting an enquiry does not confirm an installation booking
+            or a final project estimate.
+          </p>
 
           <div className="thank-you-page__actions">
             <Link className="button button--primary" to="/">
-              <span>Return Home</span>
+              Return to Homepage
             </Link>
 
-            <Link className="button button--secondary" to="/projects">
-              <span>View Recent Projects</span>
+            <Link className="button button--secondary" to="/services">
+              Explore Surface Options
             </Link>
           </div>
         </Container>
