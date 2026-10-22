@@ -4,28 +4,74 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17899719659"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-17899719659');
+    </script>
+
+    <!-- Event snippet for Click to call conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+          'send_to': 'AW-17899719659/S_OOCIGdhqUdEOuXoNdC',
+          'value': 1.0,
+          'currency': 'USD',
+          'event_callback': callback
+        });
+        return false;
+      }
+    </script>
+
+    <script>
+      // Add the requested onclick attribute to phone links rendered by React.
+      document.addEventListener('DOMContentLoaded', function () {
+        function attachPhoneHandler(root) {
+          if (root.nodeType !== 1) return;
+          if (root.matches('a[href^="tel:"]')) {
+            root.setAttribute('onclick', 'return gtag_report_conversion(this.href);');
+          }
+          root.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
+            link.setAttribute('onclick', 'return gtag_report_conversion(this.href);');
+          });
+        }
+
+        attachPhoneHandler(document.body);
+        var observer = new MutationObserver(function (records) {
+          records.forEach(function (record) {
+            record.addedNodes.forEach(attachPhoneHandler);
+          });
+        });
+        observer.observe(document.body, { childList: true, subtree: true });
+      });
+    </script>
+
     <meta
       name="description"
       content="Elevated Resin Creations installs premium resin-bound outdoor surfaces for homes and commercial properties in Menasha, Wisconsin and surrounding areas."
     />
-
     <meta name="theme-color" content="#102D22" />
-
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="manifest" href="/site.webmanifest" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
     <title>Elevated Resin Creations</title>
-
     <script src="https://link.msgsndr.com/js/form_embed.js" defer></script>
   </head>
-
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>

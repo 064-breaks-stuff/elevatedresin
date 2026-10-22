@@ -8,14 +8,9 @@ import { site } from "../../data/site";
 import DesktopNavigation from "./DesktopNavigation";
 import MobileNavigation from "./MobileNavigation";
 
-export default function Header() {
+function HeaderContent() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuButtonRef = useRef(null);
-  const location = useLocation();
-
-  useEffect(() => {
-    setIsMenuOpen(false);
-  }, [location.pathname]);
 
   useEffect(() => {
     document.body.classList.toggle("is-menu-open", isMenuOpen);
@@ -33,10 +28,7 @@ export default function Header() {
     };
 
     window.addEventListener("keydown", handleKeyDown);
-
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-    };
+    return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
 
   const closeMenu = () => {
@@ -52,19 +44,17 @@ export default function Header() {
           to="/"
           aria-label={`${site.name} home`}
         >
-
-        <img
-          className="site-header__brand-logo"
-          src="/images/elevated-resin-creations-logo.png"
-          alt="Elevated Resin Creations"
-        />
+          <img
+            className="site-header__brand-logo"
+            src="/images/elevated-resin-creations-logo.png"
+            alt="Elevated Resin Creations"
+          />
         </Link>
 
         <DesktopNavigation />
 
         <div className="site-header__actions">
           <QuoteCTA className="site-header__cta" />
-
           <button
             ref={menuButtonRef}
             className="site-header__menu-button"
@@ -84,4 +74,9 @@ export default function Header() {
       </div>
     </header>
   );
+}
+
+export default function Header() {
+  const { pathname } = useLocation();
+  return <HeaderContent key={pathname} />;
 }
