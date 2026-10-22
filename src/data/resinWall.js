@@ -1,95 +1,72 @@
 export const resinWallPage = {
-  hero: {
-    eyebrow: "Vertical Stone-Surfacing Options",
-    title: "Resin Wall for Suitable Walls, Step Faces & Vertical Details",
-    description:
-      "Discuss Resin Rock Vertical Binder for an assessed vertical stone-surfacing application. Substrate condition, exposure, preparation, and finish requirements determine suitability."
+  "hero": {
+    "eyebrow": "Vertical Stone-Surfacing Options",
+    "title": "Carry the stone detail onto suitable vertical faces.",
+    "description": "Explore selected wall faces, step risers, edges, and landscape details using Resin Rock Vertical Binder. Coordinate appearance while assessing vertical preparation, substrate, exposure, and finish requirements separately."
   },
-
-  introduction: {
-    eyebrow: "Beyond Horizontal Surfaces",
-    title: "Coordinate vertical details with the wider outdoor design.",
-    paragraphs: [
-      "Elevated Resin Creations can assess selected walls, step faces, edges, and decorative features for appropriate vertical stone surfacing.",
-      "The vertical application requires its own specification and preparation. Do not transfer horizontal-surface drainage, loading, or maintenance claims to a wall finish."
+  "introduction": {
+    "eyebrow": "A Finish Beyond the Ground",
+    "title": "Connect the design without treating every surface the same.",
+    "paragraphs": [
+      "Vertical Binder is an option for suitable vertical aggregate finishes. Selected wall faces and landscape details can be considered alongside nearby stone colors and textures.",
+      "The vertical system requires its own substrate and preparation specification. It does not stabilize failing walls, correct water ingress, or establish suitability for step treads. Assess condition, moisture, joints, exposure, and edges first."
     ]
   },
-
-  features: [
+  "features": [
     {
-      title: "Vertical Application Assessment",
-      description:
-        "Confirm the proposed face, existing material, condition, and exposure."
+      "title": "Vertical Application Assessment",
+      "description": "Identify the face, riser, edge, or feature and its existing construction."
     },
     {
-      title: "Specified Preparation",
-      description:
-        "Establish substrate suitability and preparation requirements before installation."
+      "title": "Specified Preparation",
+      "description": "Assess adhesion preparation, moisture, joints, and exposure using current instructions."
     },
     {
-      title: "Coordinated Appearance",
-      description:
-        "Consider colour and detail relationships with neighbouring paths, patios, and landscape surfaces."
+      "title": "Coordinated Appearance",
+      "description": "Compare colors and details with paths, patios, coping, and planting."
     },
     {
-      title: "Product-Specific Selection",
-      description:
-        "Confirm the actual materials and installation approach for the vertical application."
+      "title": "Product-Specific Selection",
+      "description": "Use the actual vertical system; do not transfer horizontal mixing, loading, or drainage claims."
     },
     {
-      title: "Landscape Integration",
-      description:
-        "Plan suitable decorative faces alongside the wider landscape project without treating them as structural repairs."
+      "title": "Landscape Integration",
+      "description": "Keep structural wall repairs, retaining-wall engineering, and waterproofing separate from decorative finishes."
     }
   ],
-
-  applications: [
+  "applications": [
     {
-      title: "Walls",
-      description:
-        "Assess suitable outdoor wall faces for a decorative stone-surfacing application."
+      "title": "Walls",
+      "description": "Explore assessed wall faces with structural and water-management needs handled separately."
     },
     {
-      title: "Steps",
-      description:
-        "Consider selected vertical risers and details separately from the walking surface."
+      "title": "Steps",
+      "description": "Consider suitable vertical risers. Walking treads need a separate horizontal finish and use assessment."
     },
     {
-      title: "Vertical Edges",
-      description:
-        "Review suitable edge faces where a coordinated appearance is desired."
+      "title": "Vertical Edges",
+      "description": "Define terminations, corners, and neighboring materials within the scope."
     },
     {
-      title: "Decorative Features",
-      description:
-        "Assess selected landscape features for the appropriate vertical specification."
+      "title": "Decorative Features",
+      "description": "Assess selected planters or decorative faces individually rather than assuming universal substrate suitability."
     }
   ],
-
-  continuity: {
-    eyebrow: "Coordinated Design",
-    title: "Horizontal and vertical finishes need separate specifications.",
-    description:
-      "Explore how suitable vertical details can complement nearby horizontal surfaces. The images illustrate different applications, not a matched project or proof that the same product is used in both."
+  "continuity": {
+    "eyebrow": "Coordinated Appearance, Separate Specifications",
+    "title": "Connect the palette across horizontal and vertical details.",
+    "description": "These images illustrate separate settings, not a matched project or proof of identical materials. Confirm the actual finish and substrate for every face."
   },
-
-  gallery: {
-    eyebrow: "Landscape and Surface Examples",
-    title: "Explore horizontal settings and vertical detail examples.",
-    description:
-      "This gallery includes horizontal resin-bound surfaces and vertical landscape details. Not every image shows Vertical Binder; the photographs are not identified as Wisconsin installations."
+  "gallery": {
+    "eyebrow": "Landscape and Surface References",
+    "title": "Look at the setting, then identify the actual application.",
+    "description": "This gallery includes horizontal surfaces and vertical details. Not every image shows Vertical Binder, and the photographs are not identified as Elevated Resin Creations or Wisconsin projects."
   },
-
-  faq: {
-    eyebrow: "Vertical Application Questions",
-    title: "Discuss the substrate, finish, and maintenance requirements.",
-    description:
-      "Confirm the proposed application and care instructions. Decorative surfacing must not be represented as a repair for structural wall failure."
+  "faq": {
+    "eyebrow": "Vertical Application Questions",
+    "title": "Start with the face you want to finish.",
+    "description": "Discuss substrate, moisture, edges, finish, and care. Decorative surfacing does not replace structural repairs or a horizontal walking-surface specification."
   }
 };
 
-export const resinWallFaqIds = [
-  "base-condition",
-  "maintenance",
-  "pricing"
-];
+export const resinWallFaqIds = ["base-condition", "maintenance", "pricing"];

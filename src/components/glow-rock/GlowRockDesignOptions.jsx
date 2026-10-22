@@ -4,44 +4,21 @@ import { glowRockPage } from "../../data/glowRock";
 
 export default function GlowRockDesignOptions() {
   const { designOptions } = glowRockPage;
-
   return (
     <section className="glow-rock-design-options section">
       <Container>
-        <SectionHeading
-          eyebrow={designOptions.eyebrow}
-          title={designOptions.title}
-          description={designOptions.description}
-        />
-
+        <SectionHeading eyebrow={designOptions.eyebrow} title={designOptions.title} description={designOptions.description} />
         <div className="glow-rock-design-options__grid">
           <figure className="glow-rock-design-options__card">
-            <img
-              src="/images/glow-rock-design-options-glow-stones.png"
-              alt="Glow Stone product features showing available sizes, colours, and applications."
-              loading="lazy"
-            />
-            <figcaption>
-              Glow Stone options for illuminated aggregate and decorative surface applications.
-            </figcaption>
+            <img src="/images/glow-rock-design-options-glow-stones.png" alt="Glow Stone product features showing available sizes, colours, and applications." loading="lazy" />
+            <figcaption>Glow Stone product reference: confirm the exact format, current data, and proposed use.</figcaption>
           </figure>
-
           <figure className="glow-rock-design-options__card">
-            <img
-              src="/images/glow-rock-design-options-discovery-combo.png"
-              alt="Glow Path Discovery Combo pavers showing multiple sizes, textures, colours, and laying patterns."
-              loading="lazy"
-            />
-            <figcaption>
-              Glow Path Discovery Combo paver options for creative pathway, patio, and driveway designs.
-            </figcaption>
+            <img src="/images/glow-rock-design-options-discovery-combo.png" alt="Glow Path Discovery Combo pavers showing multiple sizes, textures, colours, and laying patterns." loading="lazy" />
+            <figcaption>Discovery Combo manufactured paving reference: not the same format as loose glow aggregate.</figcaption>
           </figure>
         </div>
-
-        <p className="glow-rock-design-options__disclaimer">
-          Product availability, colours, formats, and specifications are subject to
-          manufacturer availability and project requirements.
-        </p>
+        <p className="glow-rock-design-options__disclaimer">Manufacturer sheets are product references, not evidence of installed brightness, duration, safety, or compatibility with every surface. Confirm current availability and the exact proposed specification.</p>
       </Container>
     </section>
   );

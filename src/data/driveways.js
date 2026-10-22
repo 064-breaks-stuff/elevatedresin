@@ -1,202 +1,163 @@
 export const drivewaysPage = {
-  pageTitle: "Wisconsin Driveway Resurfacing | Elevated Resin Creations",
-  metaDescription:
-    "Explore driveway resurfacing with Elevated Resin Creations in Menasha and surrounding Wisconsin areas. Plan around your existing base, vehicle use, drainage, and winter maintenance.",
-  route: "/driveways",
-
-  hero: {
-    eyebrow: "Wisconsin Driveway Projects",
-    title: "A new driveway finish starts with what’s underneath.",
-    description:
-      "Plan a driveway that complements your home without overlooking the practical questions: the condition of your existing surface, everyday vehicle use, water movement, and winter maintenance. Elevated Resin Creations assesses those details before recommending a Resin Bound surface or a Rock Crete foundation approach.",
-    ctaLabel: "Request Your Driveway Estimate",
-    image: {
-      src: "/images/home-gallery-driveway-light.jpg",
-      alt: "Light-coloured driveway leading to a residential garage and entrance."
+  "pageTitle": "Wisconsin Driveway Resurfacing | Elevated Resin Creations",
+  "metaDescription": "Explore natural-stone driveway resurfacing in Menasha and qualifying Wisconsin areas. Plan the existing base, finish, vehicle use, drainage, and winter care.",
+  "route": "/driveways",
+  "hero": {
+    "eyebrow": "Wisconsin Driveway Projects",
+    "title": "A natural-stone driveway finish that belongs with your home.",
+    "description": "Explore coordinated aggregate colors, borders, and entrance details without loose gravel moving across the driveway. Assess existing construction, vehicle use, drainage, and winter care before choosing an overlay or a different build-up.",
+    "ctaLabel": "Request Your Driveway Estimate",
+    "image": {
+      "src": "/images/home-gallery-driveway-light.jpg",
+      "alt": "Light-coloured driveway leading to a residential garage and entrance."
     }
   },
-
-  assessment: {
-    eyebrow: "Before Choosing a Finish",
-    title: "Can your existing driveway be resurfaced?",
-    description:
-      "Resurfacing is an option to assess—not a promise that every concrete driveway can be covered. Your estimate should establish what can stay, what needs preparation, and whether the project requires a different foundation approach.",
-    items: [
+  "assessment": {
+    "eyebrow": "Before Choosing a Finish",
+    "title": "Can your existing driveway be resurfaced?",
+    "description": "A suitable concrete or asphalt base may offer an opportunity to renew the appearance without full removal. Establish what is sound, what needs preparation, and how water will leave the driveway. An overlay does not stabilize a moving or failed base.",
+    "items": [
       {
-        title: "Existing surface and movement",
-        description:
-          "Show us cracks, uneven areas, previous repairs, and any sections that have shifted. The assessment determines whether the existing surface is suitable for the proposed system."
+        "title": "Existing surface and movement",
+        "description": "Show cracks, repairs, uneven areas, settlement, and previous coatings so the existing construction can be assessed."
       },
       {
-        title: "Water and transitions",
-        description:
-          "Identify where water collects and how the driveway meets the garage, street, walkways, and planting beds. Surface selection and the drainage approach need to be considered together."
+        "title": "Water and transitions",
+        "description": "Identify wet spots and the garage, street, walkway, and planting-bed interfaces. Select the surface and its water-management route together."
       },
       {
-        title: "Vehicles and everyday use",
-        description:
-          "Tell us what parks on the driveway, where vehicles turn, and whether the project includes heavier vehicles or additional parking. Intended use informs system selection."
+        "title": "Vehicles and everyday use",
+        "description": "List cars, delivery vehicles, trailers, RVs, jacks, and turning areas. Passenger-car suitability is not approval for every vehicle or point load."
       },
       {
-        title: "Finish and project scope",
-        description:
-          "Discuss colour, boundaries, entrance connections, and the area you want resurfaced. We will consider the complete driveway rather than selecting a finish in isolation."
+        "title": "Finish and project scope",
+        "description": "Compare colors and border proportions against the home. Include thresholds, edges, movement details, and access during the work."
       }
     ]
   },
-
-  winter: {
-    eyebrow: "Plan for Wisconsin Use",
-    title: "Discuss winter maintenance before installation—not after.",
-    description:
-      "Your driveway plan should include snow clearing, deicing, rain and snowmelt, and the condition of the underlying construction. We will confirm the requirements of the selected system rather than make blanket winter-performance promises.",
-    items: [
+  "winter": {
+    "eyebrow": "Plan for Wisconsin Use",
+    "title": "Include winter care in the driveway scope.",
+    "description": "Discuss snow clearing, deicing, rain and snowmelt, and supporting construction. Obtain requirements for the actual selected system rather than relying on blanket winter-performance claims.",
+    "items": [
       {
-        title: "Snow-clearing equipment",
-        description:
-          "Tell us whether you use a shovel, snowblower, or plowing service. Ask for the approved equipment and contact-surface guidance for the installed finish."
+        "title": "Snow-clearing equipment",
+        "description": "Disclose shovels, snowblowers, and plowing arrangements; request approved equipment and contact-surface guidance."
       },
       {
-        title: "Deicing practices",
-        description:
-          "Discuss the products you currently use and request system-specific care guidance. Do not assume that every deicer is suitable for every resin finish."
+        "title": "Deicing practices",
+        "description": "Confirm which products are permitted for the installed finish and how residues should be managed."
       },
       {
-        title: "Rain and snowmelt",
-        description:
-          "Point out persistent wet spots and runoff routes. A permeable surface alone does not establish how water will move through the full driveway construction."
+        "title": "Rain and snowmelt",
+        "description": "Point out wet spots and runoff routes. A permeable wearing surface alone does not establish full-system drainage."
       },
       {
-        title: "Seasonal installation planning",
-        description:
-          "Ask how site conditions, preparation, weather, curing requirements, and vehicle access will affect your installation schedule."
+        "title": "Seasonal installation planning",
+        "description": "Confirm how preparation, weather, cure, and access affect the schedule."
       }
     ],
-    note:
-      "No surface should be treated as ice-proof, slip-proof, or a substitute for appropriate winter maintenance."
+    "note": "No surface should be treated as ice-proof, slip-proof, or a substitute for appropriate winter maintenance."
   },
-
-  comparison: {
-    eyebrow: "Compare the Complete Approach",
-    title: "A surface finish and a foundation are different decisions.",
-    description:
-      "Consider the condition of the driveway first, then compare the work required and the finish you want. There is no universal winner for every Wisconsin property.",
-    columns: [
+  "comparison": {
+    "eyebrow": "Compare the Complete Approach",
+    "title": "A surface finish and its supporting construction serve different roles.",
+    "description": "Compare the actual work and desired finish. Resin-bound wearing surfaces depend on suitable support; no material wins in every situation.",
+    "columns": [
       "Decision",
       "Resin Bound resurfacing",
       "Concrete replacement"
     ],
-    rows: [
+    "rows": [
       {
-        topic: "Existing construction",
-        resin:
-          "Requires an assessment of whether the existing surface and preparation approach are suitable for the selected system.",
-        concrete:
-          "Discuss which existing materials will be removed or retained and what foundation work is included."
+        "topic": "Existing construction",
+        "resin": "An assessed overlay may retain a suitable base after preparation and repairs.",
+        "concrete": "Confirm removal, retained materials, supporting construction, and joint details."
       },
       {
-        topic: "Water management",
-        resin:
-          "Confirm the permeability of the selected system and the drainage approach beneath or around it.",
-        concrete:
-          "Confirm the proposed grading, drainage details, and transitions around the replacement surface."
+        "topic": "Water management",
+        "resin": "An overlay on concrete still needs a route across or away from the slab; full permeable construction is different.",
+        "concrete": "Dense concrete sheds water through grading and drains. Designed pervious concrete is a different assembly."
       },
       {
-        topic: "Winter use",
-        resin:
-          "Request system-specific snow-clearing and deicing instructions.",
-        concrete:
-          "Request finish-specific snow-clearing and deicing instructions."
+        "topic": "Winter use",
+        "resin": "Request system-specific snow-clearing and deicing guidance.",
+        "concrete": "Request finish-specific snow-clearing and deicing guidance."
       },
       {
-        topic: "Price and disruption",
-        resin:
-          "Compare an assessed scope covering preparation, repairs, the surface system, and access arrangements.",
-        concrete:
-          "Compare a scope covering removal, foundation work, installation, and access arrangements."
+        "topic": "Price and disruption",
+        "resin": "Compare preparation, thickness, aggregate, edges, drainage, and access. Retaining a suitable base may reduce demolition.",
+        "concrete": "Compare removal, foundation work, finishing, curing, and access."
       }
     ],
-    systems: [
+    "systems": [
       {
-        name: "Resin Bound",
-        description:
-          "The finished surface option. Selection depends on the existing construction, preparation requirements, vehicle use, and the intended appearance.",
-        to: "/services/resin-bound",
-        linkLabel: "Explore Resin Bound surfaces"
+        "name": "Resin Bound",
+        "description": "The decorative, textured wearing surface made by mixing aggregate and resin before placement. It relies on suitable supporting construction.",
+        "to": "/services/resin-bound",
+        "linkLabel": "Explore Resin Bound surfaces"
       },
       {
-        name: "Rock Crete",
-        description:
-          "A foundation and sub-base option—not an interchangeable decorative finish. Discuss its suitability where your driveway needs an appropriate foundation approach.",
-        to: "/services/rock-crete",
-        linkLabel: "Explore Rock Crete foundations"
+        "name": "Rock Crete",
+        "description": "A supporting-course option within a specified build-up—not the decorative finish or a replacement for every reservoir and subgrade requirement.",
+        "to": "/services/rock-crete",
+        "linkLabel": "Explore Rock Crete foundations"
       }
     ]
   },
-
-  examples: {
-    eyebrow: "Driveway Finish Examples",
-    title: "Explore the look. Assess your own site.",
-    description:
-      "These approved installation photographs show different driveway finishes and settings. They are not identified as Wisconsin projects, and they do not establish the suitability of a system for your property.",
-    images: [
+  "examples": {
+    "eyebrow": "Driveway Finish Examples",
+    "title": "Explore the look. Assess your own site.",
+    "description": "Approved photographs show different finishes and settings. They are not identified as Wisconsin or Elevated Resin Creations projects and do not establish suitability for your property.",
+    "images": [
       {
-        src: "/images/home-gallery-driveway-dark.jpg",
-        alt: "Dark-coloured driveway outside a brick residential garage.",
-        caption: "A darker finish beside a brick garage."
+        "src": "/images/home-gallery-driveway-dark.jpg",
+        "alt": "Dark-coloured driveway outside a brick residential garage.",
+        "caption": "A darker finish beside a brick garage."
       },
       {
-        src: "/images/resin-bound-project-driveway.webp",
-        alt: "Close view of a light-coloured driveway surface approaching a home entrance.",
-        caption: "A light-coloured aggregate finish at a residential entrance."
+        "src": "/images/resin-bound-project-driveway.webp",
+        "alt": "Light-coloured driveway surface approaching a home entrance.",
+        "caption": "A light aggregate finish at a residential entrance."
       }
     ]
   },
-
-  faqs: [
+  "faqs": [
     {
-      id: "driveway-existing-concrete",
-      question: "Can you resurface my existing concrete driveway?",
-      answer:
-        "That depends on the condition of the existing construction and the requirements of the selected system. Share photographs of cracks, repairs, uneven areas, and drainage concerns. We assess suitability before recommending resurfacing or a different foundation approach."
+      "id": "driveway-existing-concrete",
+      "question": "Can you resurface my existing concrete driveway?",
+      "answer": "Possibly. A stable, sound, suitably prepared base may remain, but movement, settlement, weak areas, and drainage need assessment. The overlay does not make the slab infiltrate water or correct structural failure."
     },
     {
-      id: "driveway-rock-crete",
-      question: "Do I need Rock Crete as well as Resin Bound?",
-      answer:
-        "Not automatically. Resin Bound is a surface option; Rock Crete is a foundation and sub-base option. The driveway assessment determines the appropriate approach rather than assuming every project needs the same combination."
+      "id": "driveway-rock-crete",
+      "question": "Do I need Rock Crete as well as Resin Bound?",
+      "answer": "Not automatically. Resin Bound is a wearing course; Rock Crete is a supporting-course option. The assessment determines whether an existing-base overlay or a different build-up fits the site."
     },
     {
-      id: "driveway-winter-care",
-      question: "What should I ask about snow clearing and deicers?",
-      answer:
-        "Ask for written care guidance for the exact installed system, including your shovel, snowblower, or plowing arrangements and any proposed deicing products. We do not describe resin surfaces as ice-proof or suitable for every winter-maintenance practice."
+      "id": "driveway-winter-care",
+      "question": "What should I ask about snow clearing and deicers?",
+      "answer": "Request written guidance for the exact installed system, including tools, plowing arrangements, and permitted deicers. Do not assume ice-proof performance or compatibility with every winter practice."
     },
     {
-      id: "driveway-drainage",
-      question: "Will resurfacing solve standing water?",
-      answer:
-        "Do not assume that a new surface alone will solve a drainage problem. Water management depends on the selected surface, underlying construction, grading, and site conditions. Point out where water collects so those issues can be included in the assessment."
+      "id": "driveway-drainage",
+      "question": "Will resurfacing solve standing water?",
+      "answer": "Not automatically. An unclogged finish and appropriate construction can support water management, but a slab beneath an overlay still needs drainage. A full permeable system needs supporting layers and infiltration or outlets."
     },
     {
-      id: "driveway-estimate",
-      question: "What information should I provide for an estimate?",
-      answer:
-        "Provide your location, approximate driveway area, photographs, existing surface type, drainage concerns, vehicle use, and preferred finish. Include any access or scheduling constraints. Pricing and installation timing require a project-specific scope."
+      "id": "driveway-estimate",
+      "question": "What information should I provide for an estimate?",
+      "answer": "Send location, approximate area, photographs, existing surface type, water concerns, vehicle use, finish preferences, and access constraints. Price and timing depend on the complete scope."
     },
     {
-      id: "driveway-service-area",
-      question: "Where do you take driveway projects?",
-      answer:
-        "We serve Menasha, Wisconsin, surrounding areas, and statewide for qualifying projects. Contact us with your location and project scope to confirm whether your driveway project qualifies."
+      "id": "driveway-service-area",
+      "question": "Where do you take driveway projects?",
+      "answer": "We serve Menasha, Wisconsin, surrounding areas, and statewide for qualifying projects. Share your location and scope to confirm suitability."
     }
   ],
-
-  cta: {
-    eyebrow: "Your Driveway Assessment",
-    title: "Tell us what your driveway needs to handle.",
-    description:
-      "Send your location, approximate area, existing-surface photos, drainage concerns, and vehicle-use details. We will discuss the next step for a project-specific estimate.",
-    label: "Request My Driveway Estimate"
+  "cta": {
+    "eyebrow": "Your Driveway Assessment",
+    "title": "Tell us what your driveway needs to handle.",
+    "description": "Send your location, approximate area, surface photographs, water concerns, and vehicle-use details for a project-specific discussion.",
+    "label": "Request My Driveway Estimate"
   }
 };

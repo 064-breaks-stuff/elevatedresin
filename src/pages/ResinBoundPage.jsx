@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-
 import Container from "../components/common/Container";
 import QuoteCTA from "../components/conversion/QuoteCTA";
 import ExploreByProject from "../components/projects/ExploreByProject";
@@ -20,18 +19,10 @@ export default function ResinBoundPage() {
   return (
     <>
       <Helmet>
-        <title>Resin-Bound Driveways & Patios | {site.name}</title>
-
-        <meta
-          name="description"
-          content="Explore Resin Bound surface options for suitable Wisconsin driveways, patios, pathways, and pool surrounds. Assess existing construction, drainage, intended use, and care requirements."
-        />
-        <link
-          rel="canonical"
-          href={`${site.domain}/services/resin-bound`}
-        />
+        <title>Resin-Bound Driveways &amp; Patios | {site.name}</title>
+        <meta name="description" content="Explore natural-stone resin-bound finishes, colors, borders, and resurfacing options for Wisconsin outdoor spaces. Plan the base, drainage, intended use, and care." />
+        <link rel="canonical" href={`${site.domain}/services/resin-bound`} />
       </Helmet>
-
       <ResinBoundHero />
       <ResinBoundIntro />
       <ResinBoundApplications />
@@ -42,29 +33,14 @@ export default function ResinBoundPage() {
       <ResinBoundAftercare />
       <ResinBoundProjects />
       <ResinBoundFaq />
-
-      <ExploreByProject
-        content={productProjectMappings["resin-bound"]}
-      />
-
+      <ExploreByProject content={productProjectMappings["resin-bound"]} />
       <section className="resin-bound-contact-cta section">
         <Container className="resin-bound-contact-cta__content">
           <div>
-            <p className="resin-bound-contact-cta__eyebrow">
-              Ready to Discuss Your Surface?
-            </p>
-
-            <h2>
-              Tell us about the driveway, patio, pathway, or outdoor space you
-              want to transform.
-            </h2>
-
-            <p>
-              Elevated Resin Creations can help you explore the right Resin
-              Bound solution for your project.
-            </p>
+            <p className="resin-bound-contact-cta__eyebrow">Ready to Discuss Your Surface?</p>
+            <h2>Tell us about the driveway, patio, pathway, or outdoor space you want to transform.</h2>
+            <p>Share the existing surface, approximate area, finish ideas, and access or drainage concerns so the conversation starts with the complete project—not only a product choice.</p>
           </div>
-
           <QuoteCTA label="Request a Project Estimate" />
         </Container>
       </section>

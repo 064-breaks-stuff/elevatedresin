@@ -20,17 +20,6 @@ export default function LegalDocument({ document }) {
 
       <section className="legal-document__content section">
         <Container className="legal-document__container">
-          <div
-            className="legal-document__notice"
-            role="note"
-            aria-label="Draft legal notice"
-          >
-            <p>
-              This document is draft content for client review. It must not be
-              treated as final legal advice or published as approved legal text
-              until the client has confirmed the wording and effective date.
-            </p>
-          </div>
 
           <div className="legal-document__sections">
             {document.sections.map((section) => (

@@ -1,7 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-
 import PageShell from "./components/layout/PageShell";
-
 import HomePage from "./pages/HomePage";
 import ServicesPage from "./pages/ServicesPage";
 import ResinBoundPage from "./pages/ResinBoundPage";
@@ -21,6 +19,8 @@ import PatiosPage from "./pages/PatiosPage";
 import PoolDecksPage from "./pages/PoolDecksPage";
 import WalkwaysPathwaysPage from "./pages/WalkwaysPathwaysPage";
 import LandscapeAreasPage from "./pages/LandscapeAreasPage";
+import ResinVsConcretePage from "./pages/ResinVsConcretePage";
+import MaintenancePage from "./pages/MaintenancePage";
 
 export default function AppRoutes() {
   return (
@@ -40,6 +40,8 @@ export default function AppRoutes() {
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/faq" element={<FAQPage />} />
+        <Route path="/resin-bound-vs-concrete" element={<ResinVsConcretePage />} />
+        <Route path="/maintenance" element={<MaintenancePage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/thank-you" element={<ThankYouPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />

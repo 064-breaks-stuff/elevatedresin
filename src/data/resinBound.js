@@ -1,149 +1,117 @@
 export const resinBoundPage = {
-  hero: {
-    eyebrow: "Resin Rock Surface Options",
-    title: "Resin Bound for Suitable Driveways, Patios & Outdoor Spaces",
-    description:
-      "Explore an aggregate-and-resin finish selected around the existing construction, intended use, drainage approach, and appearance you want. Every application requires assessment before system selection."
+  "hero": {
+    "eyebrow": "Resin Rock Surface Options",
+    "title": "Natural-stone design. A resin-bound finish.",
+    "description": "Explore a textured aggregate finish for driveways, patios, pool surrounds, paths, and connected outdoor spaces. Choose colors, curves, and borders alongside the existing base, intended use, and drainage approach."
   },
-
-  introduction: {
-    eyebrow: "What Is Resin Bound?",
-    title: "A decorative stone finish within a complete surface system.",
-    paragraphs: [
-      "Resin-bound surfacing combines selected aggregate and resin into a decorative wearing surface. The finish and the construction supporting it serve different purposes; the visible layer should not be treated as a replacement for a suitable foundation.",
-      "As an Approved Resin Rock Installer, Elevated Resin Creations helps assess appropriate surface and foundation options for residential and selected commercial projects."
+  "introduction": {
+    "eyebrow": "What Is Resin Bound?",
+    "title": "Real stone, mixed with resin before placement.",
+    "paragraphs": [
+      "Resin-bound surfacing combines dry aggregate with a two-component polyurethane binder before the mixture is placed and hand-troweled over a suitable prepared base. Resin-bonded surfacing is different: loose stone is scattered onto a resin-coated surface.",
+      "The aggregate provides the stone appearance; the binder holds it together. The decorative wearing course still depends on suitable support below. Elevated Resin Creations helps assess whether a prepared overlay or a different build-up fits your property."
     ]
   },
-
-  applications: [
+  "applications": [
     {
-      title: "Driveways",
-      description:
-        "Assess vehicle use, existing construction, preparation, drainage, and the proposed driveway system."
+      "title": "Driveways",
+      "description": "Coordinate the driveway and entrance. Disclose cars, trailers, concentrated loads, and turning areas before selecting the construction."
     },
     {
-      title: "Patios",
-      description:
-        "Consider a coordinated finish for outdoor living, furniture use, thresholds, and seasonal care."
+      "title": "Patios",
+      "description": "Connect seating, doors, and gardens with colors and borders. Consider furniture, heat sources, thresholds, and drainage."
     },
     {
-      title: "Walkways & Pathways",
-      description:
-        "Plan route width, transitions, foot traffic, drainage, and the requirements of the selected finish."
+      "title": "Walkways & Pathways",
+      "description": "Explore a bound finish rather than migrating gravel. Assess width, slopes, transitions, turning space, and the complete route."
     },
     {
-      title: "Pool Areas",
-      description:
-        "Confirm wet-area suitability, documented traction characteristics, chemical compatibility, and edge details."
+      "title": "Pool Areas",
+      "description": "Coordinate curved pool edges and seating areas. Confirm wet-traction information, chemical compatibility, coping, and drainage."
     },
     {
-      title: "Landscaped Spaces",
-      description:
-        "Coordinate suitable horizontal surfaces with paths, borders, planting beds, and landscape details."
+      "title": "Landscaped Spaces",
+      "description": "Plan defined surfaces around beds, gates, and outdoor spaces. Consider roots, sediment movement, and maintenance."
     },
     {
-      title: "Commercial Areas",
-      description:
-        "Review the actual traffic, loading, exposure, drainage, and specification requirements before proposing a system."
+      "title": "Commercial Areas",
+      "description": "Confirm actual loading, exposure, access, and specification requirements; a decorative finish alone does not establish commercial capacity."
     }
   ],
-
-  benefits: [
+  "benefits": [
     {
-      title: "Coordinated Stone Appearance",
-      description:
-        "Explore aggregate finishes and borders that complement the property. Movement details and construction joints must still be assessed where required."
+      "title": "Coordinated Stone Appearance",
+      "description": "Compare natural aggregate colors and borders with your exterior materials. Samples and hand-troweled finishing allow natural variation."
     },
     {
-      title: "Application-Specific Selection",
-      description:
-        "Consider the finish, preparation, foundation, and intended use together instead of assuming one specification fits every project."
+      "title": "Application-Specific Selection",
+      "description": "A sound finish holds aggregate together instead of leaving it loose. Blend, preparation, depth, and supporting construction must suit the use."
     },
     {
-      title: "Drainage-Aware Planning",
-      description:
-        "Assess the selected surface and the water-management route beneath or around it. Surface permeability alone does not establish full-system drainage."
+      "title": "Drainage-Aware Planning",
+      "description": "Connected voids can pass water through the wearing course. The slab, supporting layers, storage, soil, and outlets determine its onward route."
     },
     {
-      title: "Defined Care Requirements",
-      description:
-        "Request maintenance instructions for the exact installed system, including cleaning and winter-use guidance."
+      "title": "Defined Care Requirements",
+      "description": "Plan debris removal, approved cleaning, and drainage checks. Low routine upkeep is not maintenance-free."
     },
     {
-      title: "Decorative Choice",
-      description:
-        "Review the official colour charts and confirm available blends, intended applications, and the final finish during planning."
+      "title": "Decorative Choice",
+      "description": "Curves and contrasting bands can connect outdoor spaces. Movement details and planned construction joints may still be needed."
     },
     {
-      title: "Wisconsin Project Context",
-      description:
-        "Discuss winter maintenance, rain and snowmelt, seasonal installation conditions, and existing-base suitability."
+      "title": "Wisconsin Project Context",
+      "description": "Consider rain, snowmelt, base stability, installation weather, and winter care together. No frost-proof or ice-proof claim is made."
     }
   ],
-
-  drainage: {
-    eyebrow: "Surface Versus System",
-    title: "Where will the water go after it reaches the surface?",
-    paragraphs: [
-      "The drainage approach depends on the selected finish and complete construction. An existing concrete slab beneath a resin-bound overlay should not be assumed to allow water to pass into the soil.",
-      "A proposed permeable build-up needs suitable supporting layers and a defined infiltration or drainage route. Grading, soil, outlets, installation, and maintenance must be considered before promising an outcome."
+  "drainage": {
+    "eyebrow": "Two Construction Approaches",
+    "title": "The surface passes water. The construction determines its route.",
+    "paragraphs": [
+      "An overlay on suitable concrete or asphalt may renew the finish while retaining the base. Water still needs a drainage route across or away from an impermeable slab; the finish does not make the slab infiltrate water into the ground.",
+      "A complete permeable build-up needs suitable supporting layers and storage, with soil infiltration or a defined drainage outlet. Ground conditions, grading, overflow, and maintenance affect performance."
     ]
   },
-
-  colours: {
-    eyebrow: "Official Colour Charts",
-    title: "Choose a finish with the surrounding property in mind.",
-    description:
-      "Review the supplied Resin Rock colour charts, then confirm current availability and suitability for your application. The chart identifies different intended uses; do not assume every blend is suitable for vehicle traffic."
+  "colours": {
+    "eyebrow": "Color and Border Choices",
+    "title": "Choose the palette with your whole property in view.",
+    "description": "Review official Resin Rock charts and confirm current blend availability and intended use. Compare samples with brickwork, doors, coping, and planting. Visualizations are illustrative; not every blend is suitable for vehicle traffic."
   },
-
-  preparation: {
-    eyebrow: "Existing Construction",
-    title: "Assess the base before selecting the finish.",
-    paragraphs: [
-      "Resurfacing may be appropriate where the existing construction meets the selected system’s requirements after assessment and preparation. Discuss movement, weak areas, cracks, levels, drainage, and compatibility.",
-      "A decorative overlay is not a remedy for structural failure. Repairs, replacement, or a different foundation approach may be necessary before installation."
+  "preparation": {
+    "eyebrow": "Preparation Makes the Difference",
+    "title": "Retain a suitable base—not the problems beneath it.",
+    "paragraphs": [
+      "A sound existing base may offer resurfacing opportunities after inspection and preparation. Assess movement, cracks, settlement, contamination, thresholds, edges, and drainage before deciding what remains.",
+      "Dry materials, specified proportions, controlled mixing, and suitable weather protect the uncured system. A decorative overlay cannot stabilize a moving or failed foundation."
     ]
   },
-
-  aftercare: {
-    eyebrow: "Installation & Care",
-    title: "Confirm timing and maintenance for the installed system.",
-    items: [
+  "aftercare": {
+    "eyebrow": "Installation and Handover",
+    "title": "Plan access, opening, and ongoing care.",
+    "items": [
       {
-        title: "Installation schedule",
-        description:
-          "Confirm a project-specific schedule based on preparation, area, access, the selected system, and installation conditions."
+        "title": "Installation schedule",
+        "description": "Preparation, area, access, edging, weather, and cure requirements affect the schedule. A placement rate is not a complete project duration."
       },
       {
-        title: "Pedestrian access",
-        description:
-          "Use the installer’s written release and current product guidance rather than assuming a universal opening time."
+        "title": "Pedestrian access",
+        "description": "Keep traffic off until the installer releases the finish under current product guidance. No universal opening time applies."
       },
       {
-        title: "Vehicle access",
-        description:
-          "Confirm vehicle opening times and any loading or use restrictions for the actual driveway specification."
+        "title": "Vehicle access",
+        "description": "Confirm the actual vehicle opening time and restrictions for turning, concentrated loads, and equipment."
       },
       {
-        title: "Cleaning and winter care",
-        description:
-          "Request approved cleaning methods, pressure-washing limits, snow-clearing guidance, and deicer instructions."
+        "title": "Cleaning and winter care",
+        "description": "Remove debris and keep water paths clear. Request approved pressure-washing, snow-clearing, deicer, and renewal guidance."
       }
     ]
   },
-
-  projects: {
-    eyebrow: "Installation Examples",
-    title: "Explore different resin-bound surface settings.",
-    description:
-      "These approved installation photographs illustrate finishes and applications. They are not identified as Wisconsin projects or evidence of suitability for your own property."
+  "projects": {
+    "eyebrow": "Installation Examples",
+    "title": "Compare finishes across different outdoor settings.",
+    "description": "Approved photographs illustrate colors, curves, and boundaries. They are not identified as Elevated Resin Creations or Wisconsin projects and do not establish a specification for your property."
   }
 };
 
-export const resinBoundFaqIds = [
-  "base-condition",
-  "permeability",
-  "maintenance",
-  "pricing"
-];
+export const resinBoundFaqIds = ["base-condition", "permeability", "maintenance", "pricing"];

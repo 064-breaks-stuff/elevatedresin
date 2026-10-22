@@ -1,127 +1,100 @@
 export const glowRockPage = {
-  hero: {
-    eyebrow: "Decorative Glow Options",
-    title: "Explore After-Dark Details for Your Outdoor Project",
-    description:
-      "Consider selected Glow Rock stones, paving, and decorative accents within a suitable outdoor project. Confirm the exact product, placement, compatibility, and intended appearance."
+  "hero": {
+    "eyebrow": "Decorative Glow Options",
+    "title": "A different character for your outdoor space after dark.",
+    "description": "Explore selected light-charged aggregate and paving for borders, paths, patios, and landscape features. Choose the actual product around its daytime appearance, placement, exposure, and application requirements."
   },
-
-  introduction: {
-    eyebrow: "Decorative Surface Details",
-    title: "A changing appearance after sunset.",
-    paragraphs: [
-      "The supplied Glow Rock catalogue describes light-charged products that emit a glow after dark. Actual appearance depends on the selected product, exposure, placement, and surrounding light.",
-      "Elevated Resin Creations can discuss suitable decorative options as part of a larger project. These features are not presented as a substitute for required lighting or a guarantee of nighttime safety."
+  "introduction": {
+    "eyebrow": "Daylight to After-Dark Design",
+    "title": "Choose the detail—not a universal glow promise.",
+    "paragraphs": [
+      "Selected products charge from light exposure and release a glow in darker conditions. Aggregate and manufactured paving are different formats with different installation and use requirements.",
+      "The visible effect depends on product, charging light, time since charging, and surrounding illumination. Photographs illustrate designs rather than measure brightness. Decorative glow does not replace required lighting or establish nighttime safety."
     ]
   },
-
-  howItWorks: {
-    eyebrow: "Light Exposure and Placement",
-    title: "Select the product around its intended setting.",
-    steps: [
+  "howItWorks": {
+    "eyebrow": "Light Exposure and Placement",
+    "title": "Three things to agree before adding glow.",
+    "steps": [
       {
-        number: "01",
-        title: "Confirm the product",
-        description:
-          "Identify whether the design uses glow aggregate, manufactured paving, or another documented product."
+        "number": "01",
+        "title": "Choose the product format",
+        "description": "Identify the exact aggregate, paving, or detail and its intended traffic and wet-area use."
       },
       {
-        number: "02",
-        title: "Review the setting",
-        description:
-          "Consider available light exposure, surrounding illumination, placement, and the desired decorative result."
+        "number": "02",
+        "title": "Consider the light and setting",
+        "description": "Charging exposure, shade, and nearby lighting change the visible effect."
       },
       {
-        number: "03",
-        title: "Agree on the application",
-        description:
-          "Confirm compatibility, availability, installation requirements, and care guidance before including it in the scope."
+        "number": "03",
+        "title": "Confirm the finished detail",
+        "description": "Agree on placement, compatible construction, daytime appearance, and care. No generic glowing duration is promised."
       }
     ]
   },
-
-  benefits: [
+  "benefits": [
     {
-      title: "After-Dark Appearance",
-      description:
-        "Explore a decorative visual change between daylight and darker conditions."
+      "title": "After-Dark Appearance",
+      "description": "Explore a changing decorative appearance between daylight and darker conditions."
     },
     {
-      title: "Borders and Detail Bands",
-      description:
-        "Consider selected products for decorative edges and coordinated surface details."
+      "title": "Borders and Detail Bands",
+      "description": "Consider outlines and bands that relate to the surrounding stone and planting."
     },
     {
-      title: "Product Choices",
-      description:
-        "Review the official sheets for available formats and colours, then confirm current availability."
+      "title": "Product Choices",
+      "description": "Compare aggregate and manufactured paving as distinct formats; confirm current availability."
     },
     {
-      title: "Placement-Led Design",
-      description:
-        "Account for light exposure and the surrounding setting instead of promising identical results everywhere."
+      "title": "Placement-Led Design",
+      "description": "Account for the actual charging light and surrounding illumination."
     },
     {
-      title: "Coordinated Outdoor Features",
-      description:
-        "Discuss decorative accents alongside the wider patio, pathway, pool, or landscape project."
+      "title": "Coordinated Outdoor Features",
+      "description": "Plan suitable accents within a wider patio, pathway, pool, or landscape project."
     },
     {
-      title: "Application Assessment",
-      description:
-        "Confirm the exact product’s suitability for traffic, wet areas, and other proposed conditions."
+      "title": "Application Assessment",
+      "description": "Confirm product-specific traffic, wet-area, installation, and care requirements."
     }
   ],
-
-  applications: [
+  "applications": [
     {
-      title: "Driveways",
-      description:
-        "Discuss selected decorative details only where the product and vehicular specification support the proposed use."
+      "title": "Driveways",
+      "description": "Consider compatible details only where the exact product and vehicle specification permit them."
     },
     {
-      title: "Walkways & Pathways",
-      description:
-        "Explore decorative route and border features without replacing required lighting."
+      "title": "Walkways & Pathways",
+      "description": "Explore decorative route accents alongside adequate lighting and complete route design."
     },
     {
-      title: "Patios",
-      description:
-        "Consider after-dark design details within an assessed outdoor-living project."
+      "title": "Patios",
+      "description": "Compare accents with seating, borders, and the daytime appearance of the patio."
     },
     {
-      title: "Pool Areas",
-      description:
-        "Confirm wet-area suitability and product requirements before adding a decorative pool-area feature."
+      "title": "Pool Areas",
+      "description": "Confirm wet-area and chemical compatibility; glow does not establish traction or safety."
     },
     {
-      title: "Garden Features",
-      description:
-        "Explore coordinated borders, paths, and suitable landscape accents."
+      "title": "Garden Features",
+      "description": "Consider shade, planting, debris, and maintenance access around decorative details."
     },
     {
-      title: "Commercial Spaces",
-      description:
-        "Assess product compatibility and the project’s lighting, traffic, and maintenance requirements."
+      "title": "Commercial Spaces",
+      "description": "Assess exposure, traffic, lighting requirements, and the exact specification."
     }
   ],
-
-  designOptions: {
-    eyebrow: "Official Product Information",
-    title: "Compare glow aggregate and manufactured paving options.",
-    description:
-      "The supplied sheets show Glow Stone features and Discovery Combo paving. These are different product formats; confirm current availability, specification, and suitability for the proposed application."
+  "designOptions": {
+    "eyebrow": "Product Formats and References",
+    "title": "Glow aggregate and manufactured paving are different choices.",
+    "description": "The Glow Stone and Discovery Combo sheets illustrate different formats. Confirm the exact product, availability, construction, and intended use rather than assuming all are resin-bound additives or vehicle-suitable finishes."
   },
-
-  gallery: {
-    eyebrow: "Decorative Installation Examples",
-    title: "Explore glow patterns, paving, and borders.",
-    description:
-      "Approved photographs illustrate decorative installations. They are not identified as Wisconsin projects or measurements of brightness, duration, safety, or performance."
+  "gallery": {
+    "eyebrow": "Decorative Installation Examples",
+    "title": "Compare pattern and placement—not guaranteed brightness.",
+    "description": "Approved photographs illustrate different settings. They are not identified as Elevated Resin Creations or Wisconsin projects or measured evidence of brightness, duration, or safety."
   }
 };
 
-export const glowRockFaqIds = [
-  "maintenance",
-  "pricing"
-];
+export const glowRockFaqIds = ["maintenance", "pricing"];

@@ -12,7 +12,7 @@ export default function PrivacyPolicyPage() {
 
         <meta
           name="description"
-          content="Draft Privacy Policy for Elevated Resin Creations, pending client review and approval."
+          content="Privacy Policy for Elevated Resin Creations."
         />
       </Helmet>
 

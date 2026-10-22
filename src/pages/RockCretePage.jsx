@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-
 import Container from "../components/common/Container";
 import QuoteCTA from "../components/conversion/QuoteCTA";
 import ExploreByProject from "../components/projects/ExploreByProject";
@@ -19,16 +18,9 @@ export default function RockCretePage() {
     <>
       <Helmet>
         <title>Rock Crete Foundation Options | {site.name}</title>
-        <meta
-          name="description"
-          content="Discuss Rock Crete foundation and binder-course options within a suitable Resin Rock project. Review supporting construction, drainage, traffic, and project-specific requirements."
-        />
-        <link
-          rel="canonical"
-          href={`${site.domain}/services/rock-crete`}
-        />
+        <meta name="description" content="Understand Rock Crete supporting-course options and the layers beneath resin-bound stone. Discuss project-specific preparation, traffic, reservoir, and drainage." />
+        <link rel="canonical" href={`${site.domain}/services/rock-crete`} />
       </Helmet>
-
       <RockCreteHero />
       <RockCreteFoundation />
       <RockCretePerformance />
@@ -37,27 +29,14 @@ export default function RockCretePage() {
       <RockCreteApplications />
       <RockCreteGlowLink />
       <RockCreteFaq />
-
       <ExploreByProject content={productProjectMappings["rock-crete"]} />
-
       <section className="rock-crete-contact-cta section">
         <Container className="rock-crete-contact-cta__content">
           <div>
-            <p className="rock-crete-contact-cta__eyebrow">
-              Interested in Rock Crete?
-            </p>
-
-            <h2>
-              Tell us about the resin-bound surface you want to build from the
-              ground up.
-            </h2>
-
-            <p>
-              Discuss your driveway, patio, pathway, residential surface, or
-              commercial project with Elevated Resin Creations.
-            </p>
+            <p className="rock-crete-contact-cta__eyebrow">Interested in Rock Crete?</p>
+            <h2>Tell us what needs to support your chosen outdoor finish.</h2>
+            <p>Share the existing construction, expected traffic, and drainage concerns. We can discuss whether an assessed overlay or a different build-up is appropriate for the project.</p>
           </div>
-
           <QuoteCTA label="Discuss Your Foundation Options" />
         </Container>
       </section>

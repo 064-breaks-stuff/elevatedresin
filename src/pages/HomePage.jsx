@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-
 import HomeBenefits from "../components/home/HomeBenefits";
 import HomeComparison from "../components/home/HomeComparison";
 import HomeFAQPreview from "../components/home/HomeFAQPreview";
@@ -20,57 +19,22 @@ export default function HomePage() {
   return (
     <>
       <Helmet>
-        <title>
-          Elevated Resin Creations | Wisconsin Resin Surfacing Projects
-        </title>
-        <meta
-          name="description"
-          content="Plan resin-bound driveways, patios, pool surrounds, pathways, and landscape details with Elevated Resin Creations. Serving Menasha, surrounding areas, and statewide for qualifying projects."
-        />
+        <title>Elevated Resin Creations | Wisconsin Resin Surfacing Projects</title>
+        <meta name="description" content="Explore natural-stone resin-bound driveways, patios, pool surrounds, pathways, and landscape details. Serving Menasha, surrounding areas, and qualifying Wisconsin projects." />
         <link rel="canonical" href={`${site.domain}/`} />
       </Helmet>
-
-      <HomeHero />
-      <HomeTrustBar />
-
+      <HomeHero /><HomeTrustBar /><HomeServices />
       <section className="home-transformation section">
-        <SectionHeading
-          eyebrow="Representative Design Comparison"
-          title="Explore a different finish—not a guaranteed project outcome."
-          description="This illustrative before-and-after pair is not an Elevated Resin Creations installation. Your project begins with an assessment of the existing construction, intended use, drainage, and finish requirements."
-        />
-
-        <Container>
-          <BeforeAfterSlider />
-        </Container>
+        <SectionHeading eyebrow="Representative Design Comparison" title="See how a different stone finish can change the feel of a space." description="Use this illustrative comparison to explore appearance, not to predict a result. These images are not an Elevated Resin Creations installation. Your finish and construction begin with a site-specific assessment." />
+        <Container><BeforeAfterSlider /></Container>
       </section>
-
-      <HomeBenefits />
-      <HomeValueSection />
-      <HomeServices />
-      <HomeFeaturedProject />
-      <HomeComparison />
-
+      <HomeBenefits /><HomeValueSection /><HomeFeaturedProject /><HomeComparison />
       <section className="home-gallery section">
-        <SectionHeading
-          eyebrow="Installation Gallery"
-          title="Explore approved outdoor-surface examples."
-          description="Browse approved installation photographs across driveway, pool, and decorative applications. These images are not identified as Wisconsin projects; your system and scope will be selected for your own property."
-        />
-
-        <Container>
-          <ProjectPreviewGrid />
-        </Container>
+        <SectionHeading eyebrow="Installation Gallery" title="Explore finishes across different outdoor settings." description="Compare approved driveway, pool, and decorative installation examples. These photographs are not identified as Wisconsin projects or Elevated Resin Creations installations." />
+        <Container><ProjectPreviewGrid /></Container>
       </section>
-
-      <HomeProcess />
-      <HomeFAQPreview />
-
-      <QuoteFormSection
-        eyebrow="Request a Project Estimate"
-        title="Tell us what your outdoor space needs to handle."
-        description={`Share your location, photographs, approximate area, and project goals with ${site.name}. We will discuss the existing construction, intended use, drainage considerations, and appropriate scope.`}
-      />
+      <HomeProcess /><HomeFAQPreview />
+      <QuoteFormSection eyebrow="Request a Project Estimate" title="Show us the space you want to improve." description={`Share your location, approximate area, existing-surface photographs, and the result you want with ${site.name}. Include access, drainage, and vehicle-use concerns so the conversation starts with a realistic scope.`} />
     </>
   );
 }

@@ -1,22 +1,17 @@
 export const faqPage = {
-  hero: {
-    eyebrow: "Resin Rock FAQs",
-    title: "Frequently Asked Questions",
-    description:
-      "Find answers to common questions about resin-bound surfaces, preparation, drainage, installation timing, maintenance, and requesting a quote."
+  "hero": {
+    "eyebrow": "Project Planning FAQs",
+    "title": "Clear answers before you choose a surface.",
+    "description": "Understand resin-bound finishes, existing-base overlays, drainage, vehicle use, care, and project estimates."
   },
-
-  introduction: {
-    eyebrow: "Planning Your Project",
-    title: "Clear answers before you begin.",
-    description:
-      "Every outdoor space is different. These answers cover the questions Elevated Resin Creations is asked most often about Resin Rock systems and resin-bound surfacing."
+  "introduction": {
+    "eyebrow": "Start with Your Property",
+    "title": "Compare the finish and the complete construction.",
+    "description": "Use these answers as a planning guide. The selected product, site assessment, proposal, and applicable written care and warranty information determine the actual project."
   },
-
-  support: {
-    eyebrow: "Still Have a Question?",
-    title: "Tell us about your project.",
-    description:
-      "If you need guidance specific to your driveway, patio, pathway, pool area, landscape, commercial surface, or vertical feature, contact Elevated Resin Creations."
+  "support": {
+    "eyebrow": "Your Project Questions",
+    "title": "Show us the area you want to improve.",
+    "description": "Share your location, photographs, approximate dimensions, intended use, and any drainage or access concerns with Elevated Resin Creations."
   }
 };
