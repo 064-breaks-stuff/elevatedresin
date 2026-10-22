@@ -1,0 +1,55 @@
+.driveway-comparison__scope {
+  max-width: 76rem;
+  margin-bottom: var(--space-6);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  line-height: 1.65;
+}
+.driveway-comparison__references {
+  margin-left: .25em;
+  font-size: .7em;
+  white-space: nowrap;
+}
+.driveway-comparison__references a,
+.driveway-comparison__sources a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: .15em;
+}
+.driveway-comparison__notes {
+  margin-top: var(--space-6);
+  max-width: 76rem;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  line-height: 1.65;
+}
+.driveway-comparison__notes > p + p {
+  margin-top: var(--space-3);
+}
+.driveway-comparison__sources {
+  margin-top: var(--space-5);
+}
+.driveway-comparison__sources summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+.driveway-comparison__sources ol {
+  margin-top: var(--space-4);
+  padding-left: 1.5rem;
+  list-style: decimal;
+}
+.driveway-comparison__sources li + li {
+  margin-top: var(--space-2);
+}
+.driveway-comparison__sources li {
+  scroll-margin-top: 7rem;
+}
+.driveway-comparison__sources p {
+  margin-top: var(--space-4);
+}
+.driveway-comparison__references a:focus-visible,
+.driveway-comparison__sources a:focus-visible,
+.driveway-comparison__sources summary:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
