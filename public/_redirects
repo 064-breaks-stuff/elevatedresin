@@ -1,1 +1,2 @@
-/* /index.html 200
+# Static files are served directly by Cloudflare Pages.
+# SPA routes use Cloudflare Pages' automatic fallback.
